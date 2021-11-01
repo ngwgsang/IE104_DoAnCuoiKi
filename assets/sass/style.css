@@ -83,6 +83,18 @@ ul {
   list-style: none;
 }
 
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.heading span {
+  font-family: 'Pacifico', cursive;
+  color: #FD514D;
+  font-size: 3.4rem;
+}
+
 .navbar {
   width: 100%;
   height: 5rem;
@@ -138,9 +150,8 @@ ul {
 
 .hero {
   width: 100%;
-  height: auto;
+  height: 80rem;
   position: relative;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,37 +165,13 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
+  background-size: cover;
   gap: 0;
-  top: -7rem;
-}
-
-.hero__main {
-  width: 101%;
-  z-index: 2;
-  height: auto;
-}
-
-.hero__main video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  z-index: 0;
 }
 
 .hero__main__content {
-  position: absolute;
-  z-index: 4;
-  color: 1rem;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #0820328e;
-}
-
-.hero__main__content div {
   position: absolute;
   z-index: 10;
   top: 45%;
@@ -206,7 +193,7 @@ ul {
           flex-direction: column;
 }
 
-.hero__main__content div * {
+.hero__main__content * {
   font-size: 2.6rem;
   font-family: 'Pacifico', cursive;
   color: #fff;
@@ -216,29 +203,153 @@ ul {
   text-align: center;
 }
 
-.hero__main__content div h1 {
+.hero__main__content h1 {
   font-size: 5rem;
   color: #FD514D;
   margin-bottom: 2rem;
 }
 
-.hero__sub {
+.hero__sub__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  background: #181A37;
+  height: 20rem;
+  background: #000;
   padding: 4rem 4rem;
   z-index: 10;
 }
 
-.hero__sub p {
+.hero__sub__content p {
   color: #fff;
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
 
-.hero__sub p span {
+.hero__sub__content p span {
   font-family: 'Pacifico', cursive;
   color: #FD514D;
   font-size: 2.4rem;
+}
+
+.sale {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #181A37;
+  padding: 8rem 0;
+}
+
+.sale__slider {
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.sale__slider .slick-prev {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+}
+
+.sale__slider .slick-next {
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+}
+
+.sale__slider .slick-prev:before, .sale__slider .slick-next:before {
+  font-size: 3.2rem;
+}
+
+.sale__slider__item {
+  position: relative;
+  width: 70rem;
+  height: 38rem;
+  background: #fff;
+  padding: 2rem;
+  margin: 0 20rem;
+}
+
+.sale__slider__item img {
+  width: 100%;
+  height: 24rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.sale__slider__item h5 {
+  margin-top: 1rem;
+  font-size: 2.6rem;
+  color: #FD514D;
+}
+
+.sale__slider__item p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.home-menu {
+  width: 100%;
+  height: auto;
+  background: url("../images/bg.png") top;
+  padding: 8rem 4rem;
+}
+
+.home-menu__container {
+  height: 30rem;
+  padding: 1rem 3rem;
+  margin: 4rem 0;
+}
+
+.home-menu__container h4 {
+  font-size: 2.8rem;
+  font-family: 'Pacifico', cursive;
+  margin: 2rem;
+  color: #fff;
+}
+
+.home-menu__container .list-item {
+  background: #fff;
+  width: 18rem;
+  height: 26rem;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  margin: 0 4rem;
+}
+
+.home-menu__container .list-item img {
+  width: 100%;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.home-menu__container .list-item h5 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6rem;
+  margin: 0.5rem auto;
+}
+
+.home-menu__container .list-item .price {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+
+.home-menu__container .list-item .price span {
+  font-size: 1.6rem;
+  color: #FD514D;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
