@@ -3,11 +3,12 @@
 //---------------------------->BASE
 @import './base/base';
 @import './base/typography';
+@import './base/variables';
 //---------------------------->COMPONENTS
 @import './components/mixins';
 @import './components/button';
 //---------------------------->SECTIONS
-
+@import './sections/navbar';
 //-------------------------->PAGES
 @import './pages/home';
 @import './pages/login';
