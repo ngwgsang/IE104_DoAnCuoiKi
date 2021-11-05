@@ -150,22 +150,74 @@ ul {
 
 .footer {
   width: 100%;
-  height: 20rem;
-  padding: 3rem 5rem;
+  height: auto;
+  padding: 4rem 5rem;
   background: #000;
+  gap: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer div div {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.footer div div h5 {
+  color: #FD514D;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.footer div div li {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+}
+
+.footer__logo {
+  width: 26rem;
+}
+
+.footer__logo p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer__about {
+  width: 26rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__open-time {
   color: #fff;
+  width: 26rem;
+}
+
+.footer__open-time div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,19 +227,21 @@ ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  width: 100%;
+  height: auto;
   gap: 1rem;
 }
 
-.footer__open-time ul li {
-  margin-bottom: 0.7rem;
+.footer__open-time div div li {
+  margin-bottom: 0.5rem;
 }
 
-.footer__open-time ul:nth-child(1) li {
+.footer__open-time div div ul:nth-child(1) li {
   border-right: 2px dotted white;
   padding-right: 1rem;
 }
 
-.footer__open-time ul:nth-child(2) li {
+.footer__open-time div div ul:nth-child(2) li {
   color: #F0A501;
 }
 
@@ -398,7 +452,7 @@ ul {
 
 .feedback {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 40rem;
   padding: 5rem;
   background: #060823;
