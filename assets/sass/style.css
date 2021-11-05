@@ -365,6 +365,7 @@ ul {
   background: #fff;
   padding: 2rem;
   margin: 0 20rem;
+  overflow: hidden;
 }
 
 .sale__slider__item img {
@@ -418,6 +419,7 @@ ul {
   position: relative;
   cursor: pointer;
   margin: 0 4rem;
+  overflow: hidden;
 }
 
 .home-menu__container .list-item img {
@@ -483,6 +485,7 @@ ul {
   height: 20rem;
   width: 60rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .feedback__slider__item img {
