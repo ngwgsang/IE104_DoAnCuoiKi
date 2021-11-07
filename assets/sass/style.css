@@ -462,30 +462,21 @@ ul {
 }
 
 .feedback__slider {
-  position: absolute;
-  top: 12rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 60rem;
+  margin: 0 auto;
+  margin-top: 3rem;
   height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 80rem;
+}
+
+.feedback__slider .slick-dots li button:before {
+  color: #FD514D;
 }
 
 .feedback__slider__item {
   position: relative;
   height: 20rem;
-  width: 60rem;
   text-align: center;
-  overflow: hidden;
+  margin: 0 10rem;
 }
 
 .feedback__slider__item img {
@@ -514,25 +505,6 @@ ul {
   color: #fff;
 }
 
-.feedback__nav {
-  position: absolute;
-  bottom: 6rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-  color: #fff;
-}
-
 .login {
   width: 100%;
   height: 100%;
@@ -550,8 +522,11 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #181A37;
-  margin: 6.25rem 12.5rem;
-  padding-bottom: 2.5rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 4rem;
 }
 
 .login__box .login__logo__img {
@@ -679,5 +654,11 @@ ul {
 .login__box button, .login__box input {
   border-radius: 0.313rem;
   border: none;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: url(/assets/images/bg.png);
 }
 /*# sourceMappingURL=style.css.map */
