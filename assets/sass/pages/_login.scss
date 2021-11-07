@@ -1,10 +1,4 @@
 .login{
-<<<<<<< HEAD
-    display: flex;
-    align-self: center;
-    justify-content: center;
-=======
->>>>>>> 8d7db433e3e8f3264014e436ca4403d228921b92
     width: 100%;
     height: 100%;
     padding-top: 1.25rem;
@@ -16,19 +10,11 @@
     position: absolute;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    align-self: center;
     background-color: $cl-4;
-    padding-bottom: 2.5rem;
-=======
-    background-color: $cl-4;
-    // margin: 6.25rem 12.5rem;
-    // padding-bottom: 2.5rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 4rem;
->>>>>>> 8d7db433e3e8f3264014e436ca4403d228921b92
     .login__logo__img{
         position: relative;
         width: 37.5rem;
