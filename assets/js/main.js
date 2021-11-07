@@ -12,3 +12,11 @@ $('.list').slick({
     autoplaySpeed: 4000,
     arrows: true,
   });
+$('.feedback__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4500,
+    dots: true,
+    arrows:  false
+  });
