@@ -190,21 +190,19 @@
     background: #060823;
     gap: 1rem;
     &__slider{
-        position: absolute;
-        top: 12rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60rem;
+        margin: 0 auto;
+        margin-top: 3rem;
         height: 20rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 80rem;
+        .slick-dots li button:before{
+            color: $cl-1;
+        }
         &__item{
             position: relative;
             height: 20rem;
-            width: 60rem;
+            // width: 80rem;
             text-align: center;
-            overflow: hidden;
+            margin: 0 10rem;
             img{
                 height: 7rem;
                 width: 7rem;
@@ -228,17 +226,7 @@
             }
         }
     }
-    &__nav{
-        position: absolute;
-        bottom: 6rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        color: #fff;
-    }
+
 }
 
 
