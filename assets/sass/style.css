@@ -83,6 +83,10 @@ ul {
   list-style: none;
 }
 
+p {
+  color: #000;
+}
+
 .heading {
   text-align: center;
   font-size: 3rem;
@@ -183,6 +187,10 @@ ul {
   font-size: 1rem;
   margin-bottom: 0.2rem;
   line-height: 1.5;
+}
+
+.footer div div li a {
+  color: #fff;
 }
 
 .footer__logo {
@@ -898,5 +906,206 @@ ul {
   height: 3rem;
   background: #FD514D;
   cursor: pointer;
+}
+
+.promotion-content {
+  width: 100%;
+  background: #181A37;
+  padding: 10% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.promotion-content__top {
+  background: #fff;
+  width: 100%;
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.promotion-content__top__left {
+  padding: 2rem;
+  width: 60%;
+  line-height: 1.5;
+}
+
+.promotion-content__top__left h3 {
+  font-size: 2.4rem;
+  color: #FD514D;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.promotion-content__top__left p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.promotion-content__top__left ul {
+  margin-top: 1rem;
+}
+
+.promotion-content__top__left ul li {
+  list-style: disc inside;
+  line-height: 1.5;
+}
+
+.promotion-content__top__right {
+  width: 60%;
+  padding: 0.4rem;
+}
+
+.promotion-content__top__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.promotion-content__bottom {
+  border-radius: 1rem;
+  width: 100%;
+  background: #fff;
+  padding: 4rem;
+}
+
+.promotion-content__bottom h4 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 2rem auto;
+}
+
+.promotion-content__bottom .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.promotion-content__bottom .list-item {
+  padding: 4rem 1rem;
+  background-color: rgba(204, 204, 204, 0.2);
+  line-height: 1.5;
+  border-radius: 0.6rem;
+}
+
+.promotion-content__bottom .list-item img {
+  margin-bottom: 2rem;
+}
+
+.promotion-content__bottom .list-item h5 {
+  font-size: 1.3rem;
+}
+
+.restaurant-system {
+  width: 100%;
+  background: #181A37;
+  padding: 10rem 15rem;
+}
+
+.restaurant-system .box {
+  width: 100%;
+  height: 120rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.restaurant-system__left {
+  height: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurant-system__left__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(204, 204, 204, 0.219);
+}
+
+.restaurant-system__left__top * {
+  width: 100%;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.restaurant-system__left__top h3 {
+  font-size: 1.2rem;
+}
+
+.restaurant-system__left__top h3 span {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  color: #FD514D;
+}
+
+.restaurant-system__left__top button {
+  border: 0;
+  outline: 0;
+  background: #FD514D;
+  color: #fff;
+}
+
+.restaurant-system__right {
+  background: #fff;
 }
 /*# sourceMappingURL=style.css.map */
