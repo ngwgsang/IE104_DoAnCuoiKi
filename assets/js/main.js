@@ -20,3 +20,14 @@ $('.feedback__slider').slick({
     dots: true,
     arrows:  false
   });
+
+
+//#MỞ OVERVIEW SẢN PHẨM KHI CLICK
+document.querySelector('.product').addEventListener('click', () =>{
+  document.getElementById('popup').style.display = "flex"
+})
+//#ĐÓNG OVERVIEW SẢN PHẨM KHI CLICK [X]
+document.getElementById('close-overview-btn').addEventListener('click', ()=>{
+  document.getElementById('popup').style.display = "none"
+})
+
