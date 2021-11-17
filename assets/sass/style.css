@@ -253,6 +253,174 @@ p {
   color: #F0A501;
 }
 
+.contact {
+  width: 100%;
+  height: 100%;
+  padding-top: 1.25rem;
+  background-color: #060823;
+  font-family: 'Pacifico', cursive;
+}
+
+.contact__box {
+  width: 60%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.contact__box .contact__box__left {
+  margin-left: 5rem;
+  padding: 2.375rem 2.375rem 2.375rem 0;
+}
+
+.contact__box .contact__box__left .contact__box__content__left {
+  padding: 0 0.938rem;
+  width: 100%;
+}
+
+.contact__box .contact__box__left .contact__box__content__left h1 {
+  color: #181A37;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact__box .contact__box__left .contact__box__content__left form .contact__form__content__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 0.5rem;
+}
+
+.contact__box .contact__box__left .contact__box__content__left form .contact__form__content__box .contact__form__group5 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.contact__box .contact__box__left .contact__box__content__left form .contact__form__content__box .contact__form__group6 {
+  -ms-grid-row: 4;
+  grid-row: 4/4;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.contact__box .contact__form__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.628rem;
+  line-height: 1.5;
+}
+
+.contact__box .contact__form__control label {
+  color: #000;
+  font-size: 1rem;
+}
+
+.contact__box .contact__form__control input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact__box .contact__form__control input::-webkit-input-placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control input:-ms-input-placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control input::-ms-input-placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control input::placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control textarea {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.contact__box .contact__form__control textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control textarea::placeholder {
+  font-size: 0.8rem;
+}
+
+.contact__box .contact__form__control button {
+  width: 100%;
+  background-color: #F0A501;
+  color: #000;
+  font-size: 0.938rem;
+  padding: 0.625rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+}
+
+.contact__box .contact__box__right {
+  width: 50%;
+  min-height: 100%;
+  float: right;
+}
+
+.contact__box .contact__box__right .contact__box__content__right {
+  height: 100%;
+  width: 100%;
+}
+
+.contact__box .contact__box__right .contact__box__content__right img {
+  float: right;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translate(-150%, -50%);
+            transform: translate(-150%, -50%);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translate(-150%, -50%);
+            transform: translate(-150%, -50%);
+  }
+}
+
 .signup {
   width: 100%;
   height: 100%;
@@ -262,6 +430,8 @@ p {
 }
 
 .signup__box {
+  -webkit-animation: slideInFromLeft 1s ease-out;
+          animation: slideInFromLeft 1s ease-out;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
