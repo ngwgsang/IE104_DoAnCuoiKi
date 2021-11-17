@@ -11,61 +11,74 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- ##-----------NAVIGATION-----------##- -->
-        <div class="navbar">
-            <div class="navbar__logo">
-                <img src="./assets/images/logo.png" alt="">
+        <!-- ##-----------SET-BACKGROUND-----------##- -->
+        <div class="signup">
+            <!-- ##-----------NAVIGATION-----------##- -->
+            <div class="signup__transition">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__menu__item"><a href="./index.html">Trang chủ</a></li>
+                    <li class="navbar__menu__item"><a href="./promotion.html">Khuyến mãi</a></li>
+                    <li class="navbar__menu__item"><a href="./menu.html">Thực đơn</a></li>
+                    <li class="navbar__menu__item"><a href="./login.html" id="loginBtn">Đăng nhập</a></li>
+                </ul>
             </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item"><a href="./index.html">Trang chủ</a></li>
-                <li class="navbar__menu__item"><a href="./promotion.html">Khuyến mãi</a></li>
-                <li class="navbar__menu__item"><a href="./menu.html">Thực đơn</a></li>
-                <li class="navbar__menu__item"><a href="./login.html" id="loginBtn">Đăng nhập</a></li>
-            </ul>
-        </div>
-        <!-- ##----------------MENU---------------##- -->
-        <div class="menu">
-            <div class="menu__box">
-                <div class="menu__nav">
-                    <div class="menu__nav__searchbar">
-                        <div class="menu__nav__searchbar__option">
-                            <a class="menu__nav__searchbar__controls" href="#">Giao hàng tận nơi</a>
-                            <a class="menu__nav__searchbar__controls" href="#">Lấy tại chỗ</a>
+            <!-- ##-----------SIGNUP_BOX-----------##- -->
+            <div class="signup__box">
+                <form action="#" method="post">
+                    <div class="signup__form__group__box">
+                        <div class="signup__form__group1">
+                            <h1>THAM GIA NGAY</h1>
+                            <p><span>Bạn đã có tài khoản?</span> <a href="./login.html">Đăng nhập tại đây</a></p>
                         </div>
-                        <div class="menu__nav__seachbar__group">
-                            <input class="menu__nav__searchbar__controls" type="text" placeholder="Vui lòng đặt địa chỉ nhận hàng">
-                            <a class="menu__nav__searchbar__controls" href="#"><i class="fas fa-search fa-3x"></i></a>
+                        <div class="signup__form__group2">
+                            <div class="signup__form__control">
+                                <label for="signup__email" class="signup__form__control">Email</label>
+                            </div>
+                            <div class="signup__form__control">
+                                <input id="signup__email" name="signup__email" type="email" class="signup__form__control" required>
+                            </div>
+                        </div>
+                        <div class="signup__form__group3">
+                            <div class="signup__form__control">
+                                <label for="signup__password" class="signup__form__control">Mật Khẩu</label>
+                            </div>
+                            <div class="signup__form__control">
+                                <input id="signup__password" name="signup__password" type="password" class="signup__form__control" required>
+                            </div>
+                        </div>
+                        <div class="signup__form__group4">
+                            <div class="signup__form__control">
+                                <button type="submit">Đăng nhập</button>
+                            </div>
+                        </div>
+                        <div class="signup__form__group5">
+                            <p>Hoặc</p>
+                        </div>
+                        <div class="signup__form__group6">
+                            <div class="signup__form__control">
+                                <button  class="signup__form__button__google" type="submit"><i class="fab fa-google fa-2x"></i> Đăng nhập với Google</button>
+                            </div>
+                            <div class="signup__form__control">
+                                <button class="signup__form__button__facebook" type="submit"><i class="fab fa-facebook fa-2x"></i> Đăng nhập với Facebook</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu__nav__navbar">
-                        <ul>
-                            <li><a href="#">Khuyến mãi</a></li>
-                            <li><a href="#">Pizza</a></li>
-                            <li><a href="#">Mỳ Ý</a></li>
-                            <li><a href="#">Gà rán</a></li>
-                            <li><a href="#">Tráng miệng</a></li>
-                            <li><a href="#">Nước uống</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="menu__items">
-
-                </div>
+                </form>
             </div>
-            <div class="menu__status">
-                <div class="menu__status__img"><img src="./assets/images/hungryface.png" alt="hungryface"></div>
-                <h1>Giỏ hàng chưa có sản phẩm. Xin mời bạn mua hàng</h1>   
             </div>
         </div>
-        
-        <!-- ##----------------FOOTER---------------##- -->
+         <!-- ##----------------FOOTER---------------##- -->
         <div class="footer">
 
             <div class="footer__logo">
                 <img src="./assets/images/logo.png" alt="">
                 <p>"Life is mostly pain and struggle; the rest is love and deep-dish pizza."</p>
             </div>
-    
+
             <div class="footer__about">
                 <div>
                     <h5>Giới thiệu</h5>
@@ -85,7 +98,7 @@
                     </ul>
                 </div>
             </div>
-    
+
             <div class="footer__contact">
                 <div>
                     <h5>Liên hệ</h5>
@@ -104,9 +117,9 @@
                         <li>Tổng đài CSKH: 1900 1234 567 (9:30 - 21h00)</li>
                     </ul>
                 </div>
-    
+
             </div>
-    
+
             <div class="footer__open-time">
                 <div>
                     <h5>Giờ mở cửa</h5>
@@ -132,7 +145,9 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 </body>
-</html>
+</html> 
