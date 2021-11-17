@@ -1,3 +1,4 @@
+//#SLICK SLIDER
 $('.sale__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -23,9 +24,14 @@ $('.feedback__slider').slick({
 
 
 //#MỞ OVERVIEW SẢN PHẨM KHI CLICK
-document.querySelector('.product').addEventListener('click', () =>{
-  document.getElementById('popup').style.display = "flex"
+
+document.querySelectorAll('.product').forEach((product) =>{
+  product.addEventListener('click',  () => {
+    console.log(product.value)
+    document.getElementById('popup').style.display = "flex";
+  })
 })
+
 //#ĐÓNG OVERVIEW SẢN PHẨM KHI CLICK [X]
 document.getElementById('close-overview-btn').addEventListener('click', ()=>{
   document.getElementById('popup').style.display = "none"
