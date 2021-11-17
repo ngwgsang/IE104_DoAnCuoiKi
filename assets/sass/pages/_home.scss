@@ -128,7 +128,7 @@
     &__container{
         height: 30rem;
         padding: 1rem 3rem;
-        margin: 4rem 0;
+        margin: 5rem 0;
         h4{
             font-size: 2.8rem;
             font-family: 'Pacifico', cursive;
@@ -143,9 +143,12 @@
             // justify-content: space-around;
             // gap: 2rem;
             &-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 background: $cl-f;
                 width: 18rem;
-                height: 26rem;
+                height: 28rem;
                 padding: 2rem;
                 border-radius: 0.6rem;
                 text-align: center;
@@ -160,16 +163,16 @@
                     object-position: center;
                 }
                 h5{
-                    font-family: 'Pacifico', cursive;
+                    // font-family: 'Pacifico', cursive;
+                    line-height: 1.5;
                     font-size: 1.6rem;
                     margin: 0.5rem auto;
                 }
+                h5 + p{
+                    font-size: 0.8rem;
+                }
                 .price{
-                    position: absolute;
-                    bottom: 2rem;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 100%;
+                    text-align: center;
                     span{
                         font-size: 1.6rem;
                         color: $cl-1;
