@@ -5,21 +5,17 @@
   }
 .signup{
     width: 100%;
-    height: 100%;
-    padding-top: 1.25rem;
+    padding: 10% 30%;
     background-color: #060823;
     font-family: 'Pacifico', cursive;
 }
-.signup__box
-{   animation: slideInFromLeft 1s ease-out;
-    position: absolute;
+.signup__box{
+    margin: 0 auto;   
+    animation: slideInFromLeft 1s ease-out;
     display: flex;
     justify-content: center;
     background-color: $cl-4;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 4rem;
+    padding: 2rem;
     .signup__logo__img{
         position: relative;
         width: 37.5rem;
