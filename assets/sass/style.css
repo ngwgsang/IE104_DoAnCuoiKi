@@ -1205,6 +1205,7 @@ p {
 .promotion-content__top__left ul li {
   list-style: disc inside;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 .promotion-content__top__right {
@@ -1284,7 +1285,6 @@ p {
           justify-content: start;
   padding: 2rem;
   background: #fff;
-  border-radius: 1rem;
 }
 
 .restaurant-system__left {
@@ -1324,7 +1324,6 @@ p {
 
 .restaurant-system__left__top * {
   width: 100%;
-  border-radius: 0.6rem;
   padding: 1rem;
   font-size: 1rem;
 }
@@ -1929,5 +1928,233 @@ p {
 .signup__box button, .signup__box input {
   border-radius: 0.313rem;
   border: none;
+}
+
+.brandstory {
+  padding: 10% 15%;
+  background: #181A37;
+  width: 100%;
+}
+
+.brandstory__content {
+  background: #fff;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.brandstory__content h3 {
+  color: #FD514D;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.brandstory__content hr {
+  width: 10%;
+  height: 0.3rem;
+  background: #FD514D;
+  margin: 1rem 0;
+  outline: 0;
+  border: 0;
+}
+
+.brandstory__content img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 2rem auto;
+  -webkit-box-shadow: 0.5rem 0.5rem 0 0 #FD514D;
+          box-shadow: 0.5rem 0.5rem 0 0 #FD514D;
+}
+
+.brandstory__content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.brandstory__content p span {
+  font-family: 'Pacifico', cursive;
+  color: #FD514D;
+}
+
+.brandstory__content p span:nth-child(2) {
+  color: #000;
+}
+
+.brandstory__content--sign {
+  text-align: center;
+  margin: 2rem;
+}
+
+.member {
+  width: 100%;
+  background: #181A37;
+  padding: 10% 15%;
+}
+
+.member__content {
+  background: #fff;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.member__content h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #FD514D;
+}
+
+.member__content hr {
+  width: 10%;
+  height: 0.3rem;
+  background: #FD514D;
+  margin: 1rem 0;
+  outline: 0;
+  border: 0;
+}
+
+.member__content__box {
+  width: 100%;
+  height: 30%;
+  padding: 2rem;
+  background: #082032;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto;
+}
+
+.member__content__box img {
+  display: block;
+}
+
+.member__content h4 {
+  font-size: 1.6rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.member__content p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 1rem auto;
+}
+
+.member__content ul {
+  font-size: 1.2rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.member__content ul li {
+  margin: 0.5rem;
+  line-height: 1.4;
+}
+
+.member__content__contact {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.recruitment {
+  width: 100%;
+  padding: 10% 15%;
+  background: #181A37;
+}
+
+.recruitment__content {
+  background: #fff;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.recruitment__content h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #FD514D;
+}
+
+.recruitment__content hr {
+  width: 10%;
+  height: 0.3rem;
+  background: #FD514D;
+  margin: 1rem 0;
+  outline: 0;
+  border: 0;
+}
+
+.recruitment__content__box {
+  width: 100%;
+  height: 40%;
+  padding: 2rem;
+  background: #082032;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto;
+}
+
+.recruitment__content__box p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.recruitment__content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  background: #fafafa;
+}
+
+.recruitment__content__form label {
+  margin-bottom: 0.5rem;
+}
+
+.recruitment__content__form input, .recruitment__content__form select, .recruitment__content__form textarea {
+  font-size: 1.2rem;
+  outline: 0;
+  border: 1px solid rgba(204, 204, 204, 0.287);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: #FD514D;
+}
+
+.recruitment__content__form input, .recruitment__content__form select {
+  height: 3rem;
+  color: #000;
+}
+
+.recruitment__content__form button {
+  outline: 0;
+  border: 0;
+  background: #FD514D;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.recruitment__content__noti {
+  font-style: italic;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
