@@ -483,6 +483,74 @@ p {
   cursor: pointer;
 }
 
+.tac {
+  padding: 10% 15%;
+  background: #181A37;
+  width: 100%;
+}
+
+.tac__content {
+  background: #fff;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.tac__content h3 {
+  color: #FD514D;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.tac__content hr {
+  width: 10%;
+  height: 0.3rem;
+  background: #FD514D;
+  margin: 1rem 0;
+  outline: 0;
+  border: 0;
+}
+
+.tac__content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.pPolicy {
+  padding: 10% 15%;
+  background: #181A37;
+  width: 100%;
+}
+
+.pPolicy__content {
+  background: #fff;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.pPolicy__content h3 {
+  color: #FD514D;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.pPolicy__content hr {
+  width: 10%;
+  height: 0.3rem;
+  background: #FD514D;
+  margin: 1rem 0;
+  outline: 0;
+  border: 0;
+}
+
+.pPolicy__content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
 .dePolicy {
   padding: 10% 15%;
   background: #181A37;
@@ -499,6 +567,7 @@ p {
   color: #FD514D;
   font-size: 2rem;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .dePolicy__content hr {
@@ -519,7 +588,7 @@ p {
 .dePolicy__content li {
   list-style-type: disc;
   display: list-item;
-  text-align: -webkit-match-parent;
+  line-height: 1.5;
 }
 
 .hero {
