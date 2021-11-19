@@ -76,7 +76,9 @@ function hideAllPage(box){
   box.style.display = "flex";
   window.scrollTo(0, 0);
 }
-
+////////// LOAD LẦN ĐẦU
+hideAllPage(document.getElementById('HOME'));
+/////////  CLICK VÀO NAV THÌ CHUYỂN PAGE
 document.getElementById('nav__HOME').addEventListener('click', ()=>{
   hideAllPage(document.getElementById('HOME'))
 });
