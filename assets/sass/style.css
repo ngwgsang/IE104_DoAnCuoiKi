@@ -764,49 +764,50 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1rem;
+  background-color: #181A37;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.login__box .login__box__left .login__logo__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.login__box .login__box__right {
+  margin-left: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.login__box .login__box__right form {
+  width: 100%;
+  height: 100%;
   background-color: #181A37;
-  padding: 4rem;
-}
-
-.login__box .login__logo__img {
-  position: relative;
-  width: 37.5rem;
-  height: 26.875rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: -18.75rem 1.875rem;
-     object-position: -18.75rem 1.875rem;
-  margin-left: 6.25rem;
-  z-index: 1;
-}
-
-.login__box form {
-  position: relative;
-  margin-top: 4.375rem;
-  width: 28.125rem;
-  z-index: 2;
   line-height: 1.5;
 }
 
-.login__box .login__form__control {
-  position: relative;
+.login__box .login__box__right .login__form__control {
   margin-top: 0.313rem;
 }
 
-.login__box .login__form__control label {
+.login__box .login__box__right .login__form__control label {
   color: #fff;
 }
 
-.login__box .login__form__control input {
+.login__box .login__box__right .login__form__control input {
   padding: 0.3rem;
   font-size: 0.938rem;
   width: 100%;
 }
 
-.login__box .login__form__control button {
+.login__box .login__box__right .login__form__control button {
   background-color: #F0A501;
   color: #000;
   font-size: 0.938rem;
@@ -817,19 +818,19 @@ p {
   display: block;
 }
 
-.login__box .login__form__group1 h1 {
+.login__box .login__box__right .login__form__group1 h1 {
   color: #fff;
 }
 
-.login__box .login__form__group1 p span {
+.login__box .login__box__right .login__form__group1 p span {
   color: #8B8C9B;
 }
 
-.login__box .login__form__group1 p a {
+.login__box .login__box__right .login__form__group1 p a {
   color: #FD514D;
 }
 
-.login__box .login__form__group4 button {
+.login__box .login__box__right .login__form__group4 button {
   margin: 2rem auto;
   background-color: #F0A501;
   color: #000;
@@ -839,16 +840,16 @@ p {
   cursor: pointer;
   font-weight: bold;
   display: block;
-  width: 7rem;
+  width: 8rem;
 }
 
-.login__box .login__form__group5 p {
+.login__box .login__box__right .login__form__group5 p {
   color: #fff;
   text-align: center;
 }
 
-.login__box .login__form__group5 p:before,
-.login__box .login__form__group5 p:after {
+.login__box .login__box__right .login__form__group5 p:before,
+.login__box .login__box__right .login__form__group5 p:after {
   background-color: #fff;
   content: "";
   display: inline-block;
@@ -858,29 +859,27 @@ p {
   width: 35%;
 }
 
-.login__box .login__form__group5 p:before {
+.login__box .login__box__right .login__form__group5 p:before {
   right: 1rem;
   margin-left: -50%;
 }
 
-.login__box .login__form__group5 p:after {
+.login__box .login__box__right .login__form__group5 p:after {
   left: 1rem;
   margin-right: -50%;
 }
 
-.login__box .login__form__group6 {
+.login__box .login__box__right .login__form__group6 {
   margin-top: 1rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.login__box .login__form__group6 button {
+.login__box .login__box__right .login__form__group6 button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,22 +890,36 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  padding: 0.5rem;
+  vertical-align: middle;
+  text-align: justify;
   font-size: 0.75rem;
   width: 100%;
 }
 
-.login__box .login__form__group6 button .fa-google {
+.login__box .login__box__right .login__form__group6 button .fa-google {
   color: #FD514D;
 }
 
-.login__box .login__form__group6 button .fa-facebook {
+.login__box .login__box__right .login__form__group6 button .fa-facebook {
   color: #039BE5;
 }
 
-.login__box button, .login__box input {
+.login__box .login__box__right button, .login__box .login__box__right input {
   border-radius: 0.3rem;
   border: none;
+}
+
+@media (max-width: 1520px) {
+  .login__box__right .login__form__group6 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .login__box__left {
+    display: none;
+  }
 }
 
 .menu {

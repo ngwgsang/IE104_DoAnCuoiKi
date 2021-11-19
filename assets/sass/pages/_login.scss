@@ -7,124 +7,138 @@
 .login__box{   
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    gap: 1rem;
     background-color: $cl-4;
-    padding: 4rem;
-    .login__logo__img{
-        position: relative;
-        width: 37.5rem;
-        height: 26.875rem;
-        object-fit:cover;
-        object-position: -18.75rem 1.875rem;
-        margin-left: 6.25rem;
-        z-index: 1;
-    }
-    form{
-        position: relative;
-        margin-top: 4.375rem;
-        width:  28.125rem;
-        z-index: 2;
-        line-height: 1.5;
-    }
-    .login__form__control{
-        position: relative;
-        margin-top: 0.313rem;
-        label{
-        color: $cl-f;
-        }
-        input{
-        padding: 0.3rem;
-        font-size: 0.938rem;
-        width: 100%;
-        }
-        button{
-            background-color: $cl-2;
-            color: $cl-0;
-            font-size: 0.938rem;
-            padding: 0.625rem;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            display: block;
-        }
-    }
-    
-    .login__form__group1 {
-        h1{
-        color: $cl-f;
-        }
-        p {
-            span{
-               color: #8B8C9B; 
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    .login__box__left{
+        .login__logo__img{
+            object-fit: contain;
             }
-            a{
-                color: $cl-1;
-            }
-        }
     }
-    .login__form__group4{
-        button{
-            margin: 2rem auto;
-            background-color: $cl-2;
-            color: $cl-0;
-            font-size: 0.9rem;
-            padding: 0.5rem;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            display: block;
-            width: 7rem;
-        }
-    }
-    .login__form__group5{
-        p{
-            color: $cl-f;
-            text-align: center;
-        }
-        p:before,
-        p:after {
-        background-color: $cl-f;
-        content: "";
-        display: inline-block;
-        height: 0.013rem;
-        position: relative;
-        vertical-align: middle;
-        width: 35%;
-        }
-        p:before {
-            right: 1rem;
-            margin-left: -50%;
-        }
-          
-        p:after {
-            left: 1rem;
-            margin-right: -50%;
-        }
-    }
-    .login__form__group6{
-        margin-top: 1rem;
+    .login__box__right{
+        margin-left: 2rem;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            padding: 0.5rem;
-            font-size: 0.75rem;
+        height: 100%;
+        form{
             width: 100%;
-            .fa-google{
-                color: $cl-1;
+            height: 100%;
+            background-color: $cl-4;
+            line-height: 1.5;
+        }
+        .login__form__control{
+            margin-top: 0.313rem;
+            label{
+            color: $cl-f;
             }
-            .fa-facebook{
-                color: #039BE5;
+            input{
+            padding: 0.3rem;
+            font-size: 0.938rem;
+            width: 100%;
+            }
+            button{
+                background-color: $cl-2;
+                color: $cl-0;
+                font-size: 0.938rem;
+                padding: 0.625rem;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                display: block;
             }
         }
+        
+        .login__form__group1 {
+            h1{
+            color: $cl-f;
+            }
+            p {
+                span{
+                   color: #8B8C9B; 
+                }
+                a{
+                    color: $cl-1;
+                }
+            }
+        }
+        .login__form__group4{
+            button{
+                margin: 2rem auto;
+                background-color: $cl-2;
+                color: $cl-0;
+                font-size: 0.9rem;
+                padding: 0.5rem;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                display: block;
+                width: 8rem;
+            }
+        }
+        .login__form__group5{
+            p{
+                color: $cl-f;
+                text-align: center;
+            }
+            p:before,
+            p:after {
+            background-color: $cl-f;
+            content: "";
+            display: inline-block;
+            height: 0.013rem;
+            position: relative;
+            vertical-align: middle;
+            width: 35%;
+            }
+            p:before {
+                right: 1rem;
+                margin-left: -50%;
+            }
+              
+            p:after {
+                left: 1rem;
+                margin-right: -50%;
+            }
+        }
+        .login__form__group6{
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                vertical-align: middle;
+                text-align:justify;
+                font-size: 0.75rem;
+                width: 100%;
+                .fa-google{
+                    color: $cl-1;
+                }
+                .fa-facebook{
+                    color: #039BE5;
+                }
+            }
+        }
+        button,input{
+            border-radius: 0.3rem;
+            border: none;
+        }
     }
-    button,input{
-        border-radius: 0.3rem;
-        border: none;
+   
+}
+@media (max-width: 1520px){
+    .login__box__right{
+        .login__form__group6{
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .login__box__left{
+        display: none;
     }
 }
