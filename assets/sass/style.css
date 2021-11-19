@@ -85,6 +85,61 @@ p {
   color: #000;
 }
 
+#nav__HOME, #nav__MENU, #nav__PROMOTION {
+  display: block;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#nav__HOME:hover, #nav__MENU:hover, #nav__PROMOTION:hover {
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+#nav__LOGIN {
+  font-weight: 600;
+  color: #F0A501;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#nav__LOGIN:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#nav__LOCATION, #nav__MEMBER, #nav__RECRUITMENT, #nav__NEWS, #nav__BRANDSTORY, #nav__CONTACT, #nav__DEPOLICY, #nav__PRPOLICY, #nav__TAC {
+  display: block;
+}
+
+#nav__LOCATION:hover, #nav__MEMBER:hover, #nav__RECRUITMENT:hover, #nav__NEWS:hover, #nav__BRANDSTORY:hover, #nav__CONTACT:hover, #nav__DEPOLICY:hover, #nav__PRPOLICY:hover, #nav__TAC:hover {
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translate(-150%, -50%);
+            transform: translate(-150%, -50%);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translate(-150%, -50%);
+            transform: translate(-150%, -50%);
+  }
+}
+
+.account__nav ul li:hover {
+  background: #dfdfdf;
+}
+
+.account__nav ul .active {
+  border-right: 0.35rem solid #FD514D;
+  background: #fd504d40 !important;
+}
+
 .heading {
   text-align: center;
   font-size: 3rem;
@@ -143,11 +198,6 @@ p {
 .navbar__menu__item {
   color: #fff;
   font-weight: 500;
-}
-
-#loginBtn {
-  font-weight: 500;
-  color: #F0A501;
 }
 
 .footer {
@@ -1613,15 +1663,6 @@ p {
   transition: 0.1s ease;
 }
 
-.account__nav ul li:hover {
-  background: #dfdfdf;
-}
-
-.account__nav ul .active {
-  border-right: 0.35rem solid #FD514D;
-  background: #fd504d40;
-}
-
 .account__content {
   height: auto;
   width: 100%;
@@ -2110,20 +2151,6 @@ p {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-
-@-webkit-keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translate(-150%, -50%);
-            transform: translate(-150%, -50%);
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translate(-150%, -50%);
-            transform: translate(-150%, -50%);
-  }
 }
 
 .signup {
