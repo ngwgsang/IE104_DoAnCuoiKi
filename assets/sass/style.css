@@ -801,9 +801,9 @@ p {
 }
 
 .login__box .login__form__control input {
-  padding: 0.313rem;
+  padding: 0.3rem;
   font-size: 0.938rem;
-  width: 80%;
+  width: 100%;
 }
 
 .login__box .login__form__control button {
@@ -830,15 +830,16 @@ p {
 }
 
 .login__box .login__form__group4 button {
+  margin: 2rem auto;
   background-color: #F0A501;
   color: #000;
-  font-size: 0.938rem;
-  padding: 0.625rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
   border: none;
   cursor: pointer;
   font-weight: bold;
   display: block;
-  margin: 1.25rem 8.125rem;
+  width: 7rem;
 }
 
 .login__box .login__form__group5 p {
@@ -859,7 +860,7 @@ p {
 
 .login__box .login__form__group5 p:before {
   right: 1rem;
-  margin-left: -70%;
+  margin-left: -50%;
 }
 
 .login__box .login__form__group5 p:after {
@@ -868,21 +869,31 @@ p {
 }
 
 .login__box .login__form__group6 {
+  margin-top: 1rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 5rem;
+  gap: 1rem;
 }
 
 .login__box .login__form__group6 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: white;
-  padding-top: 0;
-  padding-bottom: 2rem;
+  padding: 0.5rem;
   font-size: 0.75rem;
-  height: 2.188rem;
+  width: 100%;
 }
 
 .login__box .login__form__group6 button .fa-google {
@@ -894,7 +905,7 @@ p {
 }
 
 .login__box button, .login__box input {
-  border-radius: 0.313rem;
+  border-radius: 0.3rem;
   border: none;
 }
 
@@ -1276,7 +1287,7 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  padding: 2rem;
+  padding: 1rem;
   background: #fff;
 }
 
@@ -1310,7 +1321,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   padding: 2rem;
   background: rgba(204, 204, 204, 0.219);
 }

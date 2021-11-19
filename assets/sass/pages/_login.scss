@@ -33,9 +33,9 @@
         color: $cl-f;
         }
         input{
-        padding: 0.313rem;
+        padding: 0.3rem;
         font-size: 0.938rem;
-        width: 80%;
+        width: 100%;
         }
         button{
             background-color: $cl-2;
@@ -64,15 +64,16 @@
     }
     .login__form__group4{
         button{
+            margin: 2rem auto;
             background-color: $cl-2;
             color: $cl-0;
-            font-size: 0.938rem;
-            padding: 0.625rem;
+            font-size: 0.9rem;
+            padding: 0.5rem;
             border: none;
             cursor: pointer;
             font-weight: bold;
             display: block;
-            margin: 1.25rem 8.125rem;
+            width: 7rem;
         }
     }
     .login__form__group5{
@@ -92,7 +93,7 @@
         }
         p:before {
             right: 1rem;
-            margin-left: -70%;
+            margin-left: -50%;
         }
           
         p:after {
@@ -101,15 +102,19 @@
         }
     }
     .login__form__group6{
+        margin-top: 1rem;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-right: 5rem;
+        gap: 1rem;
         button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: white;
-            padding-top:0;
-            padding-bottom: 2rem;   
+            padding: 0.5rem;
             font-size: 0.75rem;
-            height: 2.188rem;
+            width: 100%;
             .fa-google{
                 color: $cl-1;
             }
@@ -119,7 +124,7 @@
         }
     }
     button,input{
-        border-radius: 0.313rem;
+        border-radius: 0.3rem;
         border: none;
     }
 }

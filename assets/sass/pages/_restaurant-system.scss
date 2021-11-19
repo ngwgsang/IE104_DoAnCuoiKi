@@ -9,7 +9,7 @@
         align-items: flex-start;
         gap:  1rem;
         justify-content: start;
-        padding: 2rem;
+        padding: 1rem;
         background: $cl-f;
     }
     &__left{
@@ -24,7 +24,7 @@
             align-items: flex-start;
             justify-content: start;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1rem;
             padding: 2rem;
             background: rgba(204, 204, 204, 0.219);
             *{
