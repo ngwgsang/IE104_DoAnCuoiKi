@@ -53,3 +53,69 @@ function changeProduct(index){
   document.getElementById('product__description').innerText = product[index].description;
   document.getElementById('product__pic').src = product[index].pic;
 }
+
+
+//#ĐIỀU HƯỚNG TRANG
+function hideAllPage(box){
+  document.getElementById('HOME').style.display = "none";
+  document.getElementById('PROMOTION').style.display = "none";
+  document.getElementById('PROMOTIONCONTENT').style.display = "none";
+  document.getElementById('MENU').style.display = "none";
+  document.getElementById('LOGIN').style.display = "none";
+  document.getElementById('SIGNUP').style.display = "none";
+  document.getElementById('ACCOUNT').style.display = "none";
+  document.getElementById('LOCATION').style.display = "none";
+  document.getElementById('BRANDSTORY').style.display = "none";
+  document.getElementById('MEMBER').style.display = "none";
+  document.getElementById('RECRUITMENT').style.display = "none";
+  document.getElementById('CONTACT').style.display = "none";
+  document.getElementById('DEPOLICY').style.display = "none";
+  document.getElementById('PRPOLICY').style.display = "none";
+  document.getElementById('TAC').style.display = "none";
+// ẨN HẾT TẤT CẢ CÁC TRANG VÀ HIỂN THỊ TRANG ĐÃ CHỌN
+  box.style.display = "flex";
+  window.scrollTo(0, 0);
+}
+
+document.getElementById('nav__HOME').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('HOME'))
+});
+document.getElementById('nav__MENU').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('MENU'))
+});
+document.getElementById('nav__PROMOTION').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('PROMOTION'))
+});
+document.getElementById('nav__LOGIN').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('LOGIN'))
+});
+document.getElementById('nav__SIGNUP').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('SIGNUP'))
+});
+document.getElementById('nav__ACCOUNT').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('ACCOUNT'))
+});
+document.getElementById('nav__LOCATION').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('LOCATION'))
+});
+document.getElementById('nav__BRANDSTORY').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('BRANDSTORY'))
+});
+document.getElementById('nav__MEMBER').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('MEMBER'))
+});
+document.getElementById('nav__RECRUITMENT').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('RECRUITMENT'))
+});
+document.getElementById('nav__CONTACT').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('CONTACT'))
+});
+document.getElementById('nav__DEPOLICY').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('DEPOLICY'))
+});
+document.getElementById('nav__PRPOLICY').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('PRPOLICY'))
+});
+document.getElementById('nav__TAC').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('TAC'))
+});

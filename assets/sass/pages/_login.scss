@@ -1,8 +1,10 @@
 .login{
     width: 100%;
-    padding: 10% 20%;
+    padding: 10% 15%;
     background-color: #060823;
     font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-direction: column;
 }
 .login__box{   
     margin: 0 auto;

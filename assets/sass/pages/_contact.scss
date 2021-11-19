@@ -3,8 +3,8 @@
     padding: 10% 15%;
     background-color: #060823;
     font-family: 'Pacifico', cursive;
-    display: block;
-
+    display: flex;
+    flex-direction: column;
 }
 .contact__box{
     margin: 0 auto;
