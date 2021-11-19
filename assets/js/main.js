@@ -121,3 +121,21 @@ document.getElementById('nav__PRPOLICY').addEventListener('click', ()=>{
 document.getElementById('nav__TAC').addEventListener('click', ()=>{
   hideAllPage(document.getElementById('TAC'))
 });
+document.querySelector('.nav__PROMOTIONCONTENT-1').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('PROMOTIONCONTENT'))
+  document.querySelector('.promotion-content-1').style.display = "flex"
+  document.querySelector('.promotion-content-2').style.display = "none"
+  document.querySelector('.promotion-content-3').style.display = "none"
+})
+document.querySelector('.nav__PROMOTIONCONTENT-2').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('PROMOTIONCONTENT'))
+  document.querySelector('.promotion-content-2').style.display = "flex"
+  document.querySelector('.promotion-content-1').style.display = "none"
+  document.querySelector('.promotion-content-3').style.display = "none"
+})
+document.querySelector('.nav__PROMOTIONCONTENT-3').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('PROMOTIONCONTENT'))
+  document.querySelector('.promotion-content-3').style.display = "flex"
+  document.querySelector('.promotion-content-1').style.display = "none"
+  document.querySelector('.promotion-content-2').style.display = "none"
+})
