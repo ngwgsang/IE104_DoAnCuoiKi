@@ -1,0 +1,131 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translate(-150%,-50%);
+    }
+  }
+.signup{
+    width: 100%;
+    padding: 10% 30%;
+    background-color: #060823;
+    font-family: 'Pacifico', cursive;
+}
+.signup__box{
+    margin: 0 auto;   
+    animation: slideInFromLeft 1s ease-out;
+    display: flex;
+    justify-content: center;
+    background-color: $cl-4;
+    padding: 2rem;
+    .signup__logo__img{
+        position: relative;
+        width: 37.5rem;
+        height: 26.875rem;
+        object-fit:cover;
+        object-position: -18.75rem 1.875rem;
+        margin-left: 6.25rem;
+        z-index: 1;
+    }
+    form{
+        position: relative;
+        margin-top: 4.375rem;
+        width:  28.125rem;
+        z-index: 2;
+        line-height: 1.5;
+    }
+    .signup__form__control{
+        position: relative;
+        margin-top: 0.313rem;
+        label{
+        color: $cl-f;
+        }
+        input{
+        padding: 0.313rem;
+        font-size: 0.938rem;
+        width: 80%;
+        }
+        button{
+            background-color: $cl-2;
+            color: $cl-0;
+            font-size: 0.938rem;
+            padding: 0.625rem;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+        }
+    }
+
+    .signup__form__group1 {
+        h1{
+        color: $cl-f;
+        }
+        p {
+            span{
+               color: #8B8C9B; 
+            }
+            a{
+                color: $cl-1;
+            }
+        }
+    }
+    .signup__form__group4{
+        button{
+            background-color: $cl-2;
+            color: $cl-0;
+            font-size: 0.938rem;
+            padding: 0.625rem;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            margin: 1.25rem 8.125rem;
+        }
+    }
+    .signup__form__group5{
+        p{
+            color: $cl-f;
+            text-align: center;
+        }
+        p:before,
+        p:after {
+        background-color: $cl-f;
+        content: "";
+        display: inline-block;
+        height: 0.013rem;
+        position: relative;
+        vertical-align: middle;
+        width: 35%;
+        }
+        p:before {
+            right: 1rem;
+            margin-left: -70%;
+        }
+
+        p:after {
+            left: 1rem;
+            margin-right: -50%;
+        }
+    }
+    .signup__form__group6{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5rem;
+        button{
+            background-color: white;
+            padding-top:0;
+            padding-bottom: 2rem;   
+            font-size: 0.75rem;
+            height: 2.188rem;
+            .fa-google{
+                color: $cl-1;
+            }
+            .fa-facebook{
+                color: #039BE5;
+            }
+        }
+    }
+    button,input{
+        border-radius: 0.313rem;
+        border: none;
+    }
+}
