@@ -1,5 +1,5 @@
 .dePolicy{
-    @include section-style;
+    @include section;
     &__content{
         li{
             list-style-type: disc;
