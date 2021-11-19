@@ -483,6 +483,45 @@ p {
   cursor: pointer;
 }
 
+.dePolicy {
+  padding: 10% 15%;
+  background: #181A37;
+  width: 100%;
+}
+
+.dePolicy__content {
+  background: #fff;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.dePolicy__content h3 {
+  color: #FD514D;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.dePolicy__content hr {
+  width: 10%;
+  height: 0.3rem;
+  background: #FD514D;
+  margin: 1rem 0;
+  outline: 0;
+  border: 0;
+}
+
+.dePolicy__content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.dePolicy__content li {
+  list-style-type: disc;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
 .hero {
   width: 100%;
   height: 80rem;
@@ -775,39 +814,39 @@ p {
   padding: 2rem;
 }
 
-.login__box .login__box__left .login__logo__img {
+.login__box__left .login__logo__img {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.login__box .login__box__right {
+.login__box__right {
   margin-left: 2rem;
   width: 100%;
   height: 100%;
 }
 
-.login__box .login__box__right form {
+.login__box__right form {
   width: 100%;
   height: 100%;
   background-color: #181A37;
   line-height: 1.5;
 }
 
-.login__box .login__box__right .login__form__control {
+.login__box__right form .login__form__control {
   margin-top: 0.313rem;
 }
 
-.login__box .login__box__right .login__form__control label {
+.login__box__right form .login__form__control label {
   color: #fff;
 }
 
-.login__box .login__box__right .login__form__control input {
+.login__box__right form .login__form__control input {
   padding: 0.3rem;
   font-size: 0.938rem;
   width: 100%;
 }
 
-.login__box .login__box__right .login__form__control button {
+.login__box__right form .login__form__control button {
   background-color: #F0A501;
   color: #000;
   font-size: 0.938rem;
@@ -818,19 +857,19 @@ p {
   display: block;
 }
 
-.login__box .login__box__right .login__form__group1 h1 {
+.login__box__right form .login__form__group1 h1 {
   color: #fff;
 }
 
-.login__box .login__box__right .login__form__group1 p span {
+.login__box__right form .login__form__group1 p span {
   color: #8B8C9B;
 }
 
-.login__box .login__box__right .login__form__group1 p a {
+.login__box__right form .login__form__group1 p a {
   color: #FD514D;
 }
 
-.login__box .login__box__right .login__form__group4 button {
+.login__box__right form .login__form__group4 button {
   margin: 2rem auto;
   background-color: #F0A501;
   color: #000;
@@ -843,13 +882,13 @@ p {
   width: 8rem;
 }
 
-.login__box .login__box__right .login__form__group5 p {
+.login__box__right form .login__form__group5 p {
   color: #fff;
   text-align: center;
 }
 
-.login__box .login__box__right .login__form__group5 p:before,
-.login__box .login__box__right .login__form__group5 p:after {
+.login__box__right form .login__form__group5 p:before,
+.login__box__right form .login__form__group5 p:after {
   background-color: #fff;
   content: "";
   display: inline-block;
@@ -859,17 +898,17 @@ p {
   width: 35%;
 }
 
-.login__box .login__box__right .login__form__group5 p:before {
+.login__box__right form .login__form__group5 p:before {
   right: 1rem;
   margin-left: -50%;
 }
 
-.login__box .login__box__right .login__form__group5 p:after {
+.login__box__right form .login__form__group5 p:after {
   left: 1rem;
   margin-right: -50%;
 }
 
-.login__box .login__box__right .login__form__group6 {
+.login__box__right form .login__form__group6 {
   margin-top: 1rem;
   width: 100%;
   display: -webkit-box;
@@ -879,7 +918,7 @@ p {
       justify-content: space-around;
 }
 
-.login__box .login__box__right .login__form__group6 button {
+.login__box__right form .login__form__group6 button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,15 +935,15 @@ p {
   width: 100%;
 }
 
-.login__box .login__box__right .login__form__group6 button .fa-google {
+.login__box__right form .login__form__group6 button .fa-google {
   color: #FD514D;
 }
 
-.login__box .login__box__right .login__form__group6 button .fa-facebook {
+.login__box__right form .login__form__group6 button .fa-facebook {
   color: #039BE5;
 }
 
-.login__box .login__box__right button, .login__box .login__box__right input {
+.login__box__right form .login__form button, .login__box__right form .login__form input {
   border-radius: 0.3rem;
   border: none;
 }

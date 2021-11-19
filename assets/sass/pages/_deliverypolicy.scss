@@ -1,0 +1,10 @@
+.dePolicy{
+    @include section-style;
+    &__content{
+        li{
+            list-style-type: disc;
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+    }
+}
