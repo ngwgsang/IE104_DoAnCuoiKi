@@ -12,12 +12,12 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    .login__box__left{
+    &__left{
         .login__logo__img{
             object-fit: contain;
             }
     }
-    .login__box__right{
+    &__right{
         margin-left: 2rem;
         width: 100%;
         height: 100%;
@@ -26,108 +26,111 @@
             height: 100%;
             background-color: $cl-4;
             line-height: 1.5;
-        }
-        .login__form__control{
-            margin-top: 0.313rem;
-            label{
-            color: $cl-f;
+            .login__form{
+                &__control{
+                    margin-top: 0.313rem;
+                    label{
+                    color: $cl-f;
+                    }
+                    input{
+                    padding: 0.3rem;
+                    font-size: 0.938rem;
+                    width: 100%;
+                    }
+                    button{
+                        background-color: $cl-2;
+                        color: $cl-0;
+                        font-size: 0.938rem;
+                        padding: 0.625rem;
+                        border: none;
+                        cursor: pointer;
+                        font-weight: bold;
+                        display: block;
+                    }
+                }
+                
+                &__group1 {
+                    h1{
+                    color: $cl-f;
+                    }
+                    p {
+                        span{
+                           color: #8B8C9B; 
+                        }
+                        a{
+                            color: $cl-1;
+                        }
+                    }
+                }
+                &__group4{
+                    button{
+                        margin: 2rem auto;
+                        background-color: $cl-2;
+                        color: $cl-0;
+                        font-size: 0.9rem;
+                        padding: 0.5rem;
+                        border: none;
+                        cursor: pointer;
+                        font-weight: bold;
+                        display: block;
+                        width: 8rem;
+                    }
+                }
+                &__group5{
+                    p{
+                        color: $cl-f;
+                        text-align: center;
+                    }
+                    p:before,
+                    p:after {
+                    background-color: $cl-f;
+                    content: "";
+                    display: inline-block;
+                    height: 0.013rem;
+                    position: relative;
+                    vertical-align: middle;
+                    width: 35%;
+                    }
+                    p:before {
+                        right: 1rem;
+                        margin-left: -50%;
+                    }
+                      
+                    p:after {
+                        left: 1rem;
+                        margin-right: -50%;
+                    }
+                }
+                &__group6{
+                    margin-top: 1rem;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    button{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: white;
+                        vertical-align: middle;
+                        text-align:justify;
+                        font-size: 0.75rem;
+                        width: 100%;
+                        .fa-google{
+                            color: $cl-1;
+                        }
+                        .fa-facebook{
+                            color: #039BE5;
+                        }
+                    }
+                }
+                button,input{
+                    border-radius: 0.3rem;
+                    border: none;
+                }
             }
-            input{
-            padding: 0.3rem;
-            font-size: 0.938rem;
-            width: 100%;
-            }
-            button{
-                background-color: $cl-2;
-                color: $cl-0;
-                font-size: 0.938rem;
-                padding: 0.625rem;
-                border: none;
-                cursor: pointer;
-                font-weight: bold;
-                display: block;
             }
         }
         
-        .login__form__group1 {
-            h1{
-            color: $cl-f;
-            }
-            p {
-                span{
-                   color: #8B8C9B; 
-                }
-                a{
-                    color: $cl-1;
-                }
-            }
-        }
-        .login__form__group4{
-            button{
-                margin: 2rem auto;
-                background-color: $cl-2;
-                color: $cl-0;
-                font-size: 0.9rem;
-                padding: 0.5rem;
-                border: none;
-                cursor: pointer;
-                font-weight: bold;
-                display: block;
-                width: 8rem;
-            }
-        }
-        .login__form__group5{
-            p{
-                color: $cl-f;
-                text-align: center;
-            }
-            p:before,
-            p:after {
-            background-color: $cl-f;
-            content: "";
-            display: inline-block;
-            height: 0.013rem;
-            position: relative;
-            vertical-align: middle;
-            width: 35%;
-            }
-            p:before {
-                right: 1rem;
-                margin-left: -50%;
-            }
-              
-            p:after {
-                left: 1rem;
-                margin-right: -50%;
-            }
-        }
-        .login__form__group6{
-            margin-top: 1rem;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            button{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: white;
-                vertical-align: middle;
-                text-align:justify;
-                font-size: 0.75rem;
-                width: 100%;
-                .fa-google{
-                    color: $cl-1;
-                }
-                .fa-facebook{
-                    color: #039BE5;
-                }
-            }
-        }
-        button,input{
-            border-radius: 0.3rem;
-            border: none;
-        }
-    }
    
 }
 @media (max-width: 1520px){
