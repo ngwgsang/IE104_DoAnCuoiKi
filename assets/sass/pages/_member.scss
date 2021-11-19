@@ -1,28 +1,6 @@
 .member{
-    width: 100%;
-    background: $cl-4;
-    padding: 10% 15%;
-
+@include section-style;
     &__content{
-        background: $cl-f;
-        width: 100%;
-        padding: 4rem 2rem;
-
-        h3{
-            text-transform: uppercase;
-            font-size: 2rem;
-            color: $cl-1;
-        }
-
-        hr{
-            width: 10%;
-            height: 0.3rem;
-            background: $cl-1;
-            margin: 1rem 0;
-            outline: 0;
-            border: 0;
-        }
-
         &__box{
             width: 100%;
             height: 30%;
@@ -40,11 +18,6 @@
         h4{
             font-size: 1.6rem;
             margin: 2rem 0 1rem 0;
-        }
-        p{
-            font-size: 1.2rem;
-            line-height: 1.4;
-            margin: 1rem auto;
         }
         ul{
             font-size: 1.2rem;

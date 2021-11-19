@@ -1965,6 +1965,12 @@ p {
   border: 0;
 }
 
+.brandstory__content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
 .brandstory__content img {
   display: block;
   width: 100%;
@@ -1975,12 +1981,6 @@ p {
   margin: 2rem auto;
   -webkit-box-shadow: 0.5rem 0.5rem 0 0 #FD514D;
           box-shadow: 0.5rem 0.5rem 0 0 #FD514D;
-}
-
-.brandstory__content p {
-  margin-bottom: 1rem;
-  line-height: 1.5;
-  font-size: 1.2rem;
 }
 
 .brandstory__content p span {
@@ -1998,9 +1998,9 @@ p {
 }
 
 .member {
-  width: 100%;
-  background: #181A37;
   padding: 10% 15%;
+  background: #181A37;
+  width: 100%;
 }
 
 .member__content {
@@ -2010,9 +2010,9 @@ p {
 }
 
 .member__content h3 {
-  text-transform: uppercase;
-  font-size: 2rem;
   color: #FD514D;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .member__content hr {
@@ -2022,6 +2022,12 @@ p {
   margin: 1rem 0;
   outline: 0;
   border: 0;
+}
+
+.member__content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 .member__content__box {
@@ -2050,12 +2056,6 @@ p {
   margin: 2rem 0 1rem 0;
 }
 
-.member__content p {
-  font-size: 1.2rem;
-  line-height: 1.4;
-  margin: 1rem auto;
-}
-
 .member__content ul {
   font-size: 1.2rem;
   list-style: disc;
@@ -2074,9 +2074,9 @@ p {
 }
 
 .recruitment {
-  width: 100%;
   padding: 10% 15%;
   background: #181A37;
+  width: 100%;
 }
 
 .recruitment__content {
@@ -2086,9 +2086,9 @@ p {
 }
 
 .recruitment__content h3 {
-  text-transform: uppercase;
-  font-size: 2rem;
   color: #FD514D;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .recruitment__content hr {
@@ -2098,6 +2098,12 @@ p {
   margin: 1rem 0;
   outline: 0;
   border: 0;
+}
+
+.recruitment__content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 .recruitment__content__box {
