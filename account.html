@@ -39,6 +39,7 @@
                 <div class="account__content__overview">
                     <div class="account__content__overview--info">
                         <h3>Thông tin chung</h3>
+                        <hr align="left">
                         <ul>
                             <li>Họ và tên: Nguyễn Quang Sang</li>
                             <li>Số điện thoại: 0123456789</li>
@@ -47,6 +48,7 @@
                     </div>
                     <div class="account__content__overview--history">
                         <h3>Đơn hàng gần đây</h3>
+                        <hr align="left">
                         <ul>
                             <li class="primary">
                                 <span>Mã</span>
@@ -56,27 +58,28 @@
                                 <span>Trạng thái</span>
                             </li>
                         </ul>
-                            <ul>
-                                <li>
-                                    <span>Mã1</span>
-                                    <span>Tên sản phẩm</span>
-                                    <span>Ngày đặt</span>
-                                    <span>Giá tiền</span>
-                                    <span>Trạng thái</span>
-                                </li>
-                                <li>
-                                    <span>Mã2</span>
-                                    <span>Tên sản phẩm</span>
-                                    <span>Ngày đặt</span>
-                                    <span>Giá tiền</span>
-                                    <span>Trạng thái</span>
-                                </li>
+                        <ul>
+                            <li>
+                                <span>Mã1</span>
+                                <span>Tên sản phẩm</span>
+                                <span>Ngày đặt</span>
+                                <span>Giá tiền</span>
+                                <span>Trạng thái</span>
+                            </li>
+                            <li>
+                                <span>Mã2</span>
+                                <span>Tên sản phẩm</span>
+                                <span>Ngày đặt</span>
+                                <span>Giá tiền</span>
+                                <span>Trạng thái</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="account__content__address">
                     <div class="account__content__address--list">
                         <h3>Sổ địa chỉ</h3>
+                        <hr align="left">
                         <ul class="list-address">
                             <li class="address">
                                 <ul>
@@ -90,38 +93,77 @@
                     </div>
                     <div class="account__content__address--form">
                         <h3>Thêm địa chỉ mới</h3>
+                        <hr align="left">
                         <form>
-                            <labe>Họ và tên: <span>*</span></labe>
+                            <label>Họ và tên: <span>*</span></label>
                             <input type="text">
-                            <label>Tỉnh/thành</label>
+                            <label>Tỉnh/thành <span>*</span></label>
                             <select>
                                 <option value="">Thành phố Hồ Chí Minh</option>
                                 <option value="">Hà Nội</option>
                             </select>
-                            <label>Quận/Huyện</label>
+                            <label>Quận/Huyện <span>*</span></label>
                             <select>
-                                <option value="">Thành phố Hồ Chí Minh</option>
-                                <option value="">Hà Nội</option>
+                                <option value="">Quận 1</option>
+                                <option value="">Quận 2</option>
                             </select>
-                            <label>Xã/Phường</label>
+                            <label>Xã/Phường <span>*</span></label>
                             <select>
-                                <option value="">Thành phố Hồ Chí Minh</option>
-                                <option value="">Hà Nội</option>
+                                <option value="">Phường 5</option>
+                                <option value="">Phương 4</option>
                             </select>
-                            <labe>Tên đường: <span>*</span></labe>
+                            <label>Tên đường <span>*</span></label>
                             <input type="text">
-                            <labe>Số nhà: <span>*</span></labe>
+                            <label>Số nhà <span>*</span><span>*</span></label>
                             <input type="text">
-                            <labe>Số điện thoại: <span>*</span></labe>
+                            <label>Số điện thoại <span>*</span></label>
                             <input type="text">
                             <div class="check-box"><input type="checkbox"><label>Địa chỉ mặc định</label></div>
                         </form>
                         <button type="button" class="btn">Thêm</button>
                     </div>
                 </div>
-                <div class="account__content__history"></div>
-                <div class="account__content__password"></div>
-                <div class="account__content__voucher"></div>
+                <div class="account__content__search">
+                    <h3>Tra cứu đơn hàng</h3>
+                    <hr align="left">
+                    <div class="account__content__search--box">
+                        <input type="text" placeholder="Nhập số điện thoại hoặc mã đơn hàng">
+                        <button type="button">Tra cứu</button>
+                    </div>
+                </div>
+                <div class="account__content__password">
+                    <h3>Tra cứu đơn hàng</h3>
+                    <hr align="left">
+                    <form>
+                        <label>Mật khẩu cũ</label>
+                        <input type="password">
+                        <label>Mật khẩu mới</label>
+                        <input type="password">
+                        <label>Xác nhận mật khẩu</label>
+                        <input type="password">
+                        <button type="button">Đổi mật khẩu</button>
+                    </form>
+                </div>
+                <div class="account__content__voucher">
+                    <h3>Danh sách voucher</h3>
+                    <hr align="left">
+                    <ul>
+                        <li class="primary">
+                            <span>Mã</span>
+                            <span>Mô tả</span>
+                            <span>Hạn dùng</span>
+                            <span>Trạng thái</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span>Mã</span>
+                            <span>Mô tả</span>
+                            <span>Hạn dùng</span>
+                            <span>Trạng thái</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- ##----------------FOOTER---------------##- -->

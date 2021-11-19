@@ -47,10 +47,8 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        h3{
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
+        @include h3;
+        @include hr;
         &__overview{
             height: auto;
             display: flex;
@@ -76,32 +74,13 @@
                 width: 100%;
                 height: auto;
                 background: $cl-f;
-                ul{
-                    width: 100%;
-                    .primary{
-                        background: #efefef;
-                    }
-                }
-                ul li{
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    padding: 1rem;
-                    span{
-                        width: 20%;
-                        overflow: hidden;
-                        
-                    }
-                }
+                @include list;
             }
         }
-
         &__address{
             width: 100%;
             height: auto;
             display: flex;
-            gap: 2rem;
-            flex-direction: column;
 
             &--list{
                 width: 100%;
@@ -132,39 +111,58 @@
                 position: relative;
                 width: 100%;
                 padding: 2rem;
-                form{
+                .check-box{
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
                     gap: 1rem;
-                    input, select{
-                        height: 3.5rem;
-                        outline: 0;
-                        border: 0;
-                        background: #efefef;
-                        padding: 1rem;
-                        font-size: 1.2rem;
-                    }
-                    .check-box{
-                        display: flex;
-                        align-items: center;
-                        gap: 1rem;
-                    }
                 }
-                .btn{
-                    position: absolute;
-                    bottom: 2rem;
-                    right: 2rem;
-                    padding: 1rem 4rem;
-                    font-size: 1.4rem;
+                @include form;
+                @include button;
+            }
+        }
+        &__search{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background: $cl-f;
+            padding: 2rem;
+            &--box{
+                display: flex;
+                height: 4rem;
+                font-size: 1.4rem;
+                input{
+                    background: #efefef;
+                    height: 100%;
+                    flex: 7;
                     outline: 0;
                     border: 0;
+                    padding: 1rem;
+                }
+                button{
+                    height: 100%;
+                    color: $cl-f;
                     background: $cl-1;
-                    color:$cl-f;
+                    outline: 0;
+                    border: 0;
+                    flex: 1;
                 }
             }
         }
+        &__password{
+            width: 100%;
+            height: auto;
+            padding: 2rem;
+            background: $cl-f;
+            @include form;
+            @include button;
+        }
+        &__voucher{
+            width: 100%;
+            height: auto;
+            background: $cl-f;
+            padding: 2rem;
+            @include list;
+        }
     }
-
-
-
 }
