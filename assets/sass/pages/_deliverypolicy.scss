@@ -1,0 +1,10 @@
+.dePolicy{
+    @include section;
+    &__content{
+        li{
+            list-style-type: disc;
+            display: list-item;
+            line-height: 1.5;
+        }
+    }
+}
