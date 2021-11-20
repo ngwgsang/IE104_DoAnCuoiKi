@@ -1543,9 +1543,21 @@ p {
 
 .account__nav ul li {
   padding: 1.5rem 2rem;
-  background-color: #efefef;
+  background: #efefef;
   width: 100%;
   border-radius: 0.4rem;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.account__nav ul li:hover {
+  background: #dfdfdf;
+}
+
+.account__nav ul .active {
+  border-right: 0.35rem solid #FD514D;
+  background: #fd504d40;
 }
 
 .account__content {
@@ -1790,6 +1802,13 @@ p {
 }
 
 .account__content__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: auto;
   padding: 2rem;
@@ -1836,6 +1855,13 @@ p {
 }
 
 .account__content__voucher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: auto;
   background: #fff;
