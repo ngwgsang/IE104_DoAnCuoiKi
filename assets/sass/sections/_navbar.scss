@@ -24,14 +24,11 @@
         justify-content: center;
         gap: 2rem;
 
-        &__item a{
+        &__item{
             color: $cl-f;
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 }
 
-#loginBtn{
-    font-weight: 500;
-    color: $cl-2;
-}
+

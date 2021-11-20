@@ -1,0 +1,43 @@
+#nav__{
+    &HOME, &MENU, &PROMOTION{
+        display: block;
+        transition: 0.2s ease;
+        &:hover{
+            cursor: pointer;
+            color: #cfcfcf;
+        }
+    }
+    &LOGIN{
+        font-weight: 600;
+        color: $cl-2;
+        transition: 0.2s ease;
+        &:hover{
+            cursor: pointer;
+            font-weight: 700;
+        }
+    }
+    &LOCATION, &MEMBER, &RECRUITMENT, &NEWS, &BRANDSTORY, &CONTACT, &DEPOLICY, &PRPOLICY, &TAC{
+        display: block;
+        &:hover{
+            cursor: pointer;
+            color: #cfcfcf;
+        }
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translate(-150%,-50%);
+    }
+}
+
+.account__nav ul{
+    li:hover{
+        background: #dfdfdf;
+    }
+    .active{
+        border-right: 0.35rem solid $cl-1;
+        background: #fd504d40 !important;
+    }
+}
+

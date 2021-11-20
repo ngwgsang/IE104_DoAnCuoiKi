@@ -4,6 +4,7 @@
 @import './base/base';
 @import './base/typography';
 @import './base/variables';
+@import './base/animation';
 //---------------------------->COMPONENTS
 @import './components/mixins';
 @import './components/heading';
@@ -20,7 +21,7 @@
 @import './pages/menu';
 @import './pages/promotion';
 @import './pages/promotion_child';
-@import './pages/restaurant-system';
+@import './pages/location';
 @import './pages/account';
 @import './pages/contact';
 @import './pages/signup';
@@ -29,3 +30,4 @@
 @import './pages/recruitment';
 //##########################
 //##########################
+

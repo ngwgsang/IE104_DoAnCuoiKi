@@ -1,5 +1,7 @@
 .member{
-@include section;
+    @include section;
+    display: flex;
+    flex-direction: column;
     &__content{
         &__box{
             width: 100%;

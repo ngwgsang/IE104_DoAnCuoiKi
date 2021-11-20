@@ -1,5 +1,7 @@
 .brandstory{
-@include section;
+    @include section;
+    display: flex;
+    flex-direction: column;
     &__content{
         img{
             display: block;

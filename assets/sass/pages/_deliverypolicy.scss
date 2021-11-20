@@ -1,5 +1,7 @@
 .dePolicy{
     @include section;
+    display: flex;
+    flex-direction: column;
     &__content{
         li{
             list-style-type: disc;

@@ -1,3 +1,9 @@
+.home{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 .hero{
     width: 100%;
     height: 80rem;
@@ -45,17 +51,25 @@
         width: 100%;
         height: 20rem;
         background: $cl-0;
-        padding: 4rem 4rem;
+        padding: 2rem 4rem;
         z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         p{
+            text-align: center;
             color: $cl-f;
-            font-size: 1.4rem;
-            line-height: 2.2rem;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
             span{
                 font-family: 'Pacifico', cursive;
                 color: $cl-1;
                 font-size: 2.4rem;
             }
+        }
+        .box{
+            margin-top: 1rem;
         }
     }
 }

@@ -1,13 +1,10 @@
-@keyframes slideInFromLeft {
-    0% {
-      transform: translate(-150%,-50%);
-    }
-  }
 .signup{
     width: 100%;
     padding: 10% 30%;
     background-color: #060823;
     font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-direction: column;
 }
 .signup__box{
     margin: 0 auto;   

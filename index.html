@@ -15,230 +15,1156 @@
 </head>
 <body>
     <div class="wrapper">
-<!-- ##-----------NAVIGATION-----------##- -->
+<!-- ##-----------NAVIGATION-------------##- -->
         <div class="navbar">
             <div class="navbar__logo">
                 <img src="./assets/images/logo.png" alt="">
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item"><a href="./index.html">Trang chủ</a></li>
-                <li class="navbar__menu__item"><a href="./promotion.html">Khuyến mãi</a></li>
-                <li class="navbar__menu__item"><a href="./menu.html">Thực đơn</a></li>
-                <li class="navbar__menu__item"><a href="./login.html" id="loginBtn">Đăng nhập</a></li>
+                <li class="navbar__menu__item" id="nav__HOME">Trang chủ</li>
+                <li class="navbar__menu__item" id="nav__PROMOTION">Khuyến mãi</li>
+                <li class="navbar__menu__item" id="nav__MENU">Thực đơn</li>
+                <li class="navbar__menu__item" id="nav__LOGIN">Đăng nhập</li>
             </ul>
         </div>
-<!-- ##---------------HERO-------------##- -->
-        <div class="hero">
-            <!-- <video class="hero__main" autoplay loop src="./assets/videos/hero.mp4"></video> -->
-              <div class="hero__main__content">
-                      <h1>Oishii Pizza</h1>
-                      <p> "Life is mostly pain and struggle; the rest is love and deep-dish pizza."
-                </p>
-              </div>
-            <div class="hero__sub__content">
-                <p>
-                    Một phần nào đó tạo lên sự đặc biệt và khiến Pizza trở nên di sản văn hoá phi vật thể của nước Ý. Được làm ra từ những nguyên liệu rất đơn giản, bình dị. Nhưng vỏ bánh muốn ngon, phải nướng bằng củi truyền thống. Khiến cho người dùng cảm nhận khi ăn chiếc bánh Pizza, đó là hương vị quen thuộc của những nguyên liệu thông thường. Nhưng lại có sự độc đáo khi kết hợp với nhau tạo nên hương vị khó quên khiến người ăn yêu thích và ăn thường xuyên hơn.
-                </p>
-                <p>
-                    <span>Oishii Pizza</span>
-                    tự hào là thương hiệu hàng đầu về phân phối bánh pizza trên thế giới.  
-                </p>
+<!-- ###################################### -->
+<!-- ##-----------HOME-------------------## -->
+        <div class="home" id="HOME">
+    <!-- ###---------------HERO---------------##- -->
+            <div class="hero">
+                <!-- <video class="hero__main" autoplay loop src="./assets/videos/hero.mp4"></video> -->
+                    <div class="hero__main__content">
+                            <h1>Oishii Pizza</h1>
+                            <p> "Life is mostly pain and struggle; the rest is love and deep-dish pizza."
+                    </p>
+                    </div>
+                <div class="hero__sub__content">
+                    <p>
+                        Một phần nào đó tạo lên sự đặc biệt và khiến Pizza trở nên di sản văn hoá phi vật thể của nước Ý. Được làm ra từ những nguyên liệu rất đơn giản, bình dị. Nhưng vỏ bánh muốn ngon, phải nướng bằng củi truyền thống. Khiến cho người dùng cảm nhận khi ăn chiếc bánh Pizza, đó là hương vị quen thuộc của những nguyên liệu thông thường. Nhưng lại có sự độc đáo khi kết hợp với nhau tạo nên hương vị khó quên khiến người ăn yêu thích và ăn thường xuyên hơn.
+                    </p>
+                    <p class="box">
+                        <span>Oishii Pizza</span>
+                        tự hào là thương hiệu hàng đầu về phân phối bánh pizza trên thế giới.  
+                    </p>
+                </div>
             </div>
+    <!-- ###---------------SALE---------------##- -->
+            <div class="sale">
+                <h3 class="heading">Khuyến mãi chỉ có tại <span>Oishii Pizza</span></h3>
+                <!-- SLIDER -->
+                <div class="sale__slider">
+                    <div class="sale__slider__item nav__PROMOTIONCONTENT-1">
+                            <img src="https://images.unsplash.com/photo-1536964549204-cce9eab227bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                            <h5>Xin lỗi khó nói, Món ngon thay lời !</h5>
+                            <p>Bộ đôi PIZZA VIỀN TÔM NƯỚNG và PIZZA HẢI SẢN & ĐÀO với tạo hình đặc biệt lấy ý tưởng từ Hoa Hướng Dương là MÓN NGON THAY LỜI CẢM ƠN và XIN LỖI CHÂN THÀNH từ Oishii Pizza đến Quý Khách Hàng đã đồng hành và ưu ái cho chúng tôi nhiều cơ hội, động lực đến hoàn thiện hơn từng ngày! </p>
+                    </div>
+                    <div class="sale__slider__item nav__PROMOTIONCONTENT-2">
+                            <img src="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1464&q=80" alt="">
+                            <h5>MUA 1 TẶNG 1 PIZZA THỨ BA & THỨ NĂM</h5>
+                            <p>Mua 1 Pizza size M/L, tặng 1 Pizza (Đế Dày/Mỏng) dòng Classic cùng cỡ.
+                                Áp dụng vào Thứ 3 cho dịch vụ giao hàng tận nơi khi đặt hàng qua Hotline 19006066 hoặc Website và Mua mang về.
+                                Áp dụng vào Thứ 4 cho dịch vụ giao hàng tận nơi khi đặt hàng qua Hotline 19006066 hoặc Website, Dùng tại chỗ và Mua mang về.</p>
+                    </div>
+                    <div class="sale__slider__item nav__PROMOTIONCONTENT-3">
+                            <img src="https://images.unsplash.com/photo-1571407921708-4202261ea9e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=799&q=80" alt="">
+                            <h5>Món Ngon Giá Chất</h5>
+                            <p>Thực đơn Món Ngon Giá Chất chỉ từ 49.000đ và các combo ưu đãi lên đến 30%.</p>
+                    </div>
+                </div>
+            </div>
+    <!-- ###---------------LAND-MENU----------##- -->
+            <div class="home-menu">
+                <h3 class="heading">Thực đơn hôm nay <span>có gì hot</span> </h3>
+                <div class="home-menu__container">
+                    <h4>Pizza</h4>
+                    <ul class="list">
+                        <li class="list-item product" value="0">
+                            <img src="./assets/images/pizza/pizza-1.png" alt="">
+                            <h5>Pizza hải sản</h5>
+                            <p>Tôm, cua, mực và nghêu với sốt Marinara</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="1">
+                            <img src="./assets/images/pizza/pizza-2.png" alt="">
+                            <h5>Pizza Hải Sản Đào</h5>
+                            <p>Tôm, Giăm bông, Đào hoà quyện bùng nổ cùng sốt Thousand Island</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="2">
+                            <img src="./assets/images/pizza/pizza-3.png" alt="">
+                            <h5>Pizza Hải Sản Cocktail</h5>
+                            <p>Tôm, cua, giăm bông,... với sốt Thousand Island</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="3">
+                            <img src="./assets/images/pizza/pizza-4.png" alt="">
+                            <h5>Pizza Hải Sản Nhiệt Đới</h5>
+                            <p>Tôm, nghêu, mực cua, dứa với sốt Thousand Island</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="4">
+                            <img src="./assets/images/pizza/pizza-6.png" alt="">
+                            <h5>Pizza Thịt Nguội Kiểu Canada</h5>
+                            <p>Sự kết hợp giữa thịt nguội và bắp ngọt</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="5">
+                            <img src="./assets/images/pizza/pizza-7.png" alt="">
+                            <h5>Pizza Thịt Xông Khói</h5>
+                            <p>Thịt giăm bông, thịt xông khói và hai loại rau của ớt xanh, cà chua</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-menu__container">
+                    <h4>Spaghetti</h4>
+                    <ul class="list">
+                        <li class="list-item product" value="6">
+                            <img src="./assets/images/spaghetti/spg-1.png" alt="">
+                            <h5>Mì Ý Cay Hải Sản</h5>
+                            <p>Mỳ Ý rán với các loại hải sản tươi ngon cùng ớt và tỏi</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="7">
+                            <img src="./assets/images/spaghetti/spg-2.png" alt="">
+                            <h5>Mì Ý Cay Xúc Xích</h5>
+                            <p>Mỳ Ý rán với xúc xích cay, thảo mộc, ngò gai và húng quế Ý</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="8">
+                            <img src="./assets/images/spaghetti/spg-3.png" alt="">
+                            <h5>Mì Ý Giăm Bông</h5>
+                            <p>Mỳ Ý, nấm và giăm bông được nấu cùng với sốt kem trắng</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="9">
+                            <img src="./assets/images/spaghetti/spg-4.png" alt="">
+                            <h5>Mì Ý cay với thịt xông khói</h5>
+                            <p>Mỳ Ý cay nồng và ngậy hương thơm của thịt xông khói</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="10">
+                            <img src="./assets/images/spaghetti/spg-5.png" alt="">
+                            <h5>Mì Ý Chay Sốt Marinara</h5>
+                            <p>Sốt Marinara, nấm, ớt chuông và cà chua đỏ</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="11">
+                            <img src="./assets/images/spaghetti/spg-6.png" alt="">
+                            <h5>Mì Ý thịt bò bằm</h5>
+                            <p>Sốt thịt bò bằm đặc trưng kết hợp cùng mỳ Ý</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-menu__container">
+                    <h4>Món khác</h4>
+                    <ul class="list">
+                        <li class="list-item product" value="12">
+                            <img src="./assets/images/salad/salad-1.png" alt="">
+                            <h5>Salad Gà Giòn Không Xương</h5>
+                            <p>Salad Gà giòn với trứng cút, thịt xông khói, phô mai parmesan và sốt Thousand Island</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="13">
+                            <img src="./assets/images/salad/salad-2.png" alt="">
+                            <h5>Salad Da Cá Hồi Giòn</h5>
+                            <p>Salad với da cá hồi giòn với bắp cải đỏ, cà chua bi, ngô với sốt Yuzu</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="14">
+                            <img src="./assets/images/fried/fr-1.png" alt="">
+                            <h5>Gà Zòn Zòn</h5>
+                            <p>Cánh gà được phủ bởi một lớp bột chiên giòn</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="15">
+                            <img src="./assets/images/fried/fr-2.png" alt="">
+                            <h5>Đùi Gà Tẩm Bột Chiên Giòn</h5>
+                            <p>Đùi Gà phủ một lớp bột chiên giòn rụm</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="16">
+                            <img src="./assets/images/fried/fr-3.png" alt="">
+                            <h5>Gà Giòn Không Xương</h5>
+                            <p>Gà giòn tan với sốt Cocktail thơm ngậy</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                        <li class="list-item product" value="17">
+                            <img src="./assets/images/fried/fr-4.png" alt="">
+                            <h5>Gà Zòn Zòn cay</h5>
+                            <p>Cánh gà được phủ bởi một lớp bột chiên giòn cay</p>
+                            <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    <!-- ###---------------FEED-BACK----------##- -->
+            <div class="feedback">
+                <h3 class="heading">Trải nghiệm tại <span>Oishii Pizza</span></h3>
+                <div class="feedback__slider">
+                    <div class="feedback__slider__item">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+                        <p>Chất lượng món ăn và cách chế biến vô cùng sáng tạo. Thức uống sinh tố và nước ép thật tuyệt vời. Rất đáng giá. <br>- Ngọc Thủy -</p>
+                    </div>
+                    <div class="feedback__slider__item">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+                        <p>Tôi vui vì chúng tôi đã có đủ kiên nhẫn. Bước vào nhà hàng như đặt chân lên một ốc đảo nhỏ xinh và sự yên tĩnh. Nhân viên thân thiện, dịch vụ nhanh chóng.  <br>- Viết Sơn -</p>
+                    </div>
+                    <div class="feedback__slider__item">
+                        <img src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="">
+                        <p>Có rất nhiều sự lựa chọn, và chúng tôi chọn thưởng thức salad và Pizza khác của nhà hàng.  <br>- Việt Thắng -</p>
+                    </div>
+                    <div class="feedback__slider__item">
+                        <img src="https://images.unsplash.com/photo-1502452213786-a5bc0a67e963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" alt="">
+                        <p>Một từ để mô tả về nhà hàng Oishii Pizza, đó là “Tuyệt vời”. Nhà hàng không chỉ cung cấp các món ăn sáng tạo và ngon miệng, mà còn có một không gian ấm cúng, đây là điểm đặc biệt mà bạn không thể tìm thấy ở bất cứ nơi nào khác. <br>- Nhất Thống -</p>
+                    </div>
+                    <div class="feedback__slider__item">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                        <p>Bầu không khí trong nhà hàng rất thư giãn, phong cách độc đáo, dịch vụ thân thiện. Cực kỳ khuyến khích bạn dùng bữa tại đây, thay cho các bữa ăn thông thường.  <br>- Đình Thục -</p>
+                    </div>
+                    <div class="feedback__slider__item">
+                        <img src="https://images.unsplash.com/photo-1520341280432-4749d4d7bcf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+                        <p>Dịch vụ thật tuyệt vời. Các món ăn được trình bày rất đẹp, tươi mới và thơm ngon. Không gian nhà hàng sạch sẽ và phong cách thiết kế cũng rất đẹp. Cảm ơn Oishii Pizza thật nhiều! <br>- Thành Phúc -</p>
+                    </div>
+                </div>
+            </div>
+    <!-- ###-------------------MAP------------##- -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4659.580712684053!2d106.80014274528787!3d10.87050556995009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiDEkEhRRyBUUC5IQ00!5e0!3m2!1svi!2s!4v1636112887955!5m2!1svi!2s" width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-<!-- ##---------------SALE-------------##- -->
-        <div class="sale">
-            <h3 class="heading">Khuyến mãi chỉ có tại <span>Oishii Pizza</span></h3>
-            <!-- SLIDER -->
-            <div class="sale__slider">
-                <div class="sale__slider__item">
-                    <a href="./promotion_1.html">
+<!-- ##-----------PROMOTION--------------## -->
+        <div class="promotion" id="PROMOTION">
+            <div class="promotion__list">
+                <div class="promotion__list__item nav__PROMOTIONCONTENT-1">
+                    <div class="promotion__list__item__pic">
                         <img src="https://images.unsplash.com/photo-1536964549204-cce9eab227bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    </div>
+                    <div class="promotion__list__item__content">
                         <h5>Xin lỗi khó nói, Món ngon thay lời !</h5>
                         <p>Bộ đôi PIZZA VIỀN TÔM NƯỚNG và PIZZA HẢI SẢN & ĐÀO với tạo hình đặc biệt lấy ý tưởng từ Hoa Hướng Dương là MÓN NGON THAY LỜI CẢM ƠN và XIN LỖI CHÂN THÀNH từ Oishii Pizza đến Quý Khách Hàng đã đồng hành và ưu ái cho chúng tôi nhiều cơ hội, động lực đến hoàn thiện hơn từng ngày! </p>
-                    </a>
+                    </div>
+                    <ul class="promotion__list__item__tag">
+                        <li class="tag product" value ="24">Combo Tri Ân</li>
+                        <li class="tag product" value ="25">Combo Đồng Hành</li>
+                        <li class="tag product" value ="26">Combo Gắn Kết</li>
+                    </ul>
                 </div>
-                <div class="sale__slider__item">
-                    <a href="./promotion_2.html">
+                <div class="promotion__list__item nav__PROMOTIONCONTENT-2">
+                    <div class="promotion__list__item__pic">
                         <img src="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1464&q=80" alt="">
+                    </div>
+                    <div class="promotion__list__item__content">
                         <h5>MUA 1 TẶNG 1 PIZZA THỨ BA & THỨ NĂM</h5>
                         <p>Mua 1 Pizza size M/L, tặng 1 Pizza (Đế Dày/Mỏng) dòng Classic cùng cỡ.
                             Áp dụng vào Thứ 3 cho dịch vụ giao hàng tận nơi khi đặt hàng qua Hotline 19006066 hoặc Website và Mua mang về.
                             Áp dụng vào Thứ 4 cho dịch vụ giao hàng tận nơi khi đặt hàng qua Hotline 19006066 hoặc Website, Dùng tại chỗ và Mua mang về.</p>
-                    </a>
+                    </div>
+                    <ul class="promotion__list__item__tag">
+                        <li class="tag">Mua 1 tặng 1 Pizza size M & L</li>
+                    </ul>
                 </div>
-                <div class="sale__slider__item">
-                    <a href="./promotion_3.html">
+                <div class="promotion__list__item nav__PROMOTIONCONTENT-3">
+                    <div class="promotion__list__item__pic">
                         <img src="https://images.unsplash.com/photo-1571407921708-4202261ea9e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=799&q=80" alt="">
+                    </div>
+                    <div class="promotion__list__item__content">
                         <h5>Món Ngon Giá Chất</h5>
-                        <p>Thực đơn Món Ngon Giá Chất chỉ từ 49.000đ và các combo ưu đãi lên đến 30%.</p>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-<!-- ##---------------LAND-MENU-------------##- -->
-        <div class="home-menu">
-            <h3 class="heading">Thực đơn hôm nay <span>có gì hot</span> </h3>
-            <div class="home-menu__container">
-                <h4>Pizza</h4>
-                <ul class="list">
-                    <li class="list-item product" value="0">
-                        <img src="./assets/images/pizza/pizza-1.png" alt="">
-                        <h5>Pizza hải sản</h5>
-                        <p>Tôm, cua, mực và nghêu với sốt Marinara</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="1">
-                        <img src="./assets/images/pizza/pizza-2.png" alt="">
-                        <h5>Pizza Hải Sản Đào</h5>
-                        <p>Tôm, Giăm bông, Đào hoà quyện bùng nổ cùng sốt Thousand Island</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="2">
-                        <img src="./assets/images/pizza/pizza-3.png" alt="">
-                        <h5>Pizza Hải Sản Cocktail</h5>
-                        <p>Tôm, cua, giăm bông,... với sốt Thousand Island</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="3">
-                        <img src="./assets/images/pizza/pizza-4.png" alt="">
-                        <h5>Pizza Hải Sản Nhiệt Đới</h5>
-                        <p>Tôm, nghêu, mực cua, dứa với sốt Thousand Island</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="4">
-                        <img src="./assets/images/pizza/pizza-6.png" alt="">
-                        <h5>Pizza Thịt Nguội Kiểu Canada</h5>
-                        <p>Sự kết hợp giữa thịt nguội và bắp ngọt</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="5">
-                        <img src="./assets/images/pizza/pizza-7.png" alt="">
-                        <h5>Pizza Thịt Xông Khói</h5>
-                        <p>Thịt giăm bông, thịt xông khói và hai loại rau của ớt xanh, cà chua</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="home-menu__container">
-                <h4>Spaghetti</h4>
-                <ul class="list">
-                    <li class="list-item product" value="6">
-                        <img src="./assets/images/spaghetti/spg-1.png" alt="">
-                        <h5>Mì Ý Cay Hải Sản</h5>
-                        <p>Mỳ Ý rán với các loại hải sản tươi ngon cùng ớt và tỏi</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="7">
-                        <img src="./assets/images/spaghetti/spg-2.png" alt="">
-                        <h5>Mì Ý Cay Xúc Xích</h5>
-                        <p>Mỳ Ý rán với xúc xích cay, thảo mộc, ngò gai và húng quế Ý</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="8">
-                        <img src="./assets/images/spaghetti/spg-3.png" alt="">
-                        <h5>Mì Ý Giăm Bông</h5>
-                        <p>Mỳ Ý, nấm và giăm bông được nấu cùng với sốt kem trắng</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="9">
-                        <img src="./assets/images/spaghetti/spg-4.png" alt="">
-                        <h5>Mì Ý cay với thịt xông khói</h5>
-                        <p>Mỳ Ý cay nồng và ngậy hương thơm của thịt xông khói</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="10">
-                        <img src="./assets/images/spaghetti/spg-5.png" alt="">
-                        <h5>Mì Ý Chay Sốt Marinara</h5>
-                        <p>Sốt Marinara, nấm, ớt chuông và cà chua đỏ</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="11">
-                        <img src="./assets/images/spaghetti/spg-6.png" alt="">
-                        <h5>Mì Ý thịt bò bằm</h5>
-                        <p>Sốt thịt bò bằm đặc trưng kết hợp cùng mỳ Ý</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="home-menu__container">
-                <h4>Món khác</h4>
-                <ul class="list">
-                    <li class="list-item product" value="12">
-                        <img src="./assets/images/salad/salad-1.png" alt="">
-                        <h5>Salad Gà Giòn Không Xương</h5>
-                        <p>Salad Gà giòn với trứng cút, thịt xông khói, phô mai parmesan và sốt Thousand Island</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="13">
-                        <img src="./assets/images/salad/salad-2.png" alt="">
-                        <h5>Salad Da Cá Hồi Giòn</h5>
-                        <p>Salad với da cá hồi giòn với bắp cải đỏ, cà chua bi, ngô với sốt Yuzu</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="14">
-                        <img src="./assets/images/fried/fr-1.png" alt="">
-                        <h5>Gà Zòn Zòn</h5>
-                        <p>Cánh gà được phủ bởi một lớp bột chiên giòn</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="15">
-                        <img src="./assets/images/fried/fr-2.png" alt="">
-                        <h5>Đùi Gà Tẩm Bột Chiên Giòn</h5>
-                        <p>Đùi Gà phủ một lớp bột chiên giòn rụm</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="16">
-                        <img src="./assets/images/fried/fr-3.png" alt="">
-                        <h5>Gà Giòn Không Xương</h5>
-                        <p>Gà giòn tan với sốt Cocktail thơm ngậy</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                    <li class="list-item product" value="17">
-                        <img src="./assets/images/fried/fr-4.png" alt="">
-                        <h5>Gà Zòn Zòn cay</h5>
-                        <p>Cánh gà được phủ bởi một lớp bột chiên giòn cay</p>
-                        <p class="price">Giá chỉ từ:<span> 99.000</span></p>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-<!-- ##---------------FEED-BACK-------------##- -->
-        <div class="feedback">
-            <h3 class="heading">Trải nghiệm tại <span>Oishii Pizza</span></h3>
-            <div class="feedback__slider">
-                <div class="feedback__slider__item">
-                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-                    <p>Chất lượng món ăn và cách chế biến vô cùng sáng tạo. Thức uống sinh tố và nước ép thật tuyệt vời. Rất đáng giá. <br>- Ngọc Thủy -</p>
-                </div>
-                <div class="feedback__slider__item">
-                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
-                    <p>Tôi vui vì chúng tôi đã có đủ kiên nhẫn. Bước vào nhà hàng như đặt chân lên một ốc đảo nhỏ xinh và sự yên tĩnh. Nhân viên thân thiện, dịch vụ nhanh chóng.  <br>- Viết Sơn -</p>
-                </div>
-                <div class="feedback__slider__item">
-                    <img src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="">
-                    <p>Có rất nhiều sự lựa chọn, và chúng tôi chọn thưởng thức salad và Pizza khác của nhà hàng.  <br>- Việt Thắng -</p>
-                </div>
-                <div class="feedback__slider__item">
-                    <img src="https://images.unsplash.com/photo-1502452213786-a5bc0a67e963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" alt="">
-                    <p>Một từ để mô tả về nhà hàng Oishii Pizza, đó là “Tuyệt vời”. Nhà hàng không chỉ cung cấp các món ăn sáng tạo và ngon miệng, mà còn có một không gian ấm cúng, đây là điểm đặc biệt mà bạn không thể tìm thấy ở bất cứ nơi nào khác. <br>- Nhất Thống -</p>
-                </div>
-                <div class="feedback__slider__item">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
-                    <p>Bầu không khí trong nhà hàng rất thư giãn, phong cách độc đáo, dịch vụ thân thiện. Cực kỳ khuyến khích bạn dùng bữa tại đây, thay cho các bữa ăn thông thường.  <br>- Đình Thục -</p>
-                </div>
-                <div class="feedback__slider__item">
-                    <img src="https://images.unsplash.com/photo-1520341280432-4749d4d7bcf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
-                    <p>Dịch vụ thật tuyệt vời. Các món ăn được trình bày rất đẹp, tươi mới và thơm ngon. Không gian nhà hàng sạch sẽ và phong cách thiết kế cũng rất đẹp. Cảm ơn Oishii Pizza thật nhiều! <br>- Thành Phúc -</p>
+                        <p>Thực đơn Món Ngon Giá Chất chỉ từ 79.000đ và các combo ưu đãi lên đến 30%.</p>
+                    </div>
+                    <ul class="promotion__list__item__tag">
+                        <li class="tag product" value="12">Salad Gà Giòn Không Xương</li>
+                        <li class="tag product" value="13">Salad Cá Hồi Giòn</li>
+                    </ul>
                 </div>
             </div>
         </div>
-<!-- ##-------------------MAP---------------##- -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4659.580712684053!2d106.80014274528787!3d10.87050556995009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiDEkEhRRyBUUC5IQ00!5e0!3m2!1svi!2s!4v1636112887955!5m2!1svi!2s" width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-<!-- ##----------------FOOTER---------------##- -->
+<!-- ##-----------PROMOTION-CONTENT--------## -->
+        <div class="promotion-content" id="PROMOTIONCONTENT">
+            <div class="promotion-content-1">
+                <div class="promotion-content__top">
+                    <div class="promotion-content__top__left">
+                        <h3>Xin lỗi khó nói, Món ngon thay lời !</h3>
+                        <hr align="left">
+                        <p>Bộ đôi PIZZA VIỀN TÔM NƯỚNG và PIZZA HẢI SẢN & ĐÀO với tạo hình đặc biệt lấy ý tưởng từ Hoa Hướng Dương là MÓN NGON THAY LỜI CẢM ƠN và XIN LỖI CHÂN THÀNH từ Oishii đến Quý Khách Hàng đã đồng hành và ưu ái cho chúng tôi nhiều cơ hội, động lực đến hoàn thiện hơn từng ngày!</p>
+                        <ul>
+                            <li>Thời gian áp dụng: 01/08/2021 đến khi có thông báo mới</li>
+                            <li>Áp dụng cho khách hàng dùng bữa tại chỗ, mua mang về, giao hàng tận nơi</li>
+                            <li>Không áp dụng chung với các chương trình khuyến mãi, giảm giá khác</li>
+                            <li>Với mỗi hóa đơn có sản phẩm thuộc chương trình khuyến mại Xin Lỗi Khó Nói Món Ngon Thay Lời, phụ thu phí giao hàng 25,000VND/đơn khi đặt hàng qua Hotline 19006066 hoặc Website. </li>
+                        </ul>
+                    </div>
+                    <div class="promotion-content__top__right">
+                        <img src="https://images.unsplash.com/photo-1536964549204-cce9eab227bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    </div>
+                </div>
+                <div class="promotion-content__bottom">
+                    <h4>Combo Khuyến Mãi</h4>
+                    <ul>
+                        <li class="product" value="24">
+                            <img src="./assets/images/combo/combo-1.png" alt="">
+                            <div>
+                                <h5>Combo Tri Ân</h5>
+                                <p>Tôm, cua, mực và nghêu với sốt Marinara</p>
+                                <p class="price">Giá chỉ từ: <span>̶ 2̶̶9̶̶7̶̶.̶̶0̶̶0̶̶0̶  → 269.000</span></p>
+                            </div>
+                        </li>
+                        <li class="product" value="25">
+                            <img src="./assets/images/combo/combo-2.png" alt="">
+                            <div>
+                                <h5>Combo Đồng Hành</h5>
+                                <p>Tôm, cua, mực và nghêu với sốt Marinara</p>
+                                <p class="price">Giá chỉ từ: <span>̶ 2̶̶9̶̶7̶̶.̶̶0̶̶0̶̶0̶  → 269.000</span></p>
+                            </div>
+                        </li>
+                        <li class="product" value="26">
+                            <img src="./assets/images/combo/combo-3.png" alt="">
+                            <div>
+                                <h5>Combo Gắn Kết</h5>
+                                <p>Tôm, cua, mực và nghêu với sốt Marinara</p>
+                                <p class="price">Giá chỉ từ: <span>2̶̶9̶̶7̶̶.̶̶0̶̶0̶̶0 → 269.000</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="promotion-content-2">
+                <div class="promotion-content">
+                    <div class="promotion-content__top">
+                        <div class="promotion-content__top__left">
+                            <h3>MUA 1 TẶNG 1 PIZZA THỨ BA & THỨ NĂM</h3>
+                            <hr align="left">
+                            <p>Mua 1 Pizza size M/L, tặng 1 Pizza (Đế Dày/Mỏng) dòng Classic cùng cỡ.</p>
+                            <ul>
+                                <li>Áp dụng vào Thứ 4 cho dịch vụ giao hàng tận nơi khi đặt hàng qua Hotline 19006066 hoặc Website, Dùng tại chỗ và Mua mang về.</li>
+                                <li> Áp dụng vào Thứ 3 cho dịch vụ giao hàng tận nơi khi đặt hàng qua Hotline 19006066 hoặc Website và Mua mang</li>
+                            </ul>
+        
+                               
+                        </div>
+                        <div class="promotion-content__top__right">
+                            <img src="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1464&q=80" alt="">
+                        </div>
+                    </div>
+                    <div class="promotion-content__bottom">
+                        <h4>Áp dụng với các loại pizza sau</h4>
+                        <ul>
+                            <li class="product" value="0">
+                                <img src="./assets/images/pizza/pizza-1.png" alt="">
+                                <div>
+                                    <h5>Pizza Hải Sản</h5>
+                                    <p>Tôm, cua, mực và nghêu với sốt Marinara</p>
+                                    <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                                </div>
+                            </li>
+                            <li class="product" value="1">
+                                <img src="./assets/images/pizza/pizza-2.png" alt="">
+                                <div>
+                                    <h5>Pizza Hải Sản Đào</h5>
+                                    <p>Tôm, Giăm bông, Đào hoà quyện bùng nổ cùng sốt Thousand Island</p>
+                                    <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                                </div>
+                            </li>
+                            <li class="product" value="2">
+                                <img src="./assets/images/pizza/pizza-3.png" alt="">
+                                <div>
+                                    <h5>Pizza Hải Sản Cocktail</h5>
+                                    <p>Tôm, cua, giăm bông,... với sốt Thousand Island</p>
+                                    <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion-content-3">
+                <div class="promotion-content">
+                    <div class="promotion-content__top">
+                        <div class="promotion-content__top__left">
+                            <h3>Món Ngon Giá Chất</h3>
+                            <hr align="left">
+                            <p>Thực đơn Món Ngon Giá Chất chỉ từ 49.000đ và các combo ưu đãi lên đến 30%.</p>
+                        </div>
+                        <div class="promotion-content__top__right">
+                            <img src="https://images.unsplash.com/photo-1571407921708-4202261ea9e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=799&q=80" alt="">
+                        </div>
+                    </div>
+                    <div class="promotion-content__bottom">
+                        <h4>Combo Khuyến Mãi</h4>
+                        <ul>
+                            <li class="product" value="12">
+                                <img src="./assets/images/salad/salad-1.png" alt="">
+                                <div>
+                                    <h5>Salad Gà Giòn Không Xương</h5>
+                                    <p>Salad Gà giòn với trứng cút, thịt xông khói, phô mai parmesan và sốt Thousand Island</p>
+                                    <p class="price">Giá chỉ từ:<span> ̶9̶̶9̶̶.̶̶0̶̶0̶̶0̶  → 79.000</span></p>
+                                </div>
+                            </li>
+                            <li class="product" value="13">
+                                <img src="./assets/images/salad/salad-2.png" alt="">
+                                <div>
+                                    <h5>Salad Da Cá Hồi Giòn</h5>
+                                    <p>Salad với da cá hồi giòn với bắp cải đỏ, cà chua bi, ngô với sốt Yuzu</p>
+                                    <p class="price">Giá chỉ từ:<span> ̶9̶̶9̶̶.̶̶0̶̶0̶̶0̶  → 79.000</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- ##-----------MENU-------------------## -->
+        <div class="menu" id="MENU">
+            <div class="menu__box">
+                <div class="menu__nav">
+                    <div class="menu__nav__searchbar">
+                        <div class="menu__nav__searchbar__option">
+                            <a class="menu__nav__searchbar__controls" href="#">Giao hàng tận nơi</a>
+                            <a class="menu__nav__searchbar__controls" href="#">Lấy tại chỗ</a>
+                        </div>
+                        <div class="menu__nav__seachbar__group">
+                            <input class="menu__nav__searchbar__controls" type="text" placeholder="Vui lòng đặt địa chỉ nhận hàng">
+                            <a class="menu__nav__searchbar__controls" href="#"><i class="fas fa-search fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="menu__nav__navbar">
+                        <ul>
+                            <li><a href="#">Khuyến mãi</a></li>
+                            <li><a href="#">Pizza</a></li>
+                            <li><a href="#">Mỳ Ý</a></li>
+                            <li><a href="#">Gà rán</a></li>
+                            <li><a href="#">Tráng miệng</a></li>
+                            <li><a href="#">Nước uống</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu__items">
+
+                </div>
+            </div>
+            <div class="menu__status">
+                <div class="menu__status__img"><img src="./assets/images/hungryface.png" alt="hungryface"></div>
+                <h1>Giỏ hàng chưa có sản phẩm. Xin mời bạn mua hàng</h1>   
+            </div>
+        </div>
+<!-- ##-----------LOGIN------------------## -->
+        <div class="login" id="LOGIN">
+            <!-- ##-----------LOGIN_BOX-----------##- -->
+            <div class="login__box">
+                <div class="login__box__left">
+                    <img class="login__logo__img" src="./assets/images/login__logo.png" alt="login__logo">
+                </div>
+                <div class="login__box__right">
+                    <form action="#" method="post">
+                        <div class="login__form">
+                            <div class="login__form__group1">
+                                <h1>THAM GIA NGAY</h1>
+                                <p><span>Chưa có tài khoản?</span> <span id="nav__SIGNUP">Đăng ký tại đây</span></p>
+                            </div>
+                            <div class="login__form__group2">
+                                <div class="login__form__control">
+                                    <label for="login__email" class="login__form__control">Email</label>
+                                </div>
+                                <div class="login__form__control">
+                                    <input id="login__email" name="login__email" type="email" class="login__form__control" required>
+                                </div>
+                            </div>
+                            <div class="login__form__group3">
+                                <div class="login__form__control">
+                                    <label for="login__password" class="login__form__control">Mật Khẩu</label>
+                                </div>
+                                <div class="login__form__control">
+                                    <input id="login__password" name="login__password" type="password" class="login__form__control" required>
+                                </div>
+                            </div>
+                            <div class="login__form__group4">
+                                <div class="login__form__control">
+                                    <button type="submit" id="nav__ACCOUNT">Đăng nhập</button>
+                                </div>
+                            </div>
+                            <div class="login__form__group5">
+                                <p>Hoặc</p>
+                            </div>
+                            <div class="login__form__group6">
+                                <div class="login__form__control">
+                                    <button  class="login__form__button__google" type="submit"><i class="fab fa-google fa-2x"></i> Đăng nhập với Google</button>
+                                </div>
+                                <div class="login__form__control">
+                                    <button class="login__form__button__facebook" type="submit"><i class="fab fa-facebook fa-2x"></i>  Đăng nhập với Facebook</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<!-- ##-----------SIGNUP-----------------## -->
+        <div class="signup" id="SIGNUP">
+            <!-- ##-----------SIGNUP_BOX-----------##- -->
+            <div class="signup__box">
+                <form action="#" method="post">
+                    <div class="signup__form__group__box">
+                        <div class="signup__form__group1">
+                            <h1>THAM GIA NGAY</h1>
+                            <p><span>Bạn đã có tài khoản?</span> <a href="./login.html">Đăng nhập tại đây</a></p>
+                        </div>
+                        <div class="signup__form__group2">
+                            <div class="signup__form__control">
+                                <label for="signup__email" class="signup__form__control">Email</label>
+                            </div>
+                            <div class="signup__form__control">
+                                <input id="signup__email" name="signup__email" type="email" class="signup__form__control" required>
+                            </div>
+                        </div>
+                        <div class="signup__form__group3">
+                            <div class="signup__form__control">
+                                <label for="signup__password" class="signup__form__control">Mật Khẩu</label>
+                            </div>
+                            <div class="signup__form__control">
+                                <input id="signup__password" name="signup__password" type="password" class="signup__form__control" required>
+                            </div>
+                        </div>
+                        <div class="signup__form__group4">
+                            <div class="signup__form__control">
+                                <button type="submit">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="signup__form__group5">
+                            <p>Hoặc</p>
+                        </div>
+                        <div class="signup__form__group6">
+                            <div class="signup__form__control">
+                                <button  class="signup__form__button__google" type="submit"><i class="fab fa-google fa-2x"></i> Đăng nhập với Google</button>
+                            </div>
+                            <div class="signup__form__control">
+                                <button class="signup__form__button__facebook" type="submit"><i class="fab fa-facebook fa-2x"></i> Đăng nhập với Facebook</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+<!-- ##-----------ACCOUNT-----------------## -->
+        <div class="account" id="ACCOUNT">
+            <div class="account__nav">
+                <div class="account__nav__name">Nguyễn Quang Sang</div>
+                <ul>
+                    <li id="nav__overview">Thông tin khách hàng</li>
+                    <li id="nav__address">Sổ địa chỉ</li>
+                    <li id="nav__search">Lịch sử mua hàng</li>
+                    <li id="nav__password">Đổi mật khẩu</li>
+                    <li id="nav__voucher">Voucher của tôi</li>
+                </ul>
+            </div>
+            <div class="account__content">
+                <div class="account__content__overview">
+                    <div class="account__content__overview--info">
+                        <h3>Thông tin chung</h3>
+                        <hr align="left">
+                        <ul>
+                            <li>Họ và tên: Nguyễn Quang Sang</li>
+                            <li>Số điện thoại: 0123456789</li>
+                            <li>Email: 19522122@gm.uit.edu.vn</li>
+                        </ul>
+                    </div>
+                    <div class="account__content__overview--history">
+                        <h3>Đơn hàng gần đây</h3>
+                        <hr align="left">
+                        <ul>
+                            <li class="primary">
+                                <span>Mã</span>
+                                <span>Tên sản phẩm</span>
+                                <span>Ngày đặt</span>
+                                <span>Giá tiền</span>
+                                <span>Trạng thái</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Mã1</span>
+                                <span>Tên sản phẩm</span>
+                                <span>Ngày đặt</span>
+                                <span>Giá tiền</span>
+                                <span>Trạng thái</span>
+                            </li>
+                            <li>
+                                <span>Mã2</span>
+                                <span>Tên sản phẩm</span>
+                                <span>Ngày đặt</span>
+                                <span>Giá tiền</span>
+                                <span>Trạng thái</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account__content__address">
+                    <div class="account__content__address--list">
+                        <h3>Sổ địa chỉ</h3>
+                        <hr align="left">
+                        <ul class="list-address">
+                            <li class="address">
+                                <ul>
+                                    <li class="tag">Địa chỉ mặc định</li>
+                                    <li>Họ tên: Nguyễn Quang Sang</li>
+                                    <li>Địa chỉ: XXXXXXXXXXXXXXXXXXXXXX</li>
+                                    <li>Số điện thoại: 0123456789</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="account__content__address--form">
+                        <h3>Thêm địa chỉ mới</h3>
+                        <hr align="left">
+                        <form>
+                            <label>Họ và tên: <span>*</span></label>
+                            <input type="text">
+                            <label>Tỉnh/thành <span>*</span></label>
+                            <select>
+                                <option value="">Thành phố Hồ Chí Minh</option>
+                                <option value="">Hà Nội</option>
+                            </select>
+                            <label>Quận/Huyện <span>*</span></label>
+                            <select>
+                                <option value="">Quận 1</option>
+                                <option value="">Quận 2</option>
+                            </select>
+                            <label>Xã/Phường <span>*</span></label>
+                            <select>
+                                <option value="">Phường 5</option>
+                                <option value="">Phương 4</option>
+                            </select>
+                            <label>Tên đường <span>*</span></label>
+                            <input type="text">
+                            <label>Số nhà <span>*</span><span>*</span></label>
+                            <input type="text">
+                            <label>Số điện thoại <span>*</span></label>
+                            <input type="text">
+                            <div class="check-box"><input type="checkbox"><label>Địa chỉ mặc định</label></div>
+                        </form>
+                        <button type="button" class="btn">Thêm</button>
+                    </div>
+                </div>
+                <div class="account__content__search">
+                    <h3>Tra cứu đơn hàng</h3>
+                    <hr align="left">
+                    <div class="account__content__search--box">
+                        <input type="text" placeholder="Nhập số điện thoại hoặc mã đơn hàng">
+                        <button type="button">Tra cứu</button>
+                    </div>
+                </div>
+                <div class="account__content__password">
+                    <h3>Tra cứu đơn hàng</h3>
+                    <hr align="left">
+                    <form>
+                        <label>Mật khẩu cũ</label>
+                        <input type="password">
+                        <label>Mật khẩu mới</label>
+                        <input type="password">
+                        <label>Xác nhận mật khẩu</label>
+                        <input type="password">
+                        <button type="button">Đổi mật khẩu</button>
+                    </form>
+                </div>
+                <div class="account__content__voucher">
+                    <h3>Danh sách voucher</h3>
+                    <hr align="left">
+                    <ul>
+                        <li class="primary">
+                            <span>Mã</span>
+                            <span>Mô tả</span>
+                            <span>Hạn dùng</span>
+                            <span>Trạng thái</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span>Mã</span>
+                            <span>Mô tả</span>
+                            <span>Hạn dùng</span>
+                            <span>Trạng thái</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- ##-----------LOCATION----------------## -->
+        <div class="location" id="LOCATION">
+            <div class="location__left">
+                <div class="box">
+                        <div class="location__left__top">
+                            <h3>Hệ thống nhà hàng<span>Oishii Pizza</span></h3>
+                            <select name="" id=""><option value="">Tỉnh / thành phố</option></select>
+                            <select name="" id=""><option value="">Huyện</option></select>
+                            <button type="button"> Tìm kiếm</button>
+                        </div>
+                        <div class="location__left__bottom">
+
+                        </div>
+                        <div class="location__right">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249366.558578671!2d104.76103767521326!3d15.798341823686808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiDEkEhRRyBUUC5IQ00!5e1!3m2!1svi!2s!4v1636730217725!5m2!1svi!2s" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
+<!-- ##-----------BRAND-STORY-------------## -->
+        <div class="brandstory" id="BRANDSTORY">
+            <div class="brandstory__content">
+                <h3>Câu chuyện thương hiệu</h3>
+                <hr align="left">
+                <p>Được thành lập từ năm 2077, Oishii Pizza Việt Nam là một trong những công ty hàng đầu trong lĩnh vực dịch vụ chuỗi nhà hàng tại Việt Nam với hệ thống gần 150 nhà hàng, trải dài khắp 64 tỉnh thành trên cả nước. được biết đến với với các thương hiệu nổi tiếng đến đến từ Ý như:  Riry Queen®, Qensen‘s, Xuse, Hw Crab, Chieng và T Club.</p>
+                <p>Chúng tôi là Oishii Pizza. Thương hiệu thuộc quyền sở hữu của tập đoàn Oishii Group, một trong những tập đoàn hàng đầu châu Á về ngành khách sạn và ẩm thực cao cấp. </p>
+                <p>Được thành lập từ 1981, Oishii – Chuỗi nhà hàng Pizza phong vị Ý bắt đầu mở rộng, phát triển hệ thống cửa hàng và nhượng quyền thương mại quốc tế. Đến nay, thương hiệu Oishii Pizza có hơn 300 cửa hàng tại hơn 15 thị trường trên toàn thế giới.</p>
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80" alt="">
+                <p>Lấy cảm hứng từ phong cách ẩm thực tinh tế của người Ý kết hợp cùng sự am hiểu về sở thích ẩm thực của người châu Á, chúng tôi nổi tiếng với dòng Pizza Hải sản cao cấp ngon tuyệt hảo. Đặc trưng nhân bánh đầy đặn, ngập tràn phô mai hảo hạng và hương vị rất phù hợp với khẩu vị của người Việt đã giúp “Oishii Pizza” thành công trong việc chinh phục các khách hàng yêu Pizza.</p>
+                <p>Bên cạnh những sản phẩm Pizza độc đáo, phong cách phục vụ nhiệt tình, thân thiện, dịch vụ giao hàng tiện lợi, cùng với sự nghiêm túc và tập trung đầu tư phát triển chúng tôi tin tưởng Oishii sẽ làm thỏa mãn khẩu vị của những khách hàng Việt Nam sành điệu nhất.</p>
+                <p class="brandstory__content--sign"><span>Oishii Pizza</span><span> "Life is mostly pain and struggle; the rest is love and deep-dish pizza."
+                </span></p>
+            </div>
+        </div>
+<!-- ##-----------MEMBER------------------## -->
+        <div class="member" id="MEMBER">
+            <div class="member__content">
+                <h3>Ưu đãi thành viên</h3>
+                <hr align="left">
+                <div class="member__content__box">
+                    <img src="./assets/images/member.png" alt="">
+                </div>
+                <p>Nhằm tri ân quý khách hàng đã luôn tin tưởng và đồng hành cùng Oishii Pizza, chúng tôi xin gửi đến quý khách những ưu đãi hấp dẫn chỉ dành riêng cho khách hàng thân thiết của Oishii Pizza.</p>
+                <h4>1. LÀM THẾ NÀO ĐỂ TRỞ THÀNH KHÁCH HÀNG THÂN THIẾT CỦA Oishii Pizza</h4>
+                <ul>
+                    <li>Đối với khách hàng mua sắm tại cửa hàng: Nếu quý khách chưa từng đăng ký thông tin tại Oishii Pizza, sau khi mua hàng quý khách vui lòng liên hệ nhân viên cửa hàng để được hỗ trợ đăng ký thông tin khách hàng thành viên.</li>
+                    <li>Đối với khách hàng đặt hàng online: Khi quý khách đặt hàng lần đầu tiên tại Online Store của Oishii Pizza hệ thống sẽ tự động tạo tài khoản khách hàng thành viên cho quý khách dựa trên số điện thoại đặt hàng.</li>
+                </ul>
+                <h4>2. ƯU ĐÃI DÀNH CHO KHÁCH HÀNG THÂN THIẾT</h4>
+                <p>Với khách hàng thân thiết, Quý khách sẽ nhận được ưu đãi đặc biệt khi mua hàng tại website và hệ thống cửa hàng Oishii Pizza trên toàn quốc như sau:</p>
+                    <ul>
+                        <li>Được tặng Mã quà tặng nhân dịp sinh nhật khách hàng qua tin nhắn SMS.</li>
+                        <li>Được ưu tiên nhận tin về chương trình khuyến mãi hoặc sản phẩm mới của Oishii Pizza.</li>
+                        <li>Được tham gia các chương trình khuyến mãi dành riêng cho khách hàng thân thiết.</li>
+                    </ul>
+                <p class="member__content__contact">Mọi ý kiến đóng góp và thắc mắc xin liên hệ Oishii Pizza qua Hotline miễn phí 1900 1234 hoặc gửi email về địa chỉ: <a href="#">cskh@oishiipizza.com</a>.</p>
+            </div>
+        </div>
+<!-- ##-----------NEWS--------------------## -->
+<!-- ##-----------RECRUITMENT-------------## -->
+        <div class="recruitment" id="RECRUITMENT">
+            <div class="recruitment__content">
+                <h3>Tuyển dụng</h3>
+                <hr align="left">
+                <div class="recruitment__content__box">
+                    <p>Gia nhập đội ngũ Oishii Pizza ngay hôm nay</p>
+                </div>
+                <form class="recruitment__content__form">
+                    <label>Họ và tên</label>
+                    <input type="text">
+                    <label>Địa chỉ Email</label>
+                    <input type="email">
+                    <label>Số điện thoại</label>
+                    <input type="tel">
+                    <label>Năm sinh</label>
+                    <input type="number">
+                    <label>Vị trí ứng tuyển</label>
+                    <input type="text">
+                    <label>Mức lương mong muốn</label>
+                    <input type="number">
+                    <label>Sơ lược về bản thân</label>
+                    <textarea cols="30" rows="6"></textarea>
+                    <select>
+                        <option>Các trang mạng xã hội</option>
+                        <option>Các trang tuyển dụng</option>
+                        <option>Bạn bè, người thân</option>
+                        <option>Bảng tin tuyển dụng tại các cửa hàng</option>
+                    </select>
+                    <button type="button">Nộp đơn</button>
+                </form>
+
+                <p class="recruitment__content__noti">*Đơn của bạn sẽ được xét duyệt trong vòng 48h</p>
+            </div>
+        </div>
+<!-- ##-----------CONTACT-----------------## -->
+        <div class="contact" id="CONTACT">
+        <!-- ##-----------CONTACT__FORM-----------##- -->
+        <div class="contact__box">
+            <div class="contact__box__left">
+                <div class="contact__box__content__left">
+                    <h1 class="contact__box__title">Liên hệ với chúng tôi</h1>
+                <form action="#" method="post">
+                    <div class="contact__form__content__box">
+                        <div class="contact__form__group1">
+                            <div class="contact__form__control"><label for="fullName">Họ và Tên *</label></div>
+                            <div class="contact__form__control"><input type="text" placeholder="Nhập tên của bạn" id="fullName" name="fullName" value="" required></div>
+                        </div>
+                        <div class="contact__form__group2">
+                            <div class="contact__form__control"><label for="Phone">Số điện thoại *</label></div>
+                            <div class="contact__form__control"><input type="text" placeholder="Nhập số điện thoại" id="Phone" name="Phone" value="" required></div>
+                        </div>
+                        <div class="contact__form__group3">
+                            <div class="contact__form__control"><label for="Email">Email *</label></div>
+                            <div class="contact__form__control"><input type="email" placeholder="Nhập địa chỉ email của bạn." data-val-required="Nhập email" id="Email" name="Email" value="" required></div>
+                        </div>
+                        <div class="contact__form__group4">
+                            <div class="contact__form__control"><label for="Subject">Tiêu đề *</label></div>
+                            <div class="contact__form__control"><input type="text" placeholder="Nhập chủ đề" id="Subject" name="Subject" value="" required></div>
+                        </div>
+                        <div class="contact__form__group5">
+                            <div class="contact__form__control"><label for="Subject">Nội dung *</label></div>
+                            <div class="contact__form__control"><textarea class="text-content" placeholder="Nhập yêu cầu của bạn" id="Enquiry" name="Enquiry" required></textarea>
+                        </div>                             
+                        </div>
+                        <div class="contact__form__group6">
+                            <div class="contact__form__control">
+                                <button type="submit" name="send-email" class="btn-next">
+                                Gửi
+                                <em><i class="fas fa-arrow-right fa-lg"></i></em>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="contact__box__right">
+                <div class="contact__box__content__right"><img src="./assets/images/contact-bg.jpg" alt=""></div>
+            </div>
+
+        </div>
+        </div>
+<!-- ##-----------DELIVERY-POLICY---------## -->
+        <div class="dePolicy" id="DEPOLICY">
+            <div class="dePolicy__content">
+                <h3>Chính sách giao hàng</h3>
+                <hr align="left">
+                <h4>&nbsp;</h4>
+                <h5 style="padding-left: 30px;"><strong>1. Phạm vi giao hàng</strong></h5>
+                <p>Oishii Pizza Việt Nam phục vụ khách hàng qua hệ thống hơn 70 nhà hàng trên 21 tỉnh thành trong phạm vi bán kính 4km từ nhà hàng gần nhất.</p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>2. Phí giao hàng</strong></h5>
+                <p>Oishii Pizza Việt Nam miễn phí giao hàng tận nơi với đơn hàng thực thanh toán (sau khi có hoặc không có áp dụng hình thức giảm giá, khuyến mãi), có giá trị từ 100.000VND trở lên trong phạm vi bán kính 4km từ nhà hàng gần nhất.</p>
+                <p>Với các đơn hàng có giá trị dưới 100.000VND, Oishii Pizza Việt Nam sẽ đề nghị khách hàng chọn đến trực tiếp nhà hàng gần nhất để nhận đơn hàng.</p>
+                <p><span lang="vi"><em>Bắt đầu từ ngày 26/01/2021, mỗi hoá đơn thực thanh toán của chương trình Mua 1 Tặng 1 Pizza áp dụng vào thứ 3 và thứ 4 hàng tuần sẽ được cộng thêm khoản phí giao hàng 20,000VNĐ, khi khách hàng đặt hàng qua Hotline 9999 9999 hoặc website The Pizza Company.</em></span></p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>3. Thời gian giao hàng</strong></h5>
+                <p>a) Thời gian hoạt động: 10:00 - 22:00 mỗi ngày.</p>
+                <p>b) Thời gian giao hàng: 30 - 45 phút kể từ khi đơn hàng của Khách hàng được ghi nhận thành công và không trễ hơn 22:00 mỗi ngày.</p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>4. Phương thức giao hàng</strong></h5>
+                <p><em>a) Đặt giao hàng tận nơi:</em></p>
+                <p>- Khách hàng phải đi đến bước đặt hàng cuối cùng để nhận được mã đơn hàng trên Website www.oishiipizza.vn và được hệ thống xác nhận đặt hàng thành công. <br>- Đơn hàng thành công sẽ được ghi nhận và tự động giao bởi chi nhánh nhà hàng Oishii Pizza Việt Nam được chỉ định trong quá trình đặt hàng. <br>- Nhân viên tổng đài sẽ liên hệ xác nhận lại đơn hàng trong các trường hợp:</p>
+                <p>+ Thông tin Khách hàng cung cấp chưa rõ ràng hoặc chính xác;<br>+ Xác nhận lại thông tin xuất hoá đơn đỏ của Khách hàng; <br>+ Phát sinh các lỗi trong hệ thống ghi nhận đơn hàng gây ảnh hưởng đến việc xác minh thông tin chính xác.</p>
+                <p>- Sau khi đơn hàng đã được xác nhận, nhân viên tại chi nhánh nhà hàng Oishii Pizza Việt Nam gần nhất được chỉ định giao hàng và chuẩn bị các vật dụng kèm theo (tương, muỗng, nĩa, giấy ăn...).</p>
+                <p>&nbsp;</p>
+                <p><em>b) Đặt đến lấy trực tiếp tại nhà hàng:</em></p>
+                <p>- Khách hàng phải đi đến bước đặt hàng cuối cùng để nhận được mã đơn hàng trên Website www.oishiipizza.vn và được hệ thống xác nhận đặt hàng thành công. <br>- Thời gian đến nhà hàng nhận món khoảng 20 phút kể từ khi hệ thống xác nhận đặt hàng thành công hoặc nhận được cuộc gọi xác nhận của Oishii Pizza Việt Nam. <br>- Khách hàng có thể thay đổi thời gian nhận hàng trong ngày ít nhất trước 1 tiếng so với thời gian đã đặt. <br>- Khung giờ nhận đơn hàng từ 10:00 đến 21:30 mỗi ngày.<br>- Khi nhận hàng vui lòng kiểm tra nếu sản phẩm có bất kỳ lỗi hay khiếm khuyết nào, xin quý khách vui lòng giữ lại hóa đơn để được nhà hàng kiểm tra.</p>
+                <p>&nbsp;</p>
+                <p>Mọi tranh chấp nảy sinh giữa Oishii Pizza Việt Nam và khách hàng phải được giải quyết trên tinh thần hợp tác vì mục đích chung, hai bên có trách nhiệm và nghĩa vụ tôn trọng quyền lợi và sự bình đẳng giữa các bên.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <h3><strong>Chính sách thanh toán</strong></h3>
+                <hr align="left">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p class="copyright">Oishii Pizza Việt Nam có đa dạng các loại hình thức thanh toán dành cho khách hàng khi đặt hàng qua trang website <a href="#">www.oishiipizza.vn</a>&nbsp;&nbsp;</p>
+                <p class="copyright">&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>1.&nbsp;Thanh toán sau khi nhận đơn hàng (COD)&nbsp;</strong></h5>
+                <ul>
+                <li dir="ltr">
+                <p dir="ltr">Khách hàng có thể thanh toán bằng tiền mặt ngay khi nhận đơn và có thể trực tiếp kiểm tra đơn hàng trên hoá đơn.&nbsp;</p>
+                </li>
+                <li dir="ltr">
+                <p dir="ltr">Đối với đơn hàng đặt giao tận nơi có giá trị thực thanh toán trên 1.000.000VND, đại diện Oishii Pizza Việt Nam sẽ gọi xác nhận lại đơn hàng của khách hàng một lần nữa để đảm bảo thông tin đơn hàng chính xác và giao hàng theo đúng người và địa chỉ đã cung cấp.&nbsp;</p>
+                </li>
+                <li dir="ltr">
+                <p dir="ltr">Đối với đơn hàng đặt đến lấy trực tiếp tại nhà hàng, khách hàng có thể chọn thay đổi hình thức thanh toán từ tiền mặt (COD) sang các hình thức thanh toán khác hiện có tại nhà hàng.</p>
+                </li>
+                </ul>
+                <p class="copyright">&nbsp;&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>2.&nbsp;Thanh toán trực tuyến&nbsp;bằng ví điện tử MoMo&nbsp;</strong></h5>
+                <ul>
+                <li dir="ltr">
+                <p dir="ltr">Khách hàng có thể thanh toán trực tuyến bằng ví điện tử MoMo nếu đã có sử dụng.&nbsp;</p>
+                </li>
+                <li dir="ltr">
+                <p dir="ltr">Các đơn hàng hủy sau khi thanh toán thành công sẽ được giải quyết hoàn tiền trong vòng 4-5 ngày làm việc.&nbsp;</p>
+                </li>
+                </ul>
+                <p class="copyright">&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>3.&nbsp;Thanh toán&nbsp;trực tiếp bằng thẻ tín dụng, thẻ ghi nợ hoặc thẻ ATM qua cổng thanh toán của Sacombank</strong></h5>
+                <ul>
+                <li dir="ltr">
+                <p dir="ltr">Các thanh toán bằng thẻ ngân hàng sẽ được thực hiện qua cổng thanh toán của ngân hàng Sacombank.&nbsp;</p>
+                </li>
+                <li dir="ltr">
+                <p dir="ltr">Các đơn hàng hủy sau khi thanh toán thành công sẽ được giải quyết hoàn tiền trong khoảng 10-12 ngày làm việc hoặc tùy theo quy định về thời hoàn tiền của từng ngân hàng khách hàng đang sử dụng.&nbsp;&nbsp;</p>
+                </li>
+                </ul>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <h3><strong>Chính sách đổi, trả hàng và hoàn tiền&nbsp;</strong></h3>
+                <hr align="left">
+                <h1><span style="font-size: 11px;">&nbsp;</span></h1>
+                <p>Sau khi gửi xác nhận đơn hàng, khách hàng vui lòng làm theo những hướng dẫn sau nếu muốn <span style="font-size: 11pt;"><strong>HỦY ĐƠN HÀNG</strong></span>.</p>
+                <p>&nbsp;</p>
+                <h5>Đối với đơn hàng <strong>ĐẶT GIAO TẬN NƠI</strong>:</h5>
+                <p>&nbsp;</p>
+                <p>- Khách hàng chọn <strong>Giao hàng ngay</strong>:</p>
+                <ul>
+                <li>Gọi đến nhà hàng đã chọn để yêu cầu hủy đơn hàng ngay lập tức hoặc gọi đến Hotline 9999 9999 để được hỗ trợ chuyển thông tin đến nhà hàng.</li>
+                <li>Nhân viên sẽ kiểm tra trạng thái đơn hàng để tiến hành hủy cho khách hàng trong trường hợp đơn hàng chưa được thực hiện.</li>
+                </ul>
+                <p>&nbsp;</p>
+                <p>- Khách hàng chọn <strong>Giao hàng theo thời gian đã chọn</strong>:</p>
+                <ul>
+                <li>Gọi đến nhà hàng đã chọn hoặc gọi Hotline 9999 9999 để yêu cầu hủy đơn hàng tối thiểu <strong>30 phút</strong> trước thời gian đơn hàng được giao đối với đơn hàng có giá trị dưới 1.000.000VND.</li>
+                <li>Gọi đến nhà hàng đã chọn hoặc gọi Hotline 9999 9999 để yêu cầu hủy đơn hàng tối thiểu <strong>60 phút</strong> trước thời gian đơn hàng được giao đối với đơn hàng có giá trị từ 1.000.000VND trở lên.</li>
+                <li>Nhân viên sẽ kiểm tra trạng thái đơn hàng để tiến hành hủy cho khách hàng trong trường hợp đơn hàng chưa được thực hiện.</li>
+                </ul>
+                <p>&nbsp;</p>
+                <h5>Đối với đơn hàng&nbsp;<strong>ĐẶT ĐẾN LẤY:</strong></h5>
+                <p>&nbsp;</p>
+                <p>- Khách chọn <strong>Đến lấy ngay</strong>:</p>
+                <ul>
+                <li>Gọi đến nhà hàng đã chọn để yêu cầu hủy đơn hàng ngay lập tức hoặc gọi đến Hotline 9999 9999 để được hỗ trợ chuyển thông tin đến nhà hàng.</li>
+                <li>Nhân viên sẽ kiểm tra trạng thái đơn hàng để tiến hành hủy cho khách hàng trong trường hợp đơn hàng chưa được thực hiện.</li>
+                </ul>
+                <p>&nbsp;</p>
+                <p>- Khách chọn <strong>Đến lấy theo thời gian đã chọn</strong>:</p>
+                <ul>
+                <li>Gọi đến nhà hàng đã chọn hoặc gọi Hotline 9999 9999 để yêu cầu hủy đơn hàng tối thiểu <strong>30 phút</strong> trước thời gian đơn hàng được nhận đối với đơn hàng có giá trị dưới 1.000.000VND.</li>
+                <li>Gọi đến nhà hàng đã chọn hoặc gọi Hotline 9999 9999 để yêu cầu hủy đơn hàng tối thiểu <strong>60 phút</strong> trước thời gian đơn hàng được nhận đối với đơn hàng có giá trị từ 1.000.000VND trở lên.</li>
+                <li>Nhân viên sẽ kiểm tra trạng thái đơn hàng để tiến hành hủy cho khách hàng trong trường hợp đơn hàng chưa được thực hiện.</li>
+                </ul>
+                <p>&nbsp;</p>
+                <p>Cách tốt nhất để khách hàng yêu cầu hủy đơn hàng là gọi trực tiếp đến nhà hàng đã chọn. Nếu khách hàng thanh toán trực tuyến bằng ví điện tử MoMo hoặc bằng thẻ tín dụng, thẻ ghi nợ hoặc thẻ ATM qua cổng thanh toán của Sacombank thì số tiền giao dịch của khách hàng sẽ được hoàn trả theo quy định trong Chính sách Thanh toán của Oishii Pizza Việt Nam.</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+<!-- ##-----------PRIVACY-POLICY----------## -->
+        <div class="pPolicy" id="PRPOLICY">
+            <div class="pPolicy__content">
+                    <h3>Chính sách bảo mật</h3>
+                    <hr align="left">
+                    <p>Oishii Pizza Việt Nam (viết tắt là Oishii Pizza) công nhận bảo mật thông tin của các cá nhân cung cấp khi đăng nhập vào www.oishiipizza.vn (viết tắt là website). Chúng tôi tin rằng việc bạn biết được thông tin của mình được bảo mật như thế nào là điều rất quan trọng. Nếu bạn không chấp nhận những điều khoản bảo mật này, bạn vui lòng ngưng sử dụng website ngay lập tức.</p>
+                    <p>Oishii Pizza có thể điều chỉnh chính sách bảo mật này bất cứ khi nào chúng tôi thấy cần thiết, vì vậy vui lòng đăng nhập vào website thường xuyên để cập nhật thông tin mới. Chính sách bảo mật thông tin này có hiệu lực kể từ tháng 10/2017.</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>1.&nbsp;</strong><strong>Các hình thức Oishii Pizza sử dụng để thu thập thông tin khách hàng:</strong>&nbsp;</h5>
+                    </div>
+                    <p>Oishii Pizza có thể thu thập thông tin cá nhân từ khách hàng bao gồm họ tên, địa chỉ, CMND và số điện thoại di động, địa chỉ email, nội dung thẻ tín dụng và bất kỳ thông tin nào khác nếu bạn đồng ý cung cấp cho chúng tôi những thông tin này. Những thông tin này sẽ xuất hiện khi khách hàng:</p>
+                    <p>- Đăng nhập vào website của Oishii Pizza;</p>
+                    <p>- Đăng nhập vào các cuộc thi và chương trình khuyến mãi;</p>
+                    <p>- Tham gia khảo sát theo các chương trình khảo sát của Oishii Pizza và bất kỳ đối tác của Oishii Pizza (nếu có);</p>
+                    <p>- Gửi thư đến cho Oishii Pizza;</p>
+                    <p>- Đăng ký thành viên của Oishii Pizza;</p>
+                    <p>- Phản hồi yêu cầu của khách hàng;</p>
+                    <p>- Đặt bánh pizza tại hệ thống cửa hàng Oishii Pizza trên toàn quốc hoặc trên website của Oishii Pizza;</p>
+                    <p>Nếu Oishii Pizza thu thập thông tin cá nhân của bạn từ người khác, Oishii Pizza sẽ thực hiện các trình tự hợp lý để thông báo đến khách hàng.</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>2.&nbsp;</strong><strong>Mục đích của Oishii Pizza khi sử dụng những thông tin thu thập:</strong></h5>
+                    </div>
+                    <p>Oishii Pizza có thể sử dụng thông tin cá nhân do khách hàng cung cấp và xử lý những thông tin này để cung cấp hàng hóa và dịch vụ cho khách hàng, đồng thời sử dụng chúng để thực hiện các chương trình của Oishii Pizza và/hoặc đối tác của Oishii Pizza miễn là các chương trình này được thực hiện công khai và minh bạch. Thông thường, chúng tôi sẽ sử dụng những thông tin cá nhân này theo cách mà khách hàng mong muốn, bao gồm nhưng không giới hạn, cho bất cứ mục đích nào như sau:</p>
+                    <p>- Quản lý thành viên của website nếu bạn đã đăng ký thành viên</p>
+                    <p>- Cung cấp cho khách hàng bất cứ thông tin gì về công ty mà khách hàng yêu cầu;</p>
+                    <p>- Xử lý quá trình đặt hàng qua website;</p>
+                    <p>- Xác định số lượng khách hàng truy cập vào website;</p>
+                    <p>- Thông báo giải thưởng và việc mua hàng;</p>
+                    <p>- Trả lời những yêu cầu cụ thể của khách hàng;</p>
+                    <p>- Thông báo cho khách hàng biết những thay đổi trên website;</p>
+                    <p>- Quản lý chương trình nghiên cứu tiếp thị;</p>
+                    <p>- Gửi cho khách hàng những chương trình khuyến mãi hoặc những thông tin về sản phẩm và dịch vụ mà chúng tôi xét thấy có lợi cho khách hàng;</p>
+                    <p>Bất kỳ chương trình khác liên quan đến các nội dung trên và/hoặc hỗ trợ, cung cấp các tiện ích khác cho khách hàng thông qua các chương trình của Oishii Pizza và đối tác của Oishii Pizza.</p>
+                    <p>&nbsp;</p>
+                    <p>Những thông tin khác liên quan đến việc sử dụng thông tin cá nhân của khách hàng khi khách hàng sử dụng hệ thống đặt hàng qua mạng của chúng tôi:</p>
+                    <p>Khi khách hàng sử dụng hệ thống đặt hàng qua mạng, khách hàng cần phải trả lời thêm những thông tin yêu cầu nếu khách hàng đặt bánh pizza qua mạng. Những thông tin này giúp cho việc phân phối pizza đến nhà khách hàng một cách dễ dàng, nhanh chóng, chính xác. Hệ thống đặt hàng qua mạng cũng sẽ lưu trữ thông tin về đơn đặt hàng của khách giúp cho khách hàng ghi nhớ và đặt lại thực đơn cho lần mua hàng sau.</p>
+                    <p>&nbsp;</p>
+                    <p>Ngoài ra, Oishii Pizza có quyền sử dụng những thông tin cá nhân thu thập được từ website cho những mục đích khác như sau:</p>
+                    <p>- Thiết lập và xác nhận người sử dụng;</p>
+                    <p>- Mở, duy trì, quản trị và bảo quản các tài khoản của khách hàng hoặc thành viên;</p>
+                    <p>- Xử lý, bảo quản &amp; tôn trọng các thông tin liên lạc;</p>
+                    <p>- Hỗ trợ cho người sử dụng;</p>
+                    <p>- Nâng cấp website, bao gồm việc đáp ứng nhu cầu của người sử dụng;</p>
+                    <p>Cung cấp cho người sử dụng những thông tin cập nhật về sản phẩm và dịch vụ, những chương trình khuyến mãi và những thông tin khác của Oishii Pizza và các tổ chức liên kết;</p>
+                    <p>- Trả lời câu hỏi, ý kiến và những chỉ dẫn của khách hàng;</p>
+                    <p>- Duy trì tính bảo mật &amp; độ an toàn của hệ thống;</p>
+                    <p>- Các hoạt động khác có liên quan đến các hoạt động trên.</p>
+                    <p>&nbsp;</p>
+                    <p>Oishii Pizza sử dụng những chương trình tìm kiếm ẩn để tự động thu thập thông tin từ máy chủ giúp quản trị và nâng cấp website. Oishii Pizza cũng có quyền sử dụng những thông tin được tập hợp lại để cung cấp thông tin của website cho các đối tác kinh doanh và các bên không liên quan khác.</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>3.&nbsp;</strong><strong>Oishii Pizza chia sẻ thông tin với với ai?</strong>&nbsp;</h5>
+                    </div>
+                    <p>Oishii Pizza sẽ không cung cấp bất kỳ thông tin cá nhân nào của khách hàng cho bên thứ ba không liên quan đến Oishii Pizza và không để bất kỳ bên thứ ba này có thể sử dụng những thông tin này tiếp thị trực tiếp đến khách hàng. Oishii Pizza có thể sử dụng các công ty có liên quan để vận hành và bảo trì website hoặc cho những mục đích khác có liên quan đến hoạt động kinh doanh, và những công ty này sẽ nhận thông tin của khách hàng để thực hiện những yêu cầu trên của Oishii Pizza. Oishii Pizza có quyền chia sẻ thông tin cá nhân của khách hàng trong một số trường hợp cơ quan chính phủ có yêu cầu về thông tin, phục vụ mục đích điều tra hoặc những yêu cầu khác theo quy định của pháp luật.&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>Các thông tin cá nhân mà khách hàng đã đăng ký trên website có thể được chia sẻ cho bên thứ ba của Oishii Pizza:</p>
+                    <p>- Những nhà cung cấp do chúng tôi thuê để cung cấp một số dịch vụ như gửi thư đến cho khách hàng;</p>
+                    <p>- Để đáp ứng mục đích của khách hàng khi đăng ký thông tin cá nhân;</p>
+                    <p>- Nếu khách hàng đồng ý chia sẻ những thông tin cá nhân này;</p>
+                    <p>- Nếu chính quyền yêu cầu chia sẻ những thông tin cá nhân này;</p>
+                    <p>- Nếu thông tin cá nhân của khách hàng do đơn vị tiếp thị thu thập thì sẽ được cung cấp cho đơn vị tiếp thị này với mục đích nghiên cứu &amp; tiếp thị;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>4.&nbsp;Những thông tin không thuộc về cá nhân</strong></h5>
+                    </div>
+                    <p>Khi khách hàng truy cập vào website của Oishii Pizza, giống như hầu hết các website khác, những thông tin phản ảnh lượt truy cập của khách hàng sẽ tự động được nhập vào, bao gồm những thông tin về loại công cụ tìm kiếm mà khách hàng sử dụng, tên máy chủ và địa chỉ IP mà khách hàng truy cập, ngày giờ truy cập, những trang mà khách hàng truy cập cùng lúc với website, địa chỉ của website, nếu có, từ những trang liên kết trực tiếp với website của Oishii Pizza.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>5.&nbsp;Làm thế nào để chỉnh sửa/cập nhật thông tin cá nhân?</strong></h5>
+                    </div>
+                    <p>Oishii Pizza sẽ thực hiện các bước cần thiết để bảo đảm thông tin cá nhân được thu thập chính xác, hoàn chỉnh và cập nhật nhất.</p>
+                    <p>Khách hàng có thể truy cập và yêu cầu chỉnh sửa thông tin cá nhân vào bất cứ lúc nào. Khách hàng cũng có quyền yêu cầu hủy bỏ thông tin cá nhân của mình bất cứ lúc nào.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>6.&nbsp;Clickstream data</strong></h5>
+                    </div>
+                    <p>Mỗi khi khách hàng truy cập vào website của Oishii Pizza, máy chủ của chúng tôi sẽ thu thập một số thông tin ẩn, bao gồm loại công cụ tìm kiếm và hệ thống mà khách hàng đang sử dụng, địa chỉ của trang mà khách hàng truy cập và xóa bỏ sau khi truy cập, ngày giờ truy cập và địa chỉ IP của máy chủ mà khách hàng đang sử dụng.</p>
+                    <p>Oishii Pizza thu thập những thông tin này với mục đích thống kê xem website được sử dụng như thế nào bao gồm số lượng truy cập, truy cập thường xuyên hay không và truy cập trong bao lâu, thời gian nào truy cập nhiều nhất. Oishii Pizza sẽ sử dụng những thông tin này để đánh giá và nâng cấp website.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>7.&nbsp;Phạm vi sử dụng thông tin</strong></h5>
+                    </div>
+                    <p>Chúng tôi sẽ không thuê, bán hoặc tiết lộ Thông tin cá nhân của Quý khách cho bất kỳ bên thứ ba nào mà không liên quan đến Oishii Pizza, trừ những điều được nêu trong Chính sách bảo vệ thông tin cá nhân người tiêu dùng này.</p>
+                    <p>Các thông tin khuyến mại hoặc các tin tức về sản phẩm/ hàng hóa được chúng tôi cung cấp trên trang web sẽ chỉ được gửi khi có sự đồng ý của khách hàng, theo các thông tin cá nhân khách hàng đã cung cấp (bao gồm cả email, số điện thoại, địa chỉ v.v.).</p>
+                    <p>&nbsp;</p>
+                    <p><strong>Liên hệ</strong></p>
+                    <p>Địa chỉ văn phòng: Toà nhà Lottery Tower, Tầng 10, 77 Trần Nhân Tôn, P.9, Q.5, TP.HCM&nbsp;</p>
+                    <p>Hotline: 9999 9999(*)</p>
+                    <p>*Phí gọi Hotline: 1.000vnđ/phút</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <h3><strong>Điều kiện Truy cập Wifi</strong></h3>
+                    <hr align="left">
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>1. Phạm vi sử dụng thông tin người dùng</strong></h5>
+                    </div>
+                    <p dir="ltr">Người dùng đồng ý rằng Oishii Pizza Việt Nam có thể sử dụng thông tin về Người dùng (bao gồm số điện thoại và/hoặc email) mà Oishii Pizza Việt Nam thu thập được từ việc Người dùng đồng ý sử dụng Tiện ích Wifi với các điều khoản và điều kiện tại đây, bao gồm:&nbsp;</p>
+                    <p dir="ltr">- Xử lý các giao dịch mua sản phẩm và sử dụng dịch vụ của Người dùng;</p>
+                    <p dir="ltr">- Giao phiếu quà tặng hoặc quà tặng trực tuyến theo chỉ dẫn của Người dùng;</p>
+                    <p dir="ltr">- Liên lạc với Người dùng về đơn đặt hàng, giao dịch mua hàng, hoàn trả hàng, tài khoản, các chương trình;</p>
+                    <p dir="ltr">- Trả lời các thắc mắc về dịch vụ khách hàng và yêu cầu về thông tin của Người dùng;</p>
+                    <p dir="ltr">- Gửi cho Người dùng các chương trình khuyến mại, quảng cáo, bản tin và các lời đề nghị đặc biệt được cá nhân hóa;</p>
+                    <p dir="ltr">- Thông báo cho Người dùng về các sản phẩm, các dịch vụ, các cuộc thi, rút thăm trúng thưởng, sự kiện hoặc chương trình khuyến mại khác của Oishii Pizza Việt Nam;</p>
+                    <p dir="ltr">- Chia sẻ thông tin của Người dùng với Tập đoàn quản lý của Oishii Pizza Việt Nam; các nhà cung cấp mà họ cung cấp cho Oishii Pizza Việt Nam các dịch vụ hỗ trợ, hiển thị quảng cáo khi họ đang thực hiện công việc cho Oishii Pizza Việt Nam hoặc khi việc tiết lộ thông tin của Người dùng được yêu cầu theo pháp luật;&nbsp;</p>
+                    <p dir="ltr">- Chia sẻ thông tin của Người dùng theo cách mà không trực tiếp nhận dạng Người dùng;</p>
+                    <p dir="ltr">- Phát hiện, ngăn chặn và điều tra vi phạm an ninh và gian lận;&nbsp;</p>
+                    <p dir="ltr">- Duy trì hồ sơ lưu trữ chính xác và phù hợp cho mục đích quản lý nội bộ.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>2. Điều kiện sử dụng Tiện ích Wifi</strong></h5>
+                    </div>
+                    <p>Phạm vi sử dụng của Người dùng:&nbsp;</p>
+                    <ul>
+                    <li dir="ltr">
+                    <p dir="ltr">Phạm vi sử dụng của Người dùng: và phù hợp cho mục đích quản lý nội bộ kỳ thông tin nhận dạng cá nhân “nhạy cảm” nào về chính Người dùng hoặc một người khác (bao gồm, nhưng không giới hạn đối với, thông tin liên quan đến tình trạng sức khỏe hoặc bệnh lý, số an sinh xã hội, thẻ tín dụng, tài khoản ngân hàng hoặc thông tin tài chính khác, thông tin khác liên quan đến thành viên hiệp hội thương mại, đời sống tình dục, quan điểm chính trị, cáo buộc hoặc kết án hình sự, tín ngưỡng tôn giáo, nguồn gốc chủng tộc hoặc dân tộc hay các vấn đề nhạy cảm khác), trừ khi được yêu cầu cụ thể bởi Oishii Pizza Việt Nam;</p>
+                    </li>
+                    <li dir="ltr">
+                    <p dir="ltr">Bất hợp pháp, bôi nhọ, phỉ báng, tục tĩu, khiêu dâm, khiếm nhã, dâm dục, khiêu gợi, quấy rối, đe dọa, xâm phạm quyền riêng tư hoặc quyền quảng cáo, lạm dụng, khích động, gian lận, phản đối khác hoặc đe dọa đến mối quan hệ của Oishii Pizza Việt Nam với nhân viên, đối tác, khách hàng hoặc nhà cung cấp của Oishii Pizza Việt Nam;&nbsp;</p>
+                    </li>
+                    <li dir="ltr">
+                    <p dir="ltr">Có thể vi phạm bất kỳ bằng sáng chế, thương hiệu, bí mật thương mại, bản quyền hoặc quyền sở hữu trí tuệ nào khác của bất kỳ bên nào;</p>
+                    </li>
+                    <li dir="ltr">
+                    <p dir="ltr">Mạo danh bất kỳ cá nhân hay pháp nhân nào hoặc xuyên tạc danh tính hoặc mối quan hệ liên kết của Người dùng với cá nhân hoặc pháp nhân khác;</p>
+                    </li>
+                    <li dir="ltr">
+                    <p dir="ltr">Thư rác, thông báo tiếp thị trực tiếp hoặc bất kỳ tài liệu quảng cáo, khuyến mại không mong muốn nào hoặc các hình thức mời chào hoặc nội dung thương mại khác;</p>
+                    </li>
+                    <li dir="ltr">
+                    <p dir="ltr">Cấu thành, khuyến khích hoặc cung cấp hướng dẫn về tội phạm hình sự, vi phạm các quyền của bất kỳ bên nào hoặc tạo ra trách nhiệm pháp lý hoặc vi phạm bất kỳ luật địa phương, tiểu bang, quốc gia hoặc quốc tế hiện hành nào;</p>
+                    </li>
+                    <li dir="ltr">
+                    <p dir="ltr">Vi-rút, phần mềm độc hại, Trojan Horses, Easter Eggs hoặc bất kỳ tệp gây hại, phá hủy hoặc phá hoại nào khác;</p>
+                    </li>
+                    <li dir="ltr">
+                    <p dir="ltr">Theo quyết định riêng của Oishii Pizza Việt Nam, mang tính phản đối, hạn chế hoặc cấm bất kỳ người nào khác sử dụng hoặc xem Trang web hoặc hủy hoại hình ảnh hoặc quyền của Oishii Pizza Việt Nam, Người dùng hoặc các bên thứ ba khác.</p>
+                    </li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p dir="ltr">Người dùng đồng ý rằng Oishii Pizza Việt Nam không kiểm soát, chịu trách nhiệm hoặc thừa nhận trách nhiệm pháp lý đối với bất kỳ Nội dung nào được đăng, lưu trữ hoặc tải lên bởi Người dùng hoặc bất kỳ bên thứ ba nào hoặc về bất kỳ mất mát hoặc thiệt hại nào theo đó. Oishii Pizza Việt Nam cũng không chịu trách nhiệm pháp lý đối với mọi hành vi của Người dùng hoặc bất kỳ nhầm lẫn, nội dung phỉ báng, vu khống, bôi nhọ, thiếu sót, lừa dối, tục tĩu, khiêu dâm hoặc báng bổ nào mà Người dùng có thể gặp phải. Người dùng hiểu rằng thông tin và nội dung nhất định Người dùng chọn đăng có thể được hiển thị công khai. Người dùng hoàn toàn chịu trách nhiệm về việc sử dụng Tiện ích Wifi của mình.</p>
+                    <p>&nbsp;</p>
+                    <p dir="ltr">Nếu Người dùng nhận thấy Nội dung mà Người dùng cho là vi phạm các Điều khoản và Điều kiện này, Người dùng có thể báo cáo cho Oishii Pizza Việt Nam theo thông tin dưới đây:</p>
+                    <p>&nbsp;</p>
+                    <p dir="ltr"><strong>Công ty Cổ Phần Oishii Pizza</strong></p>
+                    <p dir="ltr">Địa chỉ văn phòng: Công ty Cổ phần Oishii Pizza 77 Trần Nhân Tôn, Phường 92, Quận Cam, Thành phố Hồ Chí Minh&nbsp;</p>
+                    <p dir="ltr">Hotline đặt hàng: 9999 9999 (9:30 - 21:30 mỗi ngày)</p>
+                    <p dir="ltr">*Cước phí: 1.000VND/phút</p>
+                    <p dir="ltr">Hotline CSKH: 9999 633 606 (9:30 - 21:30 mỗi ngày)</p>
+                    <p dir="ltr">*Cước phí: 1.000VND/phút</p>
+                    <p dir="ltr">Email: <a href="mailto:oishiipizza@gmail.com">oishiipizza@gmail.com</a></p>
+                    <p>&nbsp;</p>
+                    <p dir="ltr">Tuy nhiên, việc thực thi các Điều khoản Sử dụng này là quyết định riêng của Oishii Pizza Việt Nam và việc không thực thi trong một số trường hợp không có nghĩa là Oishii Pizza Việt Nam khước từ quyền thực thi Điều khoản và Điều kiện này trong các trường hợp khác.&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p dir="ltr">Mặc dù Oishii Pizza Việt Nam không có nghĩa vụ phải lọc, chỉnh sửa hoặc giám sát bất kỳ Nội dung nào được đăng thông qua tiện ích Wifi, nhưng Oishii Pizza Việt Nam có quyền quyết định tuyệt đối về việc xóa, lọc hoặc chỉnh sửa bất kỳ Nội dung nào thông qua Tiện ích Wifi vào bất cứ lúc nào và vì bất kỳ lý do gì mà không cần thông báo. Người dùng hoàn toàn chịu trách nhiệm về việc tạo bản sao lưu và thay thế bất kỳ Nội dung nào mà Người dùng đăng hoặc lưu trữ trên Tiện ích Wifi với chi phí và phí tổn của riêng Người dùng.</p>
+                    <p>&nbsp;</p>
+                    <p dir="ltr">Nếu Người dùng đang sử dụng Tiện ích Wifi trên máy tính công cộng hoặc đang sử dụng máy tính nhiều người có quyền truy cập tiềm ẩn, hãy chắc chắn làm theo tất cả hướng dẫn liên quan để đảm bảo Người dùng hoàn toàn ngắt kết nối và đăng xuất khỏi Tiện ích Wifi cũng như hệ thống máy tính Người dùng đang sử dụng để ngăn Nội dung trái phép.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>3. Sửa đổi Tiện ích Wifi</strong></h5>
+                    </div>
+                    <p dir="ltr">Oishii Pizza Việt Nam giữ quyền sửa đổi hoặc ngừng, tạm thời hoặc vĩnh viễn Tiện ích Wifi hay bất kỳ tính năng hoặc phần nào trong của Tiện ích Wifi mà không cần thông báo trước. Người dùng đồng ý rằng Oishii Pizza Việt Nam sẽ không chịu trách nhiệm pháp lý về mọi sửa đổi, tạm ngừng hoặc ngừng Tiện ích Wifi hay bất kỳ phần nào tại Tiện ích Wifi.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div id="ph-title" class="page-title custom-page-title-left">
+                    <h5><strong>4. Oishii Pizza Việt Nam</strong></h5>
+                    </div>
+                    <p dir="ltr">Bất kể mọi điều trong Điều khoản và Điều kiện này, Oishii Pizza Việt Nam giữ quyền, mà không cần thông báo trước và theo quyết định riêng của mình, về việc chấm dứt giấy phép sử dụng Tiện ích Wifi của Người dùng, chặn hoặc ngăn quyền truy cập, sử dụng Tiện ích Wifi trong tương lai của Người dùng.&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+            </div>
+        </div>
+<!-- ##-----------TERMS AND CONDITIONS----## -->
+        <div class="tac" id="TAC">
+            <div class="tac__content">
+                <p><strong>NHỮNG ĐIỀU KHOẢN VÀ ĐIỀU KIỆN NÀY ĐƯỢC ÁP DỤNG ĐỐI VỚI TRANG ĐIỆN TỬ&nbsp;<a href="#">WWW.OISHIIPIZZA.VN</a>&nbsp;(VIẾT TẮT LÀ WEBSITE). VUI LÒNG ĐỌC KỸ NỘI DUNG NÀY. NẾU BẠN KHÔNG MUỐN BỊ RÀNG BUỘC BỞI NHỮNG ĐIỀU KHOẢN VÀ ĐIỀU KIỆN NÀY, VUI LÒNG CHẤM DỨT VIỆC TRUY CẬP WEBSITE CỦA CHÚNG TÔI. VIỆC TRUY CẬP WEBSITE ĐỒNG NGHĨA VỚI VIỆC BẠN ĐÃ CHẤP THUẬN NHỮNG ĐIỀU KHOẢN VÀ ĐIỀU KIỆN NÀY.</strong></p>
+                <p>&nbsp;</p>
+                <h4><strong>I. TỔNG QUAN</strong></h4>
+                <p><strong>&nbsp;</strong></p>
+                <p>Công ty CP Oishii Pizza (“Oishii Pizza Việt Nam”) có quyền thay đổi các điều khoản &amp; điều kiện này bất cứ lúc nào mà không cần thông báo trước với khách hàng. Khách hàng có thể xem phiên bản cập nhật mới nhất của các điều khoản và điều kiện này bằng cách nhấp chuột vào "Điều khoản &amp; điều kiện sử dụng Website" đặt tại cuối trang web của Oishii Pizza Việt Nam. Phiên bản cập nhật này sẽ thay thế tất cả các phiên bản cũ. Nếu khách hàng sử dụng Website của Oishii Pizza Việt Nam sau khi xuất hiện những thay đổi này có nghĩa là khách hàng đã đồng ý với những thay đổi này.</p>
+                <p>&nbsp;</p>
+                <h4><strong>II. CHẤP THUẬN CỦA KHÁCH HÀNG</strong></h4>
+                <p>&nbsp;</p>
+                <p>Khi truy cập hoặc đăng nhập vào Website này có nghĩa là khách hàng đã đồng ý với các điều khoản và điều kiện này. Nếu khách hàng không đồng ý với bất kỳ điều khoản nào dưới đây, vui lòng không truy cập vào Website của Oishii Pizza Việt Nam.</p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>1.&nbsp;Website của Oishii Pizza Việt Nam</strong></h5>
+                <p>&nbsp;</p>
+                <p>Những điều khoản &amp; điều kiện này áp dụng cho tất cả khách hàng sử dụng Website của Oishii Pizza Việt Nam, bao gồm cả các nhà phân phối nội dung video, thông tin và những dịch vụ khác của Website. Website này có thể chứa những liên kết đến Website của bên thứ ba không thuộc sở hữu của Oishii Pizza bao gồm nhưng không giới hạn đến các đối tác của Oishii Pizza và/hoặc các bên thứ ba có liên quan đến Oishii Pizza. Để tránh hiểu nhầm, khách hàng đồng ý rằng khi khách hàng truy cập vào bất kỳ các Website liên kết với Oishii Pizza thì Oishii Pizza sẽ được miễn trừ trách nhiệm trong việc kiểm soát nội dung, chính sách bảo mật thông tin hoặc những phần khác trong các Website của bên thứ ba mà khách hàng truy cập vào. Hơn nữa, Oishii Pizza sẽ không thể kiểm duyệt hoặc biên tập lại nội dung trên các Website của bên thứ ba. Vì vậy, chúng tôi khuyến khích khách hàng đọc kỹ các điều khoản, điều kiện và chính sách bảo mật thông tin của các Website của bên thứ ba mà bạn truy cập.</p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>2.&nbsp;Truy cập vào website của Oishii Pizza Việt Nam (“Website”)</strong></h5>
+                <p>&nbsp;</p>
+                <p>a. Oishii Pizza chấp thuận cho bạn sử dụng Website như đã công bố trong điều khoản sử dụng dịch vụ, bao gồm: (i) sử dụng Website cho mục đích cá nhân, phi thương mại; (ii) khách hàng không được phép sao chép hoặc cung cấp bất cứ thông tin nào của Website này cho bất kỳ tổ chức, cá nhân nào mà không thông báo trước bằng văn bản cho Oishii Pizza cũng như không có sự đồng ý trước bằng văn bản của Oishii Pizza; (iii) khách hàng không được phép thay đổi và chỉnh sửa bất cứ phần nào của Website này; (iv) khách hàng phải tuân theo điều khoản và điều kiện sử dụng dịch vụ.</p>
+                <p>&nbsp;</p>
+                <p>b. Để truy cập vào một số tính năng của Website, khách hàng phải tạo một tài khoản cho riêng mình. Khách hàng không được phép sử dụng tài khoản của người khác nếu không được sự đồng ý của chủ tài khoản. Khi tạo tài khoản, khách hàng phải cung cấp thông tin đầy đủ và chính xác. Khách hàng cam kết truy cập, sử dụng và tự chịu trách nhiệm cho tất cả các hoạt động xảy ra trong tài khoản của mình, và khách hàng phải giữ mật mã tài khoản an toàn. Khách hàng phải lập tức thông báo cho Oishii Pizza nếu có bất cứ vi phạm nào về độ an toàn hoặc sử dụng tài khoản mà không có sự đồng ý của chủ tài khoản. Mặc dù Oishii Pizza không chịu trách nhiệm pháp lý cho bất cứ những mất mát nào liên quan đến việc sử dụng tài khoản của khách hàng một cách bất hợp pháp, khách hàng phải chịu trách nhiệm cho những mất mát của Oishii Pizza hoặc những mất mát do sử dụng bất hợp pháp.</p>
+                <p>&nbsp;</p>
+                <p>c. Khách hàng đồng ý không sử dụng bất cứ hệ thống tự động nào, bao gồm nhưng không giới hạn, người máy, gián điệp...để truy cập vào Website và gửi nhiều thông tin yêu cầu đến máy chủ của Oishii Pizza nhiều hơn một người bình thường có thể làm được bằng việc sử dụng Website thông thường trong một khoản thời gian nhất định. Khách hàng đồng ý không thu thập bất cứ thông tin cá nhân nào từ Website, bao gồm tên tài khoản, và cũng không sử dụng những hệ thống truyền thông do Website cung cấp cho mục đích thương mại nào. Khách hàng đồng ý không van nài, với mục đích thương mại, bất kỳ người sử dụng nào của Website để yêu cầu đăng ký thông tin.</p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>3.&nbsp;Đăng ký thông tin của người sử dụng</strong></h5>
+                <p>&nbsp;</p>
+                <p>a. Website của Oishii Pizza Việt Nam cho phép đăng ký thông tin cá nhân. Khách hàng nên hiểu rằng những thông tin đăng ký này có được công bố hay không, Oishii Pizza cũng không đảm bảo rằng sẽ bảo mật thông tin cho bất cứ phần đăng ký nào. Khách hàng phải đồng ý với việc Oishii Pizza có thể công bố tên của khách hàng và phần đăng ký thông tin trên Website hoặc trong những phần thông cáo báo chí hoặc trong các phương tiện truyền thông khác, hoặc nếu chính quyền yêu cầu chia sẻ những thông tin cá nhân này.</p>
+                <p>&nbsp;</p>
+                <p>b. Khách hàng sẽ đơn phương chịu trách nhiệm cho phần đăng ký thông tin cá nhân của mình và tầm quan trọng của việc công bố những thông tin này. Để kết nối với phần đăng nhập thông tin, khách hàng xác nhận &amp; cam kết rằng: (i) khách hàng có quyền sở hữu hoặc có những giấy phép cần thiết, chấp thuận và cho phép Oishii Pizza sử dụng tất cả các bằng sáng chế, thương hiệu, bản quyền, nhãn hiệu đã đăng ký bản quyền và tất cả các quyền lợi độc quyền khác trong tất cả các phần đăng ký thông tin và (ii) khách hàng có văn bản chấp thuận, biên nhận, và sự đồng ý của mỗi cá nhân đăng ký thông tin trong phần đăng ký được sử dụng tên hoặc chân dung cá nhân và những phần đăng ký này mặc nhiên trở thành tài sản của Oishii Pizza Việt Nam. Oishii Pizza có thể tự do sử dụng những phần đăng ký thông tin này. Để rõ ràng hơn, khách hàng có thể giữ quyền sở hữu cá nhân trong các phần đăng ký thông tin. Tuy nhiên, khi đăng ký thông tin của mình trên Website, khách hàng đồng ý rằng Oishii Pizza được toàn quyền sử dụng những thông tin cá nhân này và Oishii Pizza Việt Nam có quyền sử dụng những thông tin này cho mục đích quảng cáo trên Website &amp; các kênh truyền thông khác.</p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>4.&nbsp;Bồi thường</strong></h5>
+                <p>&nbsp;</p>
+                <p>Khách hàng đồng ý bảo vệ, bồi thường và không gây hại cho Oishii Pizza, công ty mẹ, nhân viên chi nhánh, ban giám đốc, người làm thuê và các đại lý dựa trên toàn bộ/bất cứ các yêu sách, thiệt hại, mất mát, nghĩa vụ, chi phí hoặc nợ (bao gồm nhưng không giới hạn phí công chứng) phát sinh do: (i) khách hàng truy cập &amp; sử dụng Website của Oishii Pizza, (ii) khách hàng vi phạm bất cứ điều khoản nào trong phần điều khoản sử dụng dịch vụ này, (iii) khách hàng vi phạm quyền lợi của bất kỳ bên thứ ba nào, bao gồm nhưng không giới hạn tác quyền, tài sản, hoặc là quyền cá nhân, (iv) bất cứ các yêu sách nào từ phần đăng ký thông tin cá nhân gây thiệt hại cho bên thứ ba. Trách nhiệm về bồi thường sẽ được áp dụng xuyên suốt trong các điều khoản sử dụng cũng như việc truy cập vào Website của chúng tôi.</p>
+                <p>&nbsp;</p>
+                <h5 style="padding-left: 30px;"><strong>5.&nbsp;Tài sản trí tuệ của Oishii Pizza</strong></h5>
+                <p>&nbsp;</p>
+                <p>Website này chứa nhiều bản quyền thương hiệu có giá trị do Oishii Pizza Việt Nam và các chi nhánh, thành viên sở hữu và sử dụng. Những bản quyền thương hiệu này được sử dụng để phân biệt các chất lượng sản phẩm và dịch vụ của Oishii Pizza. Những bản quyền thương hiệu này và các tài sản có liên quan được bảo vệ để tránh không được tái sản xuất và giả mạo theo luật quốc gia và luật quốc tế và không được sao chép dưới bất kỳ hình thức nào nếu không được sự đồng ý bằng văn bản của Oishii Pizza Việt Nam.</p>
+                <p>&nbsp;</p>
+                <p>Văn bản, hình ảnh minh họa, mã html có trong Website này sẽ không được sao chép, phân phối, trưng bày, tái sản xuất và truyền tải dưới bất kỳ hình thức nào hoặc phương tiện nào mà không được sự đồng ý trước bằng văn bản của Oishii Pizza Việt Nam.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+<!-- ####################################### -->
+<!-- ##-----------FOOTER------------------## -->
         <div class="footer">
 
             <div class="footer__logo">
@@ -250,11 +1176,11 @@
                 <div>
                     <h5>Giới thiệu</h5>
                     <ul>
-                        <li><a href="./restaurant-system.html">Hệ thống và nhà hàng</a></li>
-                        <li>Câu chuyện thương hiệu</li>
-                        <li>Ưu đãi thành viên</li>
-                        <li>Tin tức & sự kiện</li>
-                        <li>Tuyển dụng</li>
+                        <li id="nav__LOCATION">Hệ thống và nhà hàng</li>
+                        <li id="nav__BRANDSTORY">Câu chuyện thương hiệu</li>
+                        <li id="nav__MEMBER">Ưu đãi thành viên</li>
+                        <li id="nav__NEWS">Tin tức & sự kiện</li>
+                        <li id="nav__RECRUITMENT">Tuyển dụng</li>
                     </ul>
                 </div>
                 <div>
@@ -270,11 +1196,11 @@
                 <div>
                     <h5>Liên hệ</h5>
                     <ul>
-                        <li><a href="./contact.html">Liên hệ</a></li>
-                        <li>Hướng dẫn mua hàng</li>
-                        <li><a href="./deliverypolicy.html"></a>Chính sách giao hàng</li>
-                        <li><a href="./privacypolicy.html"></a>Chính sách bảo mật</li>
-                        <li><a href="./tac.html"></a>Điều khoản và điều kiện</li>
+                        <li id="nav__CONTACT">Liên hệ</li>
+                        <li id="nav__X">Hướng dẫn mua hàng</li>
+                        <li id="nav__DEPOLICY">Chính sách giao hàng</li>
+                        <li id="nav__PRPOLICY">Chính sách bảo mật</li>
+                        <li id="nav__TAC">Điều khoản và điều kiện</li>
                     </ul>
                 </div>
                 <div>
@@ -313,7 +1239,7 @@
                 </div>
             </div>
         </div>
-<!-- ##----------------PRODUCT-OVERVIEW---------------##- -->
+<!-- ##-----------PRODUCT-OVERVIEW--------## -->
         <div class="product-overview" id="popup">
 
             <div class="product-overview__container">
@@ -389,11 +1315,12 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 <!-- #########################_SCRIPT_##############################- -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./assets/js/local-data.js"></script>
 <script src="./assets/js/main.js"></script>
+<SCript src="./assets/js/account.js"></SCript>
 </body>
 </html>
