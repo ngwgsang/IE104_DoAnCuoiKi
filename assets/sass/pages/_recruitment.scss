@@ -5,16 +5,15 @@
     &__content{
         &__box{
             width: 100%;
-            height: 40%;
-            padding: 2rem;
+            height: 16rem;
             background: $cl-3;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 2rem auto;
             p{
                 color: $cl-f;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
+                display: block;
             }
         }
         &__form{

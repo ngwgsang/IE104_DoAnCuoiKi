@@ -77,13 +77,13 @@ const product = [
     {
         name: 'Salad Gà Giòn Không Xương',
         description: 'Salad Gà giòn với trứng cút, thịt xông khói, phô mai parmesan và sốt Thousand Island',
-        price: '99.000VNĐ',
+        price: '79.000VNĐ',
         pic: './assets/images/salad/salad-1.png'
     },
     {
         name: 'Salad Da Cá Hồi Giòn',
         description: 'Salad với da cá hồi giòn với bắp cải đỏ, cà chua bi, ngô với sốt Yuzu',
-        price: '99.000VNĐ',
+        price: '79.000VNĐ',
         pic: './assets/images/salad/salad-2.png'
     },
 //# FRIED
@@ -110,5 +110,61 @@ const product = [
         description: 'Cánh gà được phủ bởi một lớp bột chiên giòn cay',
         price: '99.000VNĐ',
         pic: './assets/images/fried/fr-4.png'
+    },
+//# DRINK
+    {
+        name: 'Seven Up',
+        description: 'Seven up vị nguyên bản',
+        price: '22.000',
+        pic: './assets/images/drink/d-1.png'
+    },
+    {
+        name: 'Mirinda vị Soda Kem',
+        description: 'Mirinda vị Soda kem ngon xoắn lưỡi',
+        price: '22.000',
+        pic: './assets/images/drink/d-2.png'
+    },
+    {
+        name: 'Pepsi vị chanh không calo',
+        description: 'Pepsi phiên bản vị chanh không calo',
+        price: '22.000',
+        pic: './assets/images/drink/d-3.png'
+    },
+    {
+        name: 'Pepsi không calo',
+        description: 'Pepsi phiên bản không calo',
+        price: '22.000',
+        pic: './assets/images/drink/d-4.png'
+    },
+    {
+        name: 'Trà Lipton vị chanh',
+        description: 'Trà đen vị chanh từ thương hiệu Lipton',
+        price: '22.000',
+        pic: './assets/images/drink/d-5.png'
+    },
+    {
+        name: 'Pepsi',
+        description: 'Pepsi vị nguyên bản',
+        price: '22.000',
+        pic: './assets/images/drink/d-6.png'
+    },
+//# DRINK
+    {
+        name: 'Combo Tri Ân',
+        description: '1 Pizza Hải Sản + 1 Salad Gà Giòn Không Xương + 1 Gà Zòn Zòn',
+        price: '269.000',
+        pic: './assets/images/combo/combo-1.png'
+    },
+    {
+        name: 'Combo Đồng Hành',
+        description: '1 Pizza Thịt Nguội Kiểu Canada + 1 Salad Da Cá Hồi Giòn + 1 Gà Zòn Zòn',
+        price: '269.000',
+        pic: './assets/images/combo/combo-2.png'
+    },
+    {
+        name: 'Combo Gắn Kết',
+        description: '1 Pizza Thịt Nguội Kiểu Canada + 1 Salad Da Cá Hồi Giòn + 1 Mì Ý Sốt Chay Marinara',
+        price: '269.000',
+        pic: './assets/images/combo/combo-3.png'
     },
 ]
