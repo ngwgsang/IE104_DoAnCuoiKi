@@ -88,8 +88,10 @@ hideAllPage(document.getElementById('MENU'))
 document.getElementById('nav__PROMOTION').addEventListener('click', ()=>{
 hideAllPage(document.getElementById('PROMOTION'))
 });
-document.getElementById('nav__LOGIN').addEventListener('click', ()=>{
-hideAllPage(document.getElementById('LOGIN'))
+document.querySelectorAll('.nav__LOGIN').forEach((e) =>{
+e.addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('LOGIN'))
+  });
 });
 document.getElementById('nav__SIGNUP').addEventListener('click', ()=>{
 hideAllPage(document.getElementById('SIGNUP'))

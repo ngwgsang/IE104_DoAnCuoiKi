@@ -2282,7 +2282,7 @@ p {
   color: #8B8C9B;
 }
 
-.signup__box .signup__form__group1 p #nav__LOGIN {
+.signup__box .signup__form__group1 p .nav__LOGIN {
   cursor: pointer;
   color: #FD514D;
 }
