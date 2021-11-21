@@ -1,6 +1,6 @@
 .signup{
     width: 100%;
-    padding: 10% 30%;
+    padding: 10% 15%;
     background-color: #060823;
     font-family: 'Pacifico', cursive;
     display: flex;
@@ -10,21 +10,12 @@
     margin: 0 auto;   
     animation: slideInFromLeft 1s ease-out;
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: $cl-4;
     padding: 2rem;
-    .signup__logo__img{
-        position: relative;
-        width: 37.5rem;
-        height: 26.875rem;
-        object-fit:cover;
-        object-position: -18.75rem 1.875rem;
-        margin-left: 6.25rem;
-        z-index: 1;
-    }
     form{
         position: relative;
-        margin-top: 4.375rem;
         width:  28.125rem;
         z-index: 2;
         line-height: 1.5;
@@ -38,7 +29,7 @@
         input{
         padding: 0.313rem;
         font-size: 0.938rem;
-        width: 80%;
+        width: 100%;
         }
         button{
             background-color: $cl-2;
@@ -53,6 +44,8 @@
     }
 
     .signup__form__group1 {
+        @include h3;
+        @include hr;
         h1{
         color: $cl-f;
         }
@@ -60,12 +53,16 @@
             span{
                color: #8B8C9B; 
             }
-            a{
+            #nav__LOGIN{
+                cursor: pointer;
                 color: $cl-1;
             }
         }
     }
-    .signup__form__group4{
+    .signup__form__group7{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
         button{
             background-color: $cl-2;
             color: $cl-0;
@@ -75,10 +72,11 @@
             cursor: pointer;
             font-weight: bold;
             display: block;
-            margin: 1.25rem 8.125rem;
+            width: 7rem;
         }
     }
-    .signup__form__group5{
+    .signup__form__group8{
+        margin-top: 1rem;
         p{
             color: $cl-f;
             text-align: center;
@@ -91,11 +89,11 @@
         height: 0.013rem;
         position: relative;
         vertical-align: middle;
-        width: 35%;
+        width: 30%;
         }
         p:before {
             right: 1rem;
-            margin-left: -70%;
+            margin-left: -50%;
         }
 
         p:after {
@@ -103,10 +101,11 @@
             margin-right: -50%;
         }
     }
-    .signup__form__group6{
+    .signup__form__group9{
+        margin-top: 1rem;
         display: flex;
-        justify-content: space-between;
-        margin-right: 5rem;
+        justify-content: center;
+        gap: 2rem;
         button{
             background-color: white;
             padding-top:0;
