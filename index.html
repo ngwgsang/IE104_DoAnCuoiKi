@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/images/fav-icon.png"/>
     <link rel="stylesheet" href="./assets/sass/style.css">
+    <script src="https://kit.fontawesome.com/839ef5c490.js" crossorigin="anonymous"></script>
     <title>Oishii Pizza</title>
 </head>
 <body>
@@ -422,24 +423,53 @@
                             <a class="menu__nav__searchbar__controls" href="#">Giao hàng tận nơi</a>
                             <a class="menu__nav__searchbar__controls" href="#">Lấy tại chỗ</a>
                         </div>
-                        <div class="menu__nav__seachbar__group">
+                        <div class="menu__nav__searchbar__group">
                             <input class="menu__nav__searchbar__controls" type="text" placeholder="Vui lòng đặt địa chỉ nhận hàng">
                             <a class="menu__nav__searchbar__controls" href="#"><i class="fas fa-search fa-3x"></i></a>
                         </div>
                     </div>
                     <div class="menu__nav__navbar">
                         <ul>
-                            <li><a href="#">Khuyến mãi</a></li>
-                            <li><a href="#">Pizza</a></li>
-                            <li><a href="#">Mỳ Ý</a></li>
-                            <li><a href="#">Gà rán</a></li>
-                            <li><a href="#">Tráng miệng</a></li>
-                            <li><a href="#">Nước uống</a></li>
+                            <li><span id="promo_nav">Khuyến mãi</span></li>
+                            <li><span id="pizza_nav">Pizza</span></li>
+                            <li><span id="pasta_nav">Mỳ Ý</span></li>
+                            <li><span id="chicken_nav">Gà rán</span></li>
+                            <li><span id="dessert_nav">Tráng miệng</span></li>
+                            <li><span id="drink_nav">Nước uống</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="menu__items">
-
+                    <div class="menu_item">
+                        <ul id="pizza">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <ul id="pizza">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <ul id="pasta">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <ul id="chicken">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <ul id="dessert">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <ul id="drink">
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="menu__status">
@@ -505,10 +535,27 @@
                 <form action="#" method="post">
                     <div class="signup__form__group__box">
                         <div class="signup__form__group1">
-                            <h1>THAM GIA NGAY</h1>
-                            <p><span>Bạn đã có tài khoản?</span> <a href="./login.html">Đăng nhập tại đây</a></p>
+                            <hr align="left">   
+                            <h3>ĐĂNG KÝ</h3>
+                            <p><span>Bạn đã có tài khoản?</span> <span id="nav__LOGIN">Đăng nhập tại đây</span></p>
                         </div>
                         <div class="signup__form__group2">
+                            <div class="signup__form__control">
+                                <label for="signup__name" class="signup__form__control">Họ và Tên<span> *</span></label>
+                            </div>
+                            <div class="signup__form__control">
+                                <input id="signup__name" name="signup__name" type="text" class="signup__form__control" required>
+                            </div>
+                        </div>
+                        <div class="signup__form__group3">
+                            <div class="signup__form__control">
+                                <label for="signup__phone" class="signup__form__control">Số điện thoại<span> *</span></label>
+                            </div>
+                            <div class="signup__form__control">
+                                <input id="signup__phone" name="signup__phone" type="text" class="signup__form__control" required>
+                            </div>
+                        </div>
+                        <div class="signup__form__group4">
                             <div class="signup__form__control">
                                 <label for="signup__email" class="signup__form__control">Email</label>
                             </div>
@@ -516,23 +563,31 @@
                                 <input id="signup__email" name="signup__email" type="email" class="signup__form__control" required>
                             </div>
                         </div>
-                        <div class="signup__form__group3">
+                        <div class="signup__form__group5">
                             <div class="signup__form__control">
-                                <label for="signup__password" class="signup__form__control">Mật Khẩu</label>
+                                <label for="signup__password" class="signup__form__control">Mật khẩu<span> *</span></label>
                             </div>
                             <div class="signup__form__control">
                                 <input id="signup__password" name="signup__password" type="password" class="signup__form__control" required>
                             </div>
                         </div>
-                        <div class="signup__form__group4">
+                        <div class="signup__form__group6">
+                            <div class="signup__form__control">
+                                <label for="signup__password__confirm" class="signup__form__control">Xác nhận mật khẩu<span> *</span></label>
+                            </div>
+                            <div class="signup__form__control">
+                                <input id="signup__password__confirm" name="signup__password__confirm" type="password" class="signup__form__control" required>
+                            </div>
+                        </div>
+                        <div class="signup__form__group7">
                             <div class="signup__form__control">
                                 <button type="submit">Đăng ký</button>
                             </div>
                         </div>
-                        <div class="signup__form__group5">
+                        <div class="signup__form__group8">
                             <p>Hoặc</p>
                         </div>
-                        <div class="signup__form__group6">
+                        <div class="signup__form__group9">
                             <div class="signup__form__control">
                                 <button  class="signup__form__button__google" type="submit"><i class="fab fa-google fa-2x"></i> Đăng nhập với Google</button>
                             </div>
