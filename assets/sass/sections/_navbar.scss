@@ -17,13 +17,11 @@
             height: 100%;
         }
     }
-
     &__menu{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
-
         &__item{
             color: $cl-f;
             font-weight: 500;
