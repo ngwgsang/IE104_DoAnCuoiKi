@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: 80rem;
-        .menu__box{
+        &__box{
         width: 100%;
         height: 100%;
         .menu__nav{
@@ -12,7 +12,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .menu__nav__searchbar{
+            &__searchbar{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -22,7 +22,7 @@
                 height: 40%;
                 background-color: $cl-4;
                 border-radius: 1rem;
-                .menu__nav__searchbar__option{
+                &__option{
                     align-self: center;
                     display: flex;
                     a{
@@ -35,7 +35,7 @@
                         border-top-left-radius: 0.5rem;
                     }
                 }
-                .menu__nav__seachbar__group{
+                &__group{
                     align-self: center;
                     input{
                         padding: 0.5rem;
@@ -49,7 +49,7 @@
                     }
                 }
             }
-            .menu__nav__navbar{
+            &__navbar{
                 width: 100%;
                 height: 20%;
                 background-color: $cl-4;
@@ -59,7 +59,8 @@
                         justify-content: space-around;
                         align-items: center;  
                     li{
-                        a{
+                        span{
+                            cursor: pointer;
                             color: $cl-f;
                         }
                     }
