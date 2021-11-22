@@ -82,3 +82,21 @@
         }
     }
 }
+
+@mixin active($side){
+    .active{
+        @if $side == r{
+            border-right: 0.35rem solid $cl-1;
+        }
+        @if $side == b{
+            border-bottom: 0.35rem solid $cl-1;
+        }
+        @if $side == l{
+            border-left: 0.35rem solid $cl-1;
+        }
+        @if $side == t{
+            border-top: 0.35rem solid $cl-1;
+        }
+        background: #fd504d40 !important;
+    }
+}

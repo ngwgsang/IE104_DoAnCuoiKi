@@ -53,7 +53,20 @@ document.getElementById('product__price').innerText = product[index].price;
 document.getElementById('product__description').innerText = product[index].description;
 document.getElementById('product__pic').src = product[index].pic;
 }
-
+//#CHỌN SIZE + THÊM NHÂN
+document.querySelectorAll('.more__item').forEach((e) =>{
+  e.addEventListener('click', () =>{
+    e.classList.toggle('active');
+  })
+})
+document.querySelectorAll('.size__item').forEach((e) =>{
+  e.addEventListener('click', () =>{
+    document.querySelectorAll('.size__item').forEach((child)=>{
+      child.classList.remove('active');
+    })
+    e.classList.add('active');
+  })
+})
 
 //#ĐIỀU HƯỚNG TRANG
 function hideAllPage(box){
@@ -147,3 +160,5 @@ document.querySelectorAll('.nav__PROMOTIONCONTENT-3').forEach((e)=>{
     document.querySelector('.promotion-content-2').style.display = "none"
   })
 })
+
+

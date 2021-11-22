@@ -35,9 +35,6 @@
     li:hover{
         background: #dfdfdf;
     }
-    .active{
-        border-right: 0.35rem solid $cl-1;
-        background: #fd504d40 !important;
-    }
+    @include active(r);
 }
 
