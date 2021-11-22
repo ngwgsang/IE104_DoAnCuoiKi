@@ -1,5 +1,7 @@
 .recruitment{
     @include section;
+    @include button;
+    @include form;
     display: flex;
     flex-direction: column; 
     &__content{
@@ -13,37 +15,20 @@
             p{
                 color: $cl-f;
                 font-size: 1.6rem;
-                display: block;
             }
         }
         &__form{
             display: flex;
             flex-direction: column;
             padding: 2rem;
-            background: #fafafa;
             label{
                 margin-bottom: 0.5rem;
             }
             input, select, textarea{
                 font-size: 1.2rem;
-                outline: 0;
-                border: 1px solid rgba(204, 204, 204, 0.287);
                 padding: 0.5rem;
                 margin-bottom: 1rem;
-                color: $cl-1;
-            }
-            input,select{
-                height: 3rem;
-                color: #000;
-
-            }
-            button{
-                outline:  0;
-                border:  0;
-                background: $cl-1;
-                color: $cl-f;
-                font-size: 1.4rem;
-                padding: 1rem; 
+                color: $cl-0;
             }
         }
         &__noti{

@@ -47,6 +47,11 @@
             padding: 1rem;
             font-size: 1.2rem;
         }
+        textarea{
+            background: #efefef;
+            border: 0;
+            outline: 0;
+        }
     }
 }
 @mixin button{

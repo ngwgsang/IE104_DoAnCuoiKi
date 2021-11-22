@@ -1885,6 +1885,12 @@ p {
   font-size: 1.2rem;
 }
 
+.account__content__address--form form textarea {
+  background: #efefef;
+  border: 0;
+  outline: 0;
+}
+
 .account__content__address--form button {
   border: 0;
   outline: 0;
@@ -1980,6 +1986,12 @@ p {
   background: #efefef;
   padding: 1rem;
   font-size: 1.2rem;
+}
+
+.account__content__password form textarea {
+  background: #efefef;
+  border: 0;
+  outline: 0;
 }
 
 .account__content__password button {
@@ -2566,6 +2578,51 @@ p {
   font-size: 1.2rem;
 }
 
+.recruitment button {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: #FD514D;
+  color: #fff;
+  height: 4rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recruitment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.recruitment form input, .recruitment form select {
+  height: 3.5rem;
+  outline: 0;
+  border: 0;
+  background: #efefef;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.recruitment form textarea {
+  background: #efefef;
+  border: 0;
+  outline: 0;
+}
+
 .recruitment__content__box {
   width: 100%;
   height: 16rem;
@@ -2584,7 +2641,6 @@ p {
 .recruitment__content__box p {
   color: #fff;
   font-size: 1.6rem;
-  display: block;
 }
 
 .recruitment__content__form {
@@ -2596,7 +2652,6 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2rem;
-  background: #fafafa;
 }
 
 .recruitment__content__form label {
@@ -2605,25 +2660,9 @@ p {
 
 .recruitment__content__form input, .recruitment__content__form select, .recruitment__content__form textarea {
   font-size: 1.2rem;
-  outline: 0;
-  border: 1px solid rgba(204, 204, 204, 0.287);
   padding: 0.5rem;
   margin-bottom: 1rem;
-  color: #FD514D;
-}
-
-.recruitment__content__form input, .recruitment__content__form select {
-  height: 3rem;
   color: #000;
-}
-
-.recruitment__content__form button {
-  outline: 0;
-  border: 0;
-  background: #FD514D;
-  color: #fff;
-  font-size: 1.4rem;
-  padding: 1rem;
 }
 
 .recruitment__content__noti {
