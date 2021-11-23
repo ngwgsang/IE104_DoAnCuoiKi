@@ -162,3 +162,49 @@ document.querySelectorAll('.nav__PROMOTIONCONTENT-3').forEach((e)=>{
 })
 
 
+//#ĐIỀU HƯỚNG MENU
+function hideAllMenu(list){
+  document.querySelector('#promo').style.display = "none"
+  document.querySelector('#pasta').style.display = "none"
+  document.querySelector('#pizza').style.display = "none"
+  document.querySelector('#salad').style.display = "none"
+  document.querySelector('#drink').style.display = "none"
+  document.querySelector('#fried').style.display = "none"
+  document.querySelector('#nav__fried').classList.remove("active")
+  document.querySelector('#nav__promo').classList.remove("active")
+  document.querySelector('#nav__pasta').classList.remove("active")
+  document.querySelector('#nav__pizza').classList.remove("active")
+  document.querySelector('#nav__salad').classList.remove("active")
+  document.querySelector('#nav__drink').classList.remove("active")
+  document.querySelector('#nav__fried').classList.remove("active")
+  //#Hiện menu được chọn
+  list.style.display = "flex"
+}
+//# KHỞI TẠO
+hideAllMenu(document.getElementById('promo'))
+document.querySelector('#nav__promo').classList.add("active")
+//
+document.getElementById('nav__promo').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('promo'))
+  document.querySelector('#nav__promo').classList.add("active")
+});
+document.getElementById('nav__pasta').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('pasta'))
+  document.querySelector('#nav__pasta').classList.add("active")
+});
+document.getElementById('nav__pizza').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('pizza'))
+  document.querySelector('#nav__pizza').classList.add("active")
+});
+document.getElementById('nav__salad').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('salad'))
+  document.querySelector('#nav__salad').classList.add("active")
+});
+document.getElementById('nav__drink').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('drink'))
+  document.querySelector('#nav__drink').classList.add("active")
+});
+document.getElementById('nav__fried').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('fried'))
+  document.querySelector('#nav__fried').classList.add("active")
+});

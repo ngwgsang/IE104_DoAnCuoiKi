@@ -38,3 +38,9 @@
     @include active(r);
 }
 
+.menu__nav__navbar ul{
+    li:hover{
+        background: rgba(0, 0, 0, 0.1);
+    }
+    @include active(b);
+}
