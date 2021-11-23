@@ -1,19 +1,19 @@
 //#SLICK SLIDER
-$('.sale__slider').slick({
+$('.home-promotion__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
 });
-$('.list').slick({
+$('.home-menu__list').slick({
   slidesToShow: 3,
   slidesToScroll: 2,
   autoplay: true,
   autoplaySpeed: 4000,
   arrows: true,
 });
-$('.feedback__slider').slick({
+$('.home-feedback__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -53,7 +53,20 @@ document.getElementById('product__price').innerText = product[index].price;
 document.getElementById('product__description').innerText = product[index].description;
 document.getElementById('product__pic').src = product[index].pic;
 }
-
+//#CHỌN SIZE + THÊM NHÂN
+document.querySelectorAll('.more__item').forEach((e) =>{
+  e.addEventListener('click', () =>{
+    e.classList.toggle('active');
+  })
+})
+document.querySelectorAll('.size__item').forEach((e) =>{
+  e.addEventListener('click', () =>{
+    document.querySelectorAll('.size__item').forEach((child)=>{
+      child.classList.remove('active');
+    })
+    e.classList.add('active');
+  })
+})
 
 //#ĐIỀU HƯỚNG TRANG
 function hideAllPage(box){
@@ -88,8 +101,10 @@ hideAllPage(document.getElementById('MENU'))
 document.getElementById('nav__PROMOTION').addEventListener('click', ()=>{
 hideAllPage(document.getElementById('PROMOTION'))
 });
-document.getElementById('nav__LOGIN').addEventListener('click', ()=>{
-hideAllPage(document.getElementById('LOGIN'))
+document.querySelectorAll('.nav__LOGIN').forEach((e) =>{
+e.addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('LOGIN'))
+  });
 });
 document.getElementById('nav__SIGNUP').addEventListener('click', ()=>{
 hideAllPage(document.getElementById('SIGNUP'))
@@ -145,3 +160,51 @@ document.querySelectorAll('.nav__PROMOTIONCONTENT-3').forEach((e)=>{
     document.querySelector('.promotion-content-2').style.display = "none"
   })
 })
+
+
+//#ĐIỀU HƯỚNG MENU
+function hideAllMenu(list){
+  document.querySelector('#promo').style.display = "none"
+  document.querySelector('#pasta').style.display = "none"
+  document.querySelector('#pizza').style.display = "none"
+  document.querySelector('#salad').style.display = "none"
+  document.querySelector('#drink').style.display = "none"
+  document.querySelector('#fried').style.display = "none"
+  document.querySelector('#nav__fried').classList.remove("active")
+  document.querySelector('#nav__promo').classList.remove("active")
+  document.querySelector('#nav__pasta').classList.remove("active")
+  document.querySelector('#nav__pizza').classList.remove("active")
+  document.querySelector('#nav__salad').classList.remove("active")
+  document.querySelector('#nav__drink').classList.remove("active")
+  document.querySelector('#nav__fried').classList.remove("active")
+  //#Hiện menu được chọn
+  list.style.display = "flex"
+}
+//# KHỞI TẠO
+hideAllMenu(document.getElementById('promo'))
+document.querySelector('#nav__promo').classList.add("active")
+//
+document.getElementById('nav__promo').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('promo'))
+  document.querySelector('#nav__promo').classList.add("active")
+});
+document.getElementById('nav__pasta').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('pasta'))
+  document.querySelector('#nav__pasta').classList.add("active")
+});
+document.getElementById('nav__pizza').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('pizza'))
+  document.querySelector('#nav__pizza').classList.add("active")
+});
+document.getElementById('nav__salad').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('salad'))
+  document.querySelector('#nav__salad').classList.add("active")
+});
+document.getElementById('nav__drink').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('drink'))
+  document.querySelector('#nav__drink').classList.add("active")
+});
+document.getElementById('nav__fried').addEventListener('click', ()=>{
+  hideAllMenu(document.getElementById('fried'))
+  document.querySelector('#nav__fried').classList.add("active")
+});

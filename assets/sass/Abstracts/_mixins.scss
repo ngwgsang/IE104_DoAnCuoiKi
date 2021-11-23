@@ -2,7 +2,7 @@
     padding: 10% 15%;
     background: $cl-4;
     width: 100%;
-    //##VD: Trang login có class login thì con nó có class là login__content
+    //##VD: Trang login > login__content
     &__content{
         background: $cl-f;
         width: 100%;
@@ -47,6 +47,11 @@
             padding: 1rem;
             font-size: 1.2rem;
         }
+        textarea{
+            background: #efefef;
+            border: 0;
+            outline: 0;
+        }
     }
 }
 @mixin button{
@@ -80,5 +85,23 @@
             overflow: hidden;
             
         }
+    }
+}
+
+@mixin active($side){
+    .active{
+        @if $side == r{
+            border-right: 0.35rem solid $cl-1;
+        }
+        @if $side == b{
+            border-bottom: 0.35rem solid $cl-1;
+        }
+        @if $side == l{
+            border-left: 0.35rem solid $cl-1;
+        }
+        @if $side == t{
+            border-top: 0.35rem solid $cl-1;
+        }
+        background: #fd504d40 !important;
     }
 }

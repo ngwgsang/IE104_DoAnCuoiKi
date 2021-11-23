@@ -30,19 +30,13 @@
             gap: 1rem;
             padding: 2rem;
             background: rgba(204, 204, 204, 0.219);
-            *{
+            select,button, option{
                 width: 100%;
                 padding: 1rem;
                 font-size: 1rem;
             }
-            h3{
-                font-size: 1.2rem;
-                span{
-                    font-size: 1.6rem;
-                    font-family: 'Pacifico', cursive;
-                    color: $cl-1;
-                }
-            }
+            @include hr;
+            @include h3;
             button{
                 border: 0;
                 outline: 0;
