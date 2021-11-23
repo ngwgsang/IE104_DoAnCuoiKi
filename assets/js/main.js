@@ -101,6 +101,9 @@ hideAllPage(document.getElementById('MENU'))
 document.getElementById('nav__PROMOTION').addEventListener('click', ()=>{
 hideAllPage(document.getElementById('PROMOTION'))
 });
+document.getElementById('nav__promo').addEventListener('click', ()=>{
+  hideAllPage(document.getElementById('PROMOTION'))
+  });
 document.querySelectorAll('.nav__LOGIN').forEach((e) =>{
 e.addEventListener('click', ()=>{
   hideAllPage(document.getElementById('LOGIN'))
@@ -164,14 +167,12 @@ document.querySelectorAll('.nav__PROMOTIONCONTENT-3').forEach((e)=>{
 
 //#ĐIỀU HƯỚNG MENU
 function hideAllMenu(list){
-  document.querySelector('#promo').style.display = "none"
   document.querySelector('#pasta').style.display = "none"
   document.querySelector('#pizza').style.display = "none"
   document.querySelector('#salad').style.display = "none"
   document.querySelector('#drink').style.display = "none"
   document.querySelector('#fried').style.display = "none"
   document.querySelector('#nav__fried').classList.remove("active")
-  document.querySelector('#nav__promo').classList.remove("active")
   document.querySelector('#nav__pasta').classList.remove("active")
   document.querySelector('#nav__pizza').classList.remove("active")
   document.querySelector('#nav__salad').classList.remove("active")
@@ -181,13 +182,9 @@ function hideAllMenu(list){
   list.style.display = "flex"
 }
 //# KHỞI TẠO
-hideAllMenu(document.getElementById('promo'))
-document.querySelector('#nav__promo').classList.add("active")
+hideAllMenu(document.getElementById('pizza'))
+document.querySelector('#nav__pizza').classList.add("active")
 //
-document.getElementById('nav__promo').addEventListener('click', ()=>{
-  hideAllMenu(document.getElementById('promo'))
-  document.querySelector('#nav__promo').classList.add("active")
-});
 document.getElementById('nav__pasta').addEventListener('click', ()=>{
   hideAllMenu(document.getElementById('pasta'))
   document.querySelector('#nav__pasta').classList.add("active")
