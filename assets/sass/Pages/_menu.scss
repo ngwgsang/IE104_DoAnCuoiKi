@@ -149,8 +149,11 @@
             border-color: green;
         }
     }
-  
 }
 .menu-grid{
     background-color: $cl-f !important;
+}
+.menu__product:hover{
+    transition: all .2s ease-in-out;
+    background-color: $cl-2 !important;
 }

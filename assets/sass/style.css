@@ -1367,6 +1367,12 @@ p {
   background-color: #fff !important;
 }
 
+.menu__product:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: #F0A501 !important;
+}
+
 .promotion {
   display: -webkit-box;
   display: -ms-flexbox;
