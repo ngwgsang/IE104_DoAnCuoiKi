@@ -1166,7 +1166,8 @@ p {
 .menu__nav {
   padding-top: 2rem;
   width: 100%;
-  height: 30rem;
+  height: auto;
+  gap: 1rem;
   background: url("../images/bg.png");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1175,9 +1176,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menu__nav__searchbar {
@@ -1193,7 +1193,8 @@ p {
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 6rem;
+  margin-top: 5rem;
+  padding: 3rem;
   width: 100%;
   height: 100%;
   background-color: #181A37;
@@ -1267,7 +1268,7 @@ p {
 }
 
 .menu__status {
-  background-color: #000;
+  background-color: #181A37;
   color: #fff;
   width: 20%;
   height: inherit;
@@ -1289,10 +1290,87 @@ p {
 }
 
 .menu__items {
-  height: auto;
+  height: 100%;
   width: 100%;
   padding: 2rem;
-  background: cornflowerblue;
+}
+
+.menu__product {
+  cursor: pointer;
+  border-radius: 1rem;
+  height: 100% !important;
+  max-height: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu__product img {
+  width: 15rem;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.menu__product h5 {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin: 0.5rem auto;
+}
+
+.menu__product h5 + p {
+  font-size: 0.8rem;
+  padding: 0 2rem;
+}
+
+.menu__product__bottom {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__product__bottom .price {
+  text-align: center;
+}
+
+.menu__product__bottom .price span {
+  font-size: 1.6rem;
+  color: #FD514D;
+  font-weight: 700;
+}
+
+.menu__product__bottom button {
+  color: #FD514D;
+  -webkit-text-decoration: #fff;
+          text-decoration: #fff;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 2px solid #FD514D;
+  border-radius: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+.menu__product__bottom button:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: white;
+  background: green;
+  border-color: green;
+}
+
+.menu-grid {
+  background-color: #fff !important;
+}
+
+.menu__product:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: #F0A501 !important;
 }
 
 .promotion {
@@ -2713,6 +2791,8 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: red;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .product-grid .product {
