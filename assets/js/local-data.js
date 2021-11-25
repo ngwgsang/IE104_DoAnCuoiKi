@@ -167,4 +167,30 @@ const product = [
         price: '269.000',
         pic: './assets/images/combo/combo-3.png'
     },
+    //#BỔ SUNG
+    {
+        name: 'Mực chiên giòn',
+        description: 'Khoanh mực chiên giòn rụm',
+        price: '99.000VNĐ',
+        pic: './assets/images/fried/fr-5.png'
+    },
+    {
+        name: 'Khoai tây chiên',
+        description: 'Khoai tây chiên giòn với công thức ướp đặc trưng',
+        price: '99.000VNĐ',
+        pic: './assets/images/fried/fr-6.png'
+    },
+    {
+        name: 'Salad rau củ trộn dầu giấm',
+        description: 'Salad rau củ trộn dầu giấm',
+        price: '99.000VNĐ',
+        pic: './assets/images/salad/salad-3.png'
+    },
+    {
+        name: 'Salad rau củ mayonaise',
+        description: 'Salad rau củ mayonaise',
+        price: '99.000VNĐ',
+        pic: './assets/images/salad/salad-4.png'
+    },
+
 ]

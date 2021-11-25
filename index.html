@@ -429,12 +429,12 @@
                     </div>
                     <div class="menu__nav__navbar">
                         <ul>
-                            <li><span id="nav__promo">Khuyến mãi</span></li>
-                            <li><span id="nav__pizza">Pizza</span></li>
-                            <li><span id="nav__pasta">Mỳ Ý</span></li>
-                            <li><span id="nav__fried">Gà rán</span></li>
-                            <li><span id="nav__salad">Salad</span></li>
-                            <li><span id="nav__drink">Nước uống</span></li>
+                            <li id="nav__promo">Khuyến mãi</li>
+                            <li id="nav__pizza">Pizza</li>
+                            <li id="nav__pasta">Mỳ Ý</li>
+                            <li id="nav__fried">Gà rán</li>
+                            <li id="nav__salad">Salad</li>
+                            <li id="nav__drink">Nước uống</li>
                         </ul>
                     </div>
                 </div>
@@ -587,6 +587,24 @@
                                     <button class="buynowbtn">Mua ngay <em><i class="fas fa-arrow-right fa-lg"></i></em></button>
                                 </div>
                             </li>
+                            <li class="product menu__product" value="27">
+                                <img src="./assets/images/fried/fr-5.png" alt="">
+                                <h5>Mực chiên giòn</h5>
+                                <p>Khoanh mực chiên giòn rụm</p>
+                                <div class="menu__product__bottom">
+                                    <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                                    <button class="buynowbtn">Mua ngay <em><i class="fas fa-arrow-right fa-lg"></i></em></button>
+                                </div>
+                            </li>
+                            <li class="product menu__product" value="28">
+                                <img src="./assets/images/fried/fr-6.png" alt="">
+                                <h5>Khoai tây chiên</h5>
+                                <p>Khoai tây chiên giòn với công thức ướp đặc trưng</p>
+                                <div class="menu__product__bottom">
+                                    <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                                    <button class="buynowbtn">Mua ngay <em><i class="fas fa-arrow-right fa-lg"></i></em></button>
+                                </div>
+                            </li>
                         </ul>
                         <ul id="salad" class="product-grid menu-grid">
                             <li class="product menu__product" value="12">
@@ -602,6 +620,24 @@
                                 <img src="./assets/images/salad/salad-2.png"  alt="">
                                 <h5>Salad Da Cá Hồi Giòn</h5>
                                 <p>Salad với da cá hồi giòn với bắp cải đỏ, cà chua bi, ngô với sốt Yuzu</p>
+                                <div class="menu__product__bottom">
+                                    <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                                    <button class="buynowbtn">Mua ngay <em><i class="fas fa-arrow-right fa-lg"></i></em></button>
+                                </div>
+                            </li>
+                            <li class="product menu__product" value="29">
+                                <img src="./assets/images/salad/salad-3.png"  alt="">
+                                <h5>Salad rau củ trộn dầu giấm</h5>
+                                <p>Salad rau củ trộn dầu giấm</p>
+                                <div class="menu__product__bottom">
+                                    <p class="price">Giá chỉ từ:<span> 99.000</span></p>
+                                    <button class="buynowbtn">Mua ngay <em><i class="fas fa-arrow-right fa-lg"></i></em></button>
+                                </div>
+                            </li>
+                            <li class="product menu__product" value="30">
+                                <img src="./assets/images/salad/salad-4.png"  alt="">
+                                <h5>Salad rau củ mayonaise</h5>
+                                <p>Salad rau củ mayonaise</p>
                                 <div class="menu__product__bottom">
                                     <p class="price">Giá chỉ từ:<span> 99.000</span></p>
                                     <button class="buynowbtn">Mua ngay <em><i class="fas fa-arrow-right fa-lg"></i></em></button>
@@ -1428,7 +1464,7 @@
                         <li id="nav__LOCATION">Hệ thống và nhà hàng</li>
                         <li id="nav__BRANDSTORY">Câu chuyện thương hiệu</li>
                         <li id="nav__MEMBER">Ưu đãi thành viên</li>
-                        <li id="nav__NEWS">Tin tức & sự kiện</li>
+                        <!-- <li id="nav__NEWS">Tin tức & sự kiện</li> -->
                         <li id="nav__RECRUITMENT">Tuyển dụng</li>
                     </ul>
                 </div>
@@ -1446,7 +1482,7 @@
                     <h5>Liên hệ</h5>
                     <ul>
                         <li id="nav__CONTACT">Liên hệ</li>
-                        <li id="nav__X">Hướng dẫn mua hàng</li>
+                        <!-- <li id="nav__X">Hướng dẫn mua hàng</li> -->
                         <li id="nav__DEPOLICY">Chính sách giao hàng</li>
                         <li id="nav__PRPOLICY">Chính sách bảo mật</li>
                         <li id="nav__TAC">Điều khoản và điều kiện</li>
@@ -1516,19 +1552,19 @@
                      <div class="product-overview__container__right--base box">
                          <h5>Đế</h5>
                          <div class="base-box">
-                            <input type="radio"><label>Dày</label>
+                            <input type="radio" class="base-box-radio"><label>Dày</label>
                          </div>
                          <div class="base-box">
-                            <input type="radio"><label>Mỏng giòn</label>
+                            <input type="radio" class="base-box-radio"><label>Mỏng giòn</label>
                          </div>
                          <div class="base-box">
-                            <input type="radio"><label>Viền phô mai</label>
+                            <input type="radio" class="base-box-radio"><label>Viền phô mai</label>
                          </div>
                          <div class="base-box">
-                            <input type="radio"><label>Viền tôm nướng</label>
+                            <input type="radio" class="base-box-radio"><label>Viền tôm nướng</label>
                          </div>
                          <div class="base-box">
-                            <input type="radio"><label>Viền phô mai xúc xích</label>
+                            <input type="radio" class="base-box-radio"><label>Viền phô mai xúc xích</label>
                          </div>
                      </div>
                      <div class="product-overview__container__right--more box">

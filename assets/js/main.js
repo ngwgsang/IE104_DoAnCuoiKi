@@ -67,6 +67,7 @@ document.querySelectorAll('.size__item').forEach((e) =>{
     e.classList.add('active');
   })
 })
+//# RADIO
 
 //#ĐIỀU HƯỚNG TRANG
 function hideAllPage(box){

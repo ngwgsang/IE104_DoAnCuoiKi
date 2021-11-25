@@ -1148,7 +1148,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 120rem;
+  height: 90rem;
 }
 
 .menu__box {
@@ -1262,9 +1262,6 @@ p {
   display: block;
   padding: 1rem 3rem;
   border-radius: 0.4rem;
-}
-
-.menu__nav__navbar ul li span {
   cursor: pointer;
   color: #fff;
 }
@@ -1339,6 +1336,7 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 1rem;
 }
 
 .menu__product__bottom .price {
@@ -2802,9 +2800,21 @@ p {
 }
 
 .product-grid .product {
-  display: block;
   height: 20rem;
   width: 28rem;
   background: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

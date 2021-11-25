@@ -9,10 +9,13 @@
     // flex-direction: row;
     // justify-content: space-around;
     .product{
-        display: block;
+        // display: block;
         height: 20rem;
         width: 28rem;
         background: #efefef;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
