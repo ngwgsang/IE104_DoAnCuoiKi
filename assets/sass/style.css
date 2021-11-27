@@ -86,14 +86,14 @@ p {
   color: #cfcfcf;
 }
 
-#nav__LOGIN {
+#nav__LOGIN, #nav__ACCOUNT {
   font-weight: 600;
   color: #F0A501;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
-#nav__LOGIN:hover {
+#nav__LOGIN:hover, #nav__ACCOUNT:hover {
   cursor: pointer;
   font-weight: 700;
 }
@@ -541,6 +541,24 @@ p {
   font-weight: 600;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.account-config {
+  top: 5rem;
+  right: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  gap: 1rem;
+  display: none;
 }
 
 .tac {
@@ -2167,6 +2185,12 @@ p {
 .account__content__voucher ul li span {
   width: 20%;
   overflow: hidden;
+}
+
+#nav__ACCOUNT {
+  display: none;
+  color: #FD514D;
+  font-weight: 700;
 }
 
 .contact {

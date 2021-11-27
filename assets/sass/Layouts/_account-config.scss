@@ -1,0 +1,13 @@
+.account-config{
+    top: 5rem;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    color: $cl-f;
+    gap: 1rem;
+    display: none;
+}
+

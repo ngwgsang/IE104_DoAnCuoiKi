@@ -26,6 +26,11 @@
                 <li class="navbar__menu__item" id="nav__PROMOTION">Khuyến mãi</li>
                 <li class="navbar__menu__item" id="nav__MENU">Thực đơn</li>
                 <li class="navbar__menu__item nav__LOGIN" id="nav__LOGIN">Đăng nhập</li>
+                <li class="navbar__menu__item" id="nav__ACCOUNT">Sang Nguyễn</li>
+            </ul>
+            <ul class="account-config">
+                <li>Giỏ hàng</li>
+                <li id="LOGOUT-BTN">Đăng xuất</li>
             </ul>
         </div>
 <!-- ###################################### -->
@@ -715,7 +720,7 @@
                     <img class="login__logo__img" src="./assets/images/login__logo.png" alt="login__logo">
                 </div>
                 <div class="login__box__right">
-                    <form action="#" method="post">
+                    <form>
                         <div class="login__form">
                             <div class="login__form__group1">
                                 <h1>THAM GIA NGAY</h1>
@@ -739,7 +744,7 @@
                             </div>
                             <div class="login__form__group4">
                                 <div class="login__form__control">
-                                    <button type="submit" id="nav__ACCOUNT">Đăng nhập</button>
+                                    <button type="button" id="LOGIN-BTN">Đăng nhập</button>
                                 </div>
                             </div>
                             <div class="login__form__group5">
@@ -762,7 +767,7 @@
         <div class="signup" id="SIGNUP">
             <!-- ##-----------SIGNUP_BOX-----------##- -->
             <div class="signup__box">
-                <form action="#" method="post">
+                <form>
                     <div class="signup__form__group__box">
                         <div class="signup__form__group1">
                             <hr align="left">   
@@ -811,7 +816,7 @@
                         </div>
                         <div class="signup__form__group7">
                             <div class="signup__form__control">
-                                <button type="submit">Đăng ký</button>
+                                <button type="button" id="SIGNUP-BTN">Đăng ký</button>
                             </div>
                         </div>
                         <div class="signup__form__group8">
@@ -1605,7 +1610,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./assets/js/local-data.js"></script>
-<script src="./assets/js/main.js" defer></script>
-<SCript src="./assets/js/account.js"></SCript>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/firebase.js" type="module"></script>
 </body>
 </html>
