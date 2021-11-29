@@ -207,7 +207,6 @@ document.getElementById('nav__fried').addEventListener('click', ()=>{
   document.querySelector('#nav__fried').classList.add("active")
 });
 
-
 //#THAO TÁC TRÊN TRANG TÀI KHOẢN
 /////>KHỞI TẠO
 changeActiveNav(document.getElementById('nav__overview'));

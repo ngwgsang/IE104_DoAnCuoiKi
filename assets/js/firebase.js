@@ -17,33 +17,42 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const auth = getAuth(app);
 const dbref = ref(db);
+// const UID;
 //#ĐĂNG NHẬP THÀNH CÔNG {XUẤT HIỆN TAB ACCOUNT} {ẨN TAB ĐĂNG NHẬP}
 document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
     document.getElementById('nav__LOGIN').style.display = "none";
     document.getElementById('nav__ACCOUNT').style.display = "flex";
+    document.getElementById('LOGIN').style.display = "none";
+    document.getElementById('HOME').style.display = "flex";
 
     const email = document.getElementById('login__email').value;
     const password = document.getElementById('login__password').value;
-
+    let index;
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
         // ...
         document.getElementById('nav__ACCOUNT').innerText = email;
-        window.alert("ĐĂNG NHẬP THÀNH CÔNG");
+        window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
         // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
         email = "";
         password = "";
-        // loadAccountInfo(user.uid);
+        // getData(userCredential.user.uid);
+        index =  user.uid;
     })
     .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     // ..   
     });
-
-  })
+    var cur = auth.currentUser;
+    if (cur) {
+      fetchData(cur.uid)
+    } else {
+      // No user is signed in.
+    }
+})
 //#ĐĂNG KÝ
 document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
     const email = document.getElementById('signup__email').value;
@@ -79,14 +88,16 @@ document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
 })
 //#ĐĂNG XUẤT
 document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
-    document.getElementById('nav__LOGIN').style.display = "flex";
-    document.getElementById('nav__ACCOUNT').style.display = "none";
-    document.getElementById('nav__ACCOUNT').innerText = "";
-    document.querySelector('.account-config').style.display = "none";
-
+    // document.getElementById('nav__LOGIN').style.display = "flex";
+    // document.getElementById('LOGIN').style.display = "flex";
+    // document.getElementById('ACCOUNT').style.display = "none";
+    // document.getElementById('nav__ACCOUNT').style.display = "none";
+    // document.getElementById('nav__ACCOUNT').innerText = "";
+    // document.querySelector('.account-config').style.display = "none";
     signOut(auth).then(() => {
         // Sign-out successful.
         window.alert("ĐĂNG XUẤT THÀNH CÔNG");
+        location.reload();
       }).catch((error) => {
         // An error happened.
     });
@@ -96,16 +107,95 @@ document.getElementById('nav__ACCOUNT').addEventListener('pointerenter', ()=>{
     document.querySelector('.account-config').style.display = "flex"
 })
 
-// function loadAccountInfo(UID){
-//     get (child(dbref, `/${UID}/_overview`))
-//     .then((snapshot)=>{
-//         var account = [];
-//         snapshot.forEach(childSnapshot => {
-//             account.push(childSnapshot.val());
-//             console.log("OK");
-//         });
-        
-//     })
-// }
+//# NẠP TẤT CẢ DATA THEO UID
+function fetchData(uid){
+  get(child(dbref, `${uid}/_overview`))
+  .then((snapshot)=>{
+        document.getElementById('account--name').innerText  = snapshot.val()._name;
+        document.getElementById('overview--name').innerText  = snapshot.val()._name;
+        document.getElementById('overview--email').innerText = snapshot.val()._email;
+        document.getElementById('overview--phone').innerText = snapshot.val()._phone;
+  })
+  .catch((error)=>{
+      alert("LỖI" + error);
+  });
+//## FETCH DATA BRACNH HISTORY
+  get(child(dbref, `${uid}/_history`))
+  .then((snapshot)=>{
+      var history = [];
+      snapshot.forEach(childSnapshot => {
+          history.push(childSnapshot.val());
+      });
+      history.forEach((e)=>{
+        document.getElementById('history--list').innerHTML += 
+        `
+        <li>
+        <span>${e._bill_id}</span>
+        <span>${e._bill_name}</span>
+        <span>${e._bill_time}</span>
+        <span>${e._bill_price}</span>
+        <span>${e._bill_status}</span>
+        </li>
+        `         
+      })
+  })
+  .catch(()=>{
+    alert("LỖI" + error);
+  });
+//## FETCH DATA BRACNH ADDRESS
+  get(child(dbref, `${uid}/_address`))
+  .then((snapshot)=>{
+      var address = [];
+      snapshot.forEach(childSnapshot => {
+          address.push(childSnapshot.val());
+      });
+      address.forEach((e)=>{
+        if (e._default == 1){
+          document.getElementById('default_address--name').innerText = e._name;
+          document.getElementById('default_address--address').innerText = e._home_address;
+          document.getElementById('default_address--phone').innerText = e._phone;
+        }
+        else{
+          document.getElementById('address--list').innerHTML += 
+          `
+          <li class="address">
+            <ul>
+              <li>Họ tên: <span>${e._name}</span></li>
+              <li>Địa chỉ: <span></span>${e._home_address}</li>
+              <li>Số điện thoại: <span>${e._phone}</span></li>
+            </ul>
+          </li>
+          `         
+        }
+      })
+  })
+//# FETCH DATA BRACNH VOUCHER
+  get(child(dbref, `${uid}/_voucher`))
+  .then((snapshot)=>{
+      var voucher = [];
+      snapshot.forEach(childSnapshot => {
+          voucher.push(childSnapshot.val());
+      });
+      document.getElementById('voucher--list').innerHTML = ""
+      voucher.forEach((e)=>{
+          let status;
+          if (e._voucher_status == 1) status = "Chưa sử dụng"
+          if (e._voucher_status == 2) status = "Đã sử dụng"
+          if (e._voucher_status == 3) status = "Đã hết hạn"
+          document.getElementById('voucher--list').innerHTML +=
+          `
+          <li>
+              <span>${e._voucher_id}</span>
+              <span>${e._voucher_description}</span>
+              <span>${e._voucher_exp}</span>
+              <span>${status}</span>
+          </li>
+          `         
+      })
+  })
+}
+
+
+
 
 

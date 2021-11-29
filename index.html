@@ -26,7 +26,7 @@
                 <li class="navbar__menu__item" id="nav__PROMOTION">Khuyến mãi</li>
                 <li class="navbar__menu__item" id="nav__MENU">Thực đơn</li>
                 <li class="navbar__menu__item nav__LOGIN" id="nav__LOGIN">Đăng nhập</li>
-                <li class="navbar__menu__item" id="nav__ACCOUNT">Sang Nguyễn</li>
+                <li class="navbar__menu__item" id="nav__ACCOUNT"></li>
             </ul>
             <ul class="account-config">
                 <li>Giỏ hàng</li>
@@ -838,7 +838,7 @@
 <!-- ##-----------ACCOUNT-----------------## -->
         <div class="account" id="ACCOUNT">
             <div class="account__nav">
-                <div class="account__nav__name">Nguyễn Quang Sang</div>
+                <div class="account__nav__name" id="account--name"></div>
                 <ul>
                     <li id="nav__overview">Thông tin khách hàng</li>
                     <li id="nav__address">Sổ địa chỉ</li>
@@ -853,9 +853,9 @@
                         <h3>Thông tin chung</h3>
                         <hr align="left">
                         <ul>
-                            <li>Họ và tên: Nguyễn Quang Sang</li>
-                            <li>Số điện thoại: 0123456789</li>
-                            <li>Email: 19522122@gm.uit.edu.vn</li>
+                            <li> Họ và tên:      <span id="overview--name"></span></li>
+                            <li> Số điện thoại:  <span id="overview--phone"></span></li>
+                            <li> Email:          <span id="overview--email"></span></li>
                         </ul>
                     </div>
                     <div class="account__content__overview--history">
@@ -870,7 +870,7 @@
                                 <span>Trạng thái</span>
                             </li>
                         </ul>
-                        <ul>
+                        <ul id= "history--list">
                             <li>
                                 <span>ABCDE</span>
                                 <span>Pizza Hải Sản</span>
@@ -892,15 +892,16 @@
                     <div class="account__content__address--list">
                         <h3>Sổ địa chỉ</h3>
                         <hr align="left">
-                        <ul class="list-address">
+                        <ul class="list-address" id="address--list">
                             <li class="address">
                                 <ul>
                                     <li class="tag">Địa chỉ mặc định</li>
-                                    <li>Họ tên: Nguyễn Quang Sang</li>
-                                    <li>Địa chỉ: XXXXXXXXXXXXXXXXXXXXXX</li>
-                                    <li>Số điện thoại: 0123456789</li>
+                                    <li>Họ tên: <span id="default_address--name"></span></li>
+                                    <li>Địa chỉ: <span id="default_address--address"></span></li>
+                                    <li>Số điện thoại: <span id="default_address--phone"></span></li>
                                 </ul>
                             </li>
+
                         </ul>
                     </div>
                     <div class="account__content__address--form">
@@ -967,13 +968,8 @@
                             <span>Trạng thái</span>
                         </li>
                     </ul>
-                    <ul>
-                        <li>
-                            <span>OISHII22</span>
-                            <span>Giảm 10% khi thanh toán qua thẻ</span>
-                            <span>30/11/2021</span>
-                            <span>Chưa sử dụng</span>
-                        </li>
+                    <ul id="voucher--list">
+
                     </ul>
                 </div>
             </div>
