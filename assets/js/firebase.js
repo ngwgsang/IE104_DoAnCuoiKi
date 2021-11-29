@@ -38,8 +38,6 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
         // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
         email = "";
         password = "";
-        // getData(userCredential.user.uid);
-        index =  user.uid;
     })
     .catch((error) => {
     const errorCode = error.code;
@@ -88,18 +86,19 @@ document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
 })
 //#ĐĂNG XUẤT
 document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
-    // document.getElementById('nav__LOGIN').style.display = "flex";
-    // document.getElementById('LOGIN').style.display = "flex";
-    // document.getElementById('ACCOUNT').style.display = "none";
-    // document.getElementById('nav__ACCOUNT').style.display = "none";
-    // document.getElementById('nav__ACCOUNT').innerText = "";
-    // document.querySelector('.account-config').style.display = "none";
+    document.getElementById('nav__LOGIN').style.display = "flex";
+    document.getElementById('LOGIN').style.display = "flex";
+    document.getElementById('ACCOUNT').style.display = "none";
+    document.getElementById('nav__ACCOUNT').style.display = "none";
+    document.getElementById('nav__ACCOUNT').innerText = "";
+    document.querySelector('.account-config').style.display = "none";
     signOut(auth).then(() => {
         // Sign-out successful.
         window.alert("ĐĂNG XUẤT THÀNH CÔNG");
-        location.reload();
+        // location.reload();
       }).catch((error) => {
         // An error happened.
+        // window.alert(error);
     });
 })
   
