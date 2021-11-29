@@ -15,8 +15,9 @@ import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword , si
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-const auth = getAuth(app);
+var auth = getAuth(app);
 const dbref = ref(db);
+var cur;
 // const UID;
 //#ĐĂNG NHẬP THÀNH CÔNG {XUẤT HIỆN TAB ACCOUNT} {ẨN TAB ĐĂNG NHẬP}
 document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
@@ -35,6 +36,7 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
         // ...
         document.getElementById('nav__ACCOUNT').innerText = email;
         window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
+        fetchData(auth.currentUser.uid);
         // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
         email = "";
         password = "";
@@ -44,12 +46,7 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
     const errorMessage = error.message;
     // ..   
     });
-    var cur = auth.currentUser;
-    if (cur) {
-      fetchData(cur.uid)
-    } else {
-      // No user is signed in.
-    }
+    
 })
 //#ĐĂNG KÝ
 document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
@@ -90,8 +87,8 @@ document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
     document.getElementById('LOGIN').style.display = "flex";
     document.getElementById('ACCOUNT').style.display = "none";
     document.getElementById('nav__ACCOUNT').style.display = "none";
-    document.getElementById('nav__ACCOUNT').innerText = "";
     document.querySelector('.account-config').style.display = "none";
+    clearData();
     signOut(auth).then(() => {
         // Sign-out successful.
         window.alert("ĐĂNG XUẤT THÀNH CÔNG");
@@ -194,7 +191,19 @@ function fetchData(uid){
   })
 }
 
-
+function clearData(){
+  document.getElementById('default_address--name').innerText = "";
+  document.getElementById('default_address--address').innerText = "";
+  document.getElementById('default_address--phone').innerText = "";
+  document.getElementById('address--list').innerText = "";
+  document.getElementById('voucher--list').innerText = "";
+  document.getElementById('history--list').innerText = "";
+  document.getElementById('account--name').innerText  = "";
+  document.getElementById('overview--name').innerText  = "";
+  document.getElementById('overview--email').innerText = "";
+  document.getElementById('overview--phone').innerText = "";
+  document.getElementById('nav__ACCOUNT').innerText = "";
+}
 
 
 
