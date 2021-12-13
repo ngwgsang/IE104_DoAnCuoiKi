@@ -1292,7 +1292,6 @@ p {
 }
 
 .menu__items {
-  height: 100% !important;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
