@@ -56,3 +56,110 @@ ul{
 p{
     color: #000;
 }
+#toast {
+	position: fixed;
+	top: 32px;
+	right: 32px;
+	z-index: 999999;
+  }
+  
+  .toast {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 2px;
+	padding: 20px 0;
+	min-width: 400px;
+	max-width: 450px;
+	border-left: 4px solid;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+	transition: all linear 0.3s;
+  }
+  
+  @keyframes slideInLeft {
+	from {
+	  opacity: 0;
+	  transform: translateX(calc(100% + 32px));
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes fadeOut {
+	to {
+	  opacity: 0;
+	}
+  }
+
+.toast{
+	&--success {
+		border-color: #47d864;
+	  }
+	  
+	&--success &__icon {
+		color: #47d864;
+	  }
+	  
+	&--info {
+		border-color: #2f86eb;
+	  }
+	  
+	&--info &__icon {
+		color: #2f86eb;
+	  }
+	  
+	&--warning {
+		border-color: #ffc021;
+	  }
+	  
+	&--warning &__icon {
+		color: #ffc021;
+	  }
+	  
+	&--error {
+		border-color: #ff623d;
+	  }
+	  
+	&--error &__icon {
+		color: #ff623d;
+	  }
+	  
+	& + & {
+		margin-top: 24px;
+	  }
+	  
+	&__icon {
+		font-size: 24px;
+	  }
+	  
+	  &__icon,
+	  &__close {
+		padding: 0 16px;
+	  }
+	  
+	  &__body {
+		flex-grow: 1;
+	  }
+	  
+	  &__title {
+		font-size: 16px;
+		font-weight: 600;
+		color: #333;
+	  }
+	  
+	  &__msg {
+		font-size: 14px;
+		color: #888;
+		margin-top: 6px;
+		line-height: 1.5;
+	  }
+	  
+	  &__close {
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+	  }
+}
+  
