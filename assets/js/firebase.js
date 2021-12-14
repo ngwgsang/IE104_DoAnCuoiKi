@@ -25,29 +25,6 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
     const password = document.getElementById('login__password').value;
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     console.log(email.match(pattern));
-    const getAsync = new Promise((resolve,reject) => {
-      // Kiểm tra email có đúng định dạng và password có điền chưa
-      if(email.match(pattern) && password != ""){
-        // khởi tạo toast success cho resolve
-        resolve(toast({
-          title: "Thành công!",
-          message: "Bạn đã đăng nhập thành công tài khoản tại Oishii Pizza!",
-          type: "success",
-          duration: 3000
-        }));
-      }
-      else{ 
-        // khởi tạo toast error cho reject
-        reject(toast({
-          title: "Thất bại!",
-          message: "Email hoặc password không đúng!",
-          type: "error",
-          duration: 3000
-        }));
-      }
-    });
-    getAsync
-      .then((popup) => {
       let index;
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -55,30 +32,40 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
           const user = userCredential.user;
           // ...
           document.getElementById('nav__ACCOUNT').innerText = email;
-          window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
+          // window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
           fetchData(auth.currentUser.uid);
-          // gọi hàm toast success khai báo cho resolve qua tham số popup
-          popup;
-          // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
-          email = "";
-          password = "";
-          setTimeout(() => {
-            document.getElementById('nav__LOGIN').style.display = "none";
+          // Kiểm tra email có đúng định dạng và password có điền chưa
+          if(email.match(pattern) && password != ""){
+            // khởi tạo toast success cho resolve
+            toast({
+              title: "Thành công!",
+              message: "Bạn đã đăng nhập thành công tài khoản tại Oishii Pizza!",
+              type: "success",
+              duration: 3000
+            });
+          }
+          document.getElementById('nav__LOGIN').style.display = "none";
             document.getElementById('nav__ACCOUNT').style.display = "flex";
             document.getElementById('LOGIN').style.display = "none";
             document.getElementById('HOME').style.display = "flex";
-          }, 4000);
+          // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
+          email = "";
+          password = "";
       })
       .catch((error) => {
+        console.log("gọi catch");
+        // gọi hàm toast error khai báo cho reject qua tham số popup
+        toast({
+          title: "Thất bại!",
+          message: "Email hoặc password không đúng!",
+          type: "error",
+          duration: 3000
+        });  
       const errorCode = error.code;
       const errorMessage = error.message;
-      // gọi hàm toast error khai báo cho reject qua tham số popup
-      popup;
-      });
       
-      })
-
-})
+      });
+});
 //#ĐĂNG KÝ
 document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
     const email = document.getElementById('signup__email').value;
