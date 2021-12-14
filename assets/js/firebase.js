@@ -205,5 +205,3 @@ function clearData(){
   document.getElementById('nav__ACCOUNT').innerText = "";
 }
 
-
-

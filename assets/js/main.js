@@ -1,5 +1,6 @@
 //#SLICK SLIDER
 $('.home-promotion__slider').slick({
+  lazyLoad: 'ondemand',
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -7,6 +8,7 @@ $('.home-promotion__slider').slick({
   arrows: true,
 });
 $('.home-menu__list').slick({
+  lazyLoad: 'ondemand',
   slidesToShow: 3,
   slidesToScroll: 2,
   autoplay: true,
@@ -14,6 +16,7 @@ $('.home-menu__list').slick({
   arrows: true,
 });
 $('.home-feedback__slider').slick({
+  lazyLoad: 'ondemand',
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
