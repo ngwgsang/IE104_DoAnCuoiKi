@@ -21,32 +21,60 @@ var cur;
 // const UID;
 //#ĐĂNG NHẬP THÀNH CÔNG {XUẤT HIỆN TAB ACCOUNT} {ẨN TAB ĐĂNG NHẬP}
 document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
-    document.getElementById('nav__LOGIN').style.display = "none";
-    document.getElementById('nav__ACCOUNT').style.display = "flex";
-    document.getElementById('LOGIN').style.display = "none";
-    document.getElementById('HOME').style.display = "flex";
-
     const email = document.getElementById('login__email').value;
     const password = document.getElementById('login__password').value;
-    let index;
-    signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        // ...
-        document.getElementById('nav__ACCOUNT').innerText = email;
-        window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
-        fetchData(auth.currentUser.uid);
-        // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
-        email = "";
-        password = "";
-    })
-    .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..   
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    console.log(email.match(pattern));
+    const getAsync = new Promise((resolve,reject) => {
+      if(email.match(pattern)){
+        resolve(toast({
+          title: "Thành công!",
+          message: "Bạn đã đăng nhập thành công tài khoản tại Oishii Pizza!",
+          type: "success",
+          duration: 3000
+        }));
+      }
+      else{
+        reject(toast({
+          title: "Thất bại!",
+          message: "Email cung cấp chưa hợp lệ",
+          type: "error",
+          duration: 3000
+        }));
+      }
     });
-    
+    getAsync
+      .then((popup) => {
+      popup;
+      setTimeout(() => {
+      document.getElementById('nav__LOGIN').style.display = "none";
+      document.getElementById('nav__ACCOUNT').style.display = "flex";
+      document.getElementById('LOGIN').style.display = "none";
+      document.getElementById('HOME').style.display = "flex";
+
+      let index;
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+          // ...
+          document.getElementById('nav__ACCOUNT').innerText = email;
+          window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
+          fetchData(auth.currentUser.uid);
+          // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
+          email = "";
+          password = "";
+      })
+      .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..   
+      });
+      }, 1500);
+      })
+      .catch((popup) => {
+        popup;
+      });
 })
 //#ĐĂNG KÝ
 document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
@@ -54,32 +82,60 @@ document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
     const password = document.getElementById('signup__password').value;
     const name = document.getElementById('signup__name').value;
     const phone = document.getElementById('signup__phone').value;
-
-    createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // Signed in 
-      const user = userCredential.user;
-      // TẠO BRANCH Ở DATABASE
-        set(ref(db, `${user.uid}/_overview`),{
-            _email: email,
-            _name: name,
-            _phone: phone,
-        })
-        .then(()=>{
-            console.log("Tạo branch thành công");
-        })
-        .catch((error)=>{
-            console.log("Tạo branch không thành công, Lỗi: " + error);
-        });
-      // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
-        email = "";
-        password = "";
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    console.log(email.match(pattern));
+    const aa = new Promise((resolve,reject) => {
+      if(email.match(pattern)){
+        resolve(toast({
+          title: "Thành công!",
+          message: "Bạn đã đăng ký thành công tài khoản tại Oishii Pizza!",
+          type: "success",
+          duration: 3000
+        }));
+      }
+      else{
+        reject(toast({
+          title: "Thất bại!",
+          message: "Email cung cấp chưa hợp lệ",
+          type: "error",
+          duration: 3000
+        }));
+      }
     });
+    aa
+      .then((popup) => {
+        popup;
+        setTimeout(() => {
+          createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        // TẠO BRANCH Ở DATABASE
+          set(ref(db, `${user.uid}/_overview`),{
+              _email: email,
+              _name: name,
+              _phone: phone,
+          })
+          .then(()=>{
+              console.log("Tạo branch thành công");
+          })
+          .catch((error)=>{
+              console.log("Tạo branch không thành công, Lỗi: " + error);
+          });
+        // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
+          email = "";
+          password = "";
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+        }, 1500);
+      })
+      .catch((popup) => {
+        popup;
+      });
 })
 //#ĐĂNG XUẤT
 document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
