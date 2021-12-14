@@ -25,33 +25,6 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
     const password = document.getElementById('login__password').value;
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     console.log(email.match(pattern));
-    const getAsync = new Promise((resolve,reject) => {
-      if(email.match(pattern)){
-        resolve(toast({
-          title: "Thành công!",
-          message: "Bạn đã đăng nhập thành công tài khoản tại Oishii Pizza!",
-          type: "success",
-          duration: 3000
-        }));
-      }
-      else{
-        reject(toast({
-          title: "Thất bại!",
-          message: "Email cung cấp chưa hợp lệ",
-          type: "error",
-          duration: 3000
-        }));
-      }
-    });
-    getAsync
-      .then((popup) => {
-      popup;
-      setTimeout(() => {
-      document.getElementById('nav__LOGIN').style.display = "none";
-      document.getElementById('nav__ACCOUNT').style.display = "flex";
-      document.getElementById('LOGIN').style.display = "none";
-      document.getElementById('HOME').style.display = "flex";
-
       let index;
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -59,33 +32,53 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
           const user = userCredential.user;
           // ...
           document.getElementById('nav__ACCOUNT').innerText = email;
-          window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
+          // window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
           fetchData(auth.currentUser.uid);
+          // Kiểm tra email có đúng định dạng và password có điền chưa
+          if(email.match(pattern) && password != ""){
+            // khởi tạo toast success cho resolve
+            toast({
+              title: "Thành công!",
+              message: "Bạn đã đăng nhập thành công tài khoản tại Oishii Pizza!",
+              type: "success",
+              duration: 3000
+            });
+          }
+          document.getElementById('nav__LOGIN').style.display = "none";
+            document.getElementById('nav__ACCOUNT').style.display = "flex";
+            document.getElementById('LOGIN').style.display = "none";
+            document.getElementById('HOME').style.display = "flex";
           // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
           email = "";
           password = "";
       })
       .catch((error) => {
+        console.log("gọi catch");
+        // gọi hàm toast error khai báo cho reject qua tham số popup
+        toast({
+          title: "Thất bại!",
+          message: "Email hoặc password không đúng!",
+          type: "error",
+          duration: 3000
+        });  
       const errorCode = error.code;
       const errorMessage = error.message;
-      // ..   
+      
       });
-      }, 1500);
-      })
-      .catch((popup) => {
-        popup;
-      });
-})
+});
 //#ĐĂNG KÝ
 document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
     const email = document.getElementById('signup__email').value;
     const password = document.getElementById('signup__password').value;
+    const confirmpasswd = document.getElementById('signup__password__confirm').value;
     const name = document.getElementById('signup__name').value;
     const phone = document.getElementById('signup__phone').value;
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     console.log(email.match(pattern));
     const aa = new Promise((resolve,reject) => {
-      if(email.match(pattern)){
+      // Kiểm tra email có đúng định dạng và password có điền chưa
+      if(email.match(pattern) && password != "" && password == confirmpasswd){
+        //Nếu đúng chạy resolve
         resolve(toast({
           title: "Thành công!",
           message: "Bạn đã đăng ký thành công tài khoản tại Oishii Pizza!",
@@ -94,9 +87,10 @@ document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
         }));
       }
       else{
+        //Sai chạy reject với toast error
         reject(toast({
           title: "Thất bại!",
-          message: "Email cung cấp chưa hợp lệ",
+          message: "Vui lòng kiểm tra lại thông tin đăng ký",
           type: "error",
           duration: 3000
         }));
@@ -104,11 +98,12 @@ document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
     });
     aa
       .then((popup) => {
-        popup;
         setTimeout(() => {
           createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in 
+        // Signed in
+        // Gọi tham số popup = hàm toast success đã sử dụng làm tham số cho resolve khi điều kiện đúng 
+        popup;
         const user = userCredential.user;
         // TẠO BRANCH Ở DATABASE
           set(ref(db, `${user.uid}/_overview`),{
@@ -129,13 +124,12 @@ document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        // Gọi tham số popup = hàm toast error đã sử dụng làm tham số cho reject khi điều kiện sai
+        popup;
         // ..
       });
         }, 1500);
       })
-      .catch((popup) => {
-        popup;
-      });
 })
 //#ĐĂNG XUẤT
 document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
