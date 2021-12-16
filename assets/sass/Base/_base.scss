@@ -58,7 +58,7 @@ p{
 }
 #toast {
 	position: fixed;
-	top: 32px;
+	top: 100px;
 	right: 32px;
 	z-index: 999999;
   }
@@ -127,7 +127,7 @@ p{
 	  }
 	  
 	& + & {
-		margin-top: 24px;
+		margin-top: 20px;
 	  }
 	  
 	&__icon {
