@@ -43,7 +43,7 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
           // Signed in 
           const user = userCredential.user;
           // ...
-          document.getElementById('nav__ACCOUNT').innerText = email;
+          // document.getElementById('ACCOUNT--name').innerText = email;
           // window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
           fetchData(auth.currentUser.uid);
           // Kiểm tra email có đúng định dạng và password có điền chưa
@@ -152,15 +152,16 @@ document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
     });
 })
   
-document.getElementById('nav__ACCOUNT').addEventListener('pointerenter', ()=>{
-    document.querySelector('.account-config').style.display = "flex"
-})
+// document.getElementById('nav__ACCOUNT').addEventListener('pointerenter', ()=>{
+//     document.querySelector('.account-config').style.display = "flex"
+// })
 
 //# NẠP TẤT CẢ DATA THEO UID
 function fetchData(uid){
   get(child(dbref, `${uid}/_overview`))
   .then((snapshot)=>{
         document.getElementById('account--name').innerText  = snapshot.val()._name;
+        document.getElementById('ACCOUNT--name').innerText  = snapshot.val()._name;
         document.getElementById('overview--name').innerText  = snapshot.val()._name;
         document.getElementById('overview--email').innerText = snapshot.val()._email;
         document.getElementById('overview--phone').innerText = snapshot.val()._phone;
@@ -257,6 +258,4 @@ function clearData(){
   document.getElementById('overview--phone').innerText = "";
   document.getElementById('nav__ACCOUNT').innerText = "";
 }
-
-
 

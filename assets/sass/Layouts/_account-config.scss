@@ -1,13 +1,20 @@
+#nav__ACCOUNT{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // width: 10rem;
+    gap: 1rem;
+    i{
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .account-config{
-    top: 5rem;
-    right: 0;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    color: $cl-f;
-    gap: 1rem;
-    display: none;
+    gap: 0.5rem;
 }
 

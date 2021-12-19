@@ -676,12 +676,33 @@ p {
   cursor: pointer;
 }
 
+#nav__ACCOUNT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+#nav__ACCOUNT i {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .account-config {
-  top: 5rem;
-  right: 0;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,9 +710,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #fff;
-  gap: 1rem;
-  display: none;
+  gap: 0.5rem;
 }
 
 .tac {
@@ -2321,7 +2340,6 @@ p {
 
 #nav__ACCOUNT {
   display: none;
-  color: #FD514D;
   font-weight: 700;
 }
 
@@ -2940,6 +2958,56 @@ p {
 .recruitment__content__noti {
   font-style: italic;
   margin-top: 2rem;
+}
+
+#nav__CART {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+
+#nav__CART i {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nav__CART #CART--slot {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #FD514D;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .product-grid {

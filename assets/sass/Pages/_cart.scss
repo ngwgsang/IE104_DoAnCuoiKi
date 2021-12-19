@@ -1,0 +1,29 @@
+#nav__CART{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    i{
+        width: 3rem;
+        height: 3rem;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #CART--slot{
+        width: 1.2rem;
+        height: 1.2rem;
+        background: $cl-1;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
