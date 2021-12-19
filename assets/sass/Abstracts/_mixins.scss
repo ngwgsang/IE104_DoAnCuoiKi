@@ -105,3 +105,31 @@
         background: #fd504d40 !important;
     }
 }
+
+@mixin respondsive($breakpoint){
+    @if $breakpoint == big-tab{
+        @media (max-width: 1600px){
+            @content
+        };
+    }
+    @if $breakpoint == medium-tab{
+        @media (max-width: 1400px){
+            @content
+        };
+    }
+    @if $breakpoint == tab{
+        @media (max-width: 1200px){
+            @content
+        };
+    }
+    @if $breakpoint == big-phone{
+        @media (max-width: 992px){
+            @content
+        };
+    }
+    @if $breakpoint == medium-phone{
+        @media (max-height: 768px){
+            @content
+        };
+    }
+}
