@@ -58,9 +58,10 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
             document.getElementById('nav__ACCOUNT').style.display = "flex";
             document.getElementById('LOGIN').style.display = "none";
             document.getElementById('HOME').style.display = "flex";
+            document.querySelector('.account-config').style.display = "flex";
           // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
-          email = "";
-          password = "";
+          // email = "";
+          // password = "";
       });
       
 });
@@ -132,10 +133,19 @@ document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
     document.getElementById('ACCOUNT').style.display = "none";
     document.getElementById('nav__ACCOUNT').style.display = "none";
     document.querySelector('.account-config').style.display = "none";
+    const email = document.getElementById('signup__email').value;
+    const password = document.getElementById('signup__password').value;
     clearData();
     signOut(auth).then(() => {
         // Sign-out successful.
-        window.alert("ĐĂNG XUẤT THÀNH CÔNG");
+        // window.alert("ĐĂNG XUẤT THÀNH CÔNG");
+        // trả về toast nêu đăng xuất thành công
+        toast({
+          title: "Thành công!",
+          message: "Bạn đã đăng xuất, hẹn gặp lại!",
+          type: "success",
+          duration: 3000
+        });
         // location.reload();
       }).catch((error) => {
         // An error happened.
@@ -247,6 +257,6 @@ function clearData(){
   document.getElementById('overview--name').innerText  = "";
   document.getElementById('overview--email').innerText = "";
   document.getElementById('overview--phone').innerText = "";
-  document.getElementById('nav__ACCOUNT').innerText = "";
+  // document.getElementById('nav__ACCOUNT').innerText = "";
 }
 

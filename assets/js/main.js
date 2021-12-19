@@ -25,13 +25,15 @@ $('.home-feedback__slider').slick({
   arrows:  false
 });
 
-
+var cart__count = 0
+var cart__price = 0
+document.querySelector('#CART--slot').innerText = cart__count
 //#MỞ OVERVIEW SẢN PHẨM KHI CLICK
-document.querySelectorAll('.product').forEach((product) =>{
-product.addEventListener('click',  () => {
-  changeProduct(product.value)
+document.querySelectorAll('.product').forEach((e) =>{
+e.addEventListener('click',  () => {
+  changeProduct(e.value)
   document.getElementById('popup').style.display = "flex";
-  if (product.value < 7){
+  if (e.value < 7){
     document.querySelector('.product-overview__container__right--size').style.display = "block"
     document.querySelector('.product-overview__container__right--base').style.display = "block"
     document.querySelector('.product-overview__container__right--more').style.display = "block"
@@ -41,6 +43,90 @@ product.addEventListener('click',  () => {
     document.querySelector('.product-overview__container__right--base').style.display = "none"
     document.querySelector('.product-overview__container__right--more').style.display = "none"
   }
+  //#CHỌN SIZE + THÊM NHÂN
+  let more = ""
+  let moreprice = 0
+  document.querySelectorAll('.more__item').forEach((x) =>{
+    x.addEventListener('click', () =>{
+      x.classList.toggle('active');
+      x.classList.toggle('active-2');
+      more = ""
+      moreprice = 0
+      document.querySelectorAll('.active-2').forEach((i)=>{
+        more += i.querySelector('.more__item--name').innerText + ", "
+        moreprice += i.value
+      })
+      more = more.substring(0, more.length - 2)
+      document.getElementById('product__price').innerText = `${product[e.value].price + moreprice}VNĐ`;
+    })
+  })
+  let size = 'Nhỏ 6"'
+  document.querySelectorAll('.size__item').forEach((x) =>{
+    x.addEventListener('click', () =>{
+      document.querySelectorAll('.size__item').forEach((child)=>{
+        child.classList.remove('active');
+      })
+      x.classList.add('active');
+      size = x.innerText
+    })
+  })
+  let base = "Dày"
+  document.querySelectorAll('.base__item').forEach((x) => {
+    x.addEventListener('click', ()=>{
+      document.querySelectorAll('.base__item').forEach((child)=>{
+        child.classList.remove('active');
+      })
+      x.classList.add('active');
+      base = x.innerText
+    })
+  })
+  let note =""
+  document.querySelector('#product-overview-note').addEventListener('keyup', ()=>{
+     note = document.getElementById('product-overview-note').value
+  })
+  document.querySelector('.product-overview__container__left--addtocartbtn').addEventListener('click', ()=>{
+    if (e.value < 7){
+      document.querySelector('.cart__content__list').innerHTML += `
+      <li class="cart__list__item">
+        <img src=${product[e.value].pic} class="cart__list__item--img">
+        <ul>
+          <li class="cart__list__item--name">${product[e.value].name} - ${product[e.value].price + moreprice}VNĐ</li>
+          <li class="cart__list__item--size">${size}</li>
+          <li class="cart__list__item--base">${base}</li>   
+          <li class="cart__list__item--more">Thêm: ${more}</li>   
+          <li class="cart__list__item--more">Ghi chú: ${note}</li>   
+        </ul>
+        <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+      </li>
+      `
+    }
+    else{
+      document.querySelector('.cart__content__list').innerHTML += `
+      <li class="cart__list__item">
+        <img src=${product[e.value].pic} class="cart__list__item--img">
+        <ul>
+          <li class="cart__list__item--name">${product[e.value].name} - ${product[e.value].price + moreprice}VNĐ</li> 
+          <li class="cart__list__item--more">Ghi chú: ${note}</li>   
+        </ul>
+        <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+      </li>
+      `
+    }
+
+    toast({
+      title: "Thành công!",
+      message: `Bạn đã thêm ${product[e.value].name} vào giỏ hàng !`,
+      type: "success",
+      duration: 3000
+    });
+    cart__count++
+    cart__price += product[e.value].price
+    document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price}VNĐ`
+    document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price}VNĐ`
+    document.querySelector('#CART--slot').innerText = cart__count
+    if (cart__count == 0) document.querySelector('.cart__content__list__noti').style.display = "flex"
+    else document.querySelector('.cart__content__list__noti').style.display = "none"
+  })
 })
 })
 
@@ -52,26 +138,22 @@ document.getElementById('popup').style.display = "none"
 //#THAY ĐỔI ĐỐI TƯỢNG TRONG POP-UP
 function changeProduct(index){
 document.getElementById('product__name').innerText = product[index].name;
-document.getElementById('product__price').innerText = product[index].price;
+document.getElementById('product__price').innerText = `${product[index].price}VNĐ`;
 document.getElementById('product__description').innerText = product[index].description;
 document.getElementById('product__pic').src = product[index].pic;
 }
-//#CHỌN SIZE + THÊM NHÂN
-document.querySelectorAll('.more__item').forEach((e) =>{
-  e.addEventListener('click', () =>{
-    e.classList.toggle('active');
-  })
-})
-document.querySelectorAll('.size__item').forEach((e) =>{
-  e.addEventListener('click', () =>{
-    document.querySelectorAll('.size__item').forEach((child)=>{
-      child.classList.remove('active');
-    })
-    e.classList.add('active');
-  })
-})
 //# RADIO
-
+// function checkRadio(e){
+//   // document.querySelectorAll('.base-box-radio').forEach((check) =>{
+//   //     check.removeAttribute('checked');
+//   // })  
+//   document.getElementById('base-1').removeAttribute('checked');
+//   document.getElementById('base-2').removeAttribute('checked');
+//   document.getElementById('base-3').removeAttribute('checked');
+//   document.getElementById('base-4').removeAttribute('checked');
+//   document.getElementById('base-5').removeAttribute('checked');
+//   e.setAttribute('checked', 'checked');
+// }
 //#ĐIỀU HƯỚNG TRANG
 function hideAllPage(box){
 document.getElementById('HOME').style.display = "none";
@@ -142,6 +224,9 @@ hideAllPage(document.getElementById('PRPOLICY'))
 });
 document.getElementById('nav__TAC').addEventListener('click', ()=>{
 hideAllPage(document.getElementById('TAC'))
+});
+document.getElementById('nav__CART').addEventListener('click', ()=>{
+hideAllPage(document.getElementById('CART'))
 });
 document.querySelectorAll('.nav__PROMOTIONCONTENT-1').forEach((e)=>{
   e.addEventListener('click', ()=>{
