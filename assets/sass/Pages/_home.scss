@@ -197,8 +197,8 @@
     &__slider{
         margin: 0 auto;
         margin-top: 3rem;
-        height: 20rem;
-        width: 80rem;
+        // height: 20rem;
+        // width: 80rem;
         .slick-dots li button:before{
             color: $cl-1;
         }
@@ -232,4 +232,62 @@
     }
 }
 
+.home{
+    @include respondsive (big-tab){
+        .home-menu__list-item{
+            margin: 0 3rem;
+        }
+    }
+    @include respondsive (medium-tab){
+        .home-promotion__slider__item{
+            margin: 0 16rem;
+            h5{
+                font-size: 2.2rem;
+            }
 
+            p{
+                font-size: 1rem;
+            }
+        }
+        .home-menu__list-item{
+            margin: 0 1.6rem;
+            h5{
+                line-height: 1.3;
+                font-size: 1.4rem;
+            }
+            h5 + p{
+                font-size: 0.6rem;
+            }
+            .price{
+                span{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    @include respondsive (tab){
+        .home-feedback__slider__item{
+            margin: 0 4rem;
+            P{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    @include respondsive (big-phone){
+        .home-promotion{
+            &__slider__item{
+            margin: 0 6rem;
+            }
+            .slick-prev, .slick-next{
+                display: none !important;
+            }
+        }
+        .home-feedback__slider__item{
+            margin: 0 2rem;
+            P{
+                font-size: 1rem;
+            }
+        }
+
+    }
+}

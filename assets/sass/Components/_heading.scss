@@ -8,3 +8,27 @@
         font-size: 3.4rem;
     }
 }
+.heading{
+    @include respondsive (big-tab){
+                
+        font-size: 2.8rem;
+        span{
+            font-size: 3.2rem;
+        }
+    }
+
+    @include respondsive (tab){
+        
+        font-size: 2.4rem;
+        span{
+            font-size: 2.6rem;
+        }
+    }
+    @include respondsive (phone){
+        
+        font-size: 2.2rem;
+        span{
+            font-size: 2.4rem;
+        }
+    }
+}

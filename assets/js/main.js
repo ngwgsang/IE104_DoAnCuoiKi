@@ -7,6 +7,17 @@ $('.home-promotion__slider').slick({
   autoplaySpeed: 2000,
   arrows: true,
 });
+if (window.innerWidth <= 900) {
+  $('.home-menu__list').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: true,
+  });
+}
+else
 $('.home-menu__list').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 3,
@@ -15,6 +26,7 @@ $('.home-menu__list').slick({
   autoplaySpeed: 4000,
   arrows: true,
 });
+
 $('.home-feedback__slider').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 1,
