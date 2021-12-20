@@ -3056,17 +3056,6 @@ p {
           align-items: center;
 }
 
-@media (max-width: 1600px) {
-  .menu__items {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .menu-grid {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
 @media (max-width: 1400px) {
   .menu {
     height: 200rem;
@@ -3116,10 +3105,6 @@ p {
   }
   .menu__status {
     display: none;
-  }
-  .menu__items {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=style.css.map */

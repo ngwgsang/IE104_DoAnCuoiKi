@@ -1,18 +1,11 @@
 @include respondsive (big-tab){
-    .menu{
-        &__items{
-            justify-content: space-around;
-        }
-    }
-    .menu-grid{
-        justify-content: space-around;
-    }
 }
 
 @include respondsive (medium-tab){
     .menu{
         height: 200rem;
         }
+        
 }
 @include respondsive (tab){
 
@@ -72,9 +65,7 @@
         &__status{
             display: none;
         }
-        &__items{
-            justify-content: space-around;
-        }
+        
     }
 
 }   
