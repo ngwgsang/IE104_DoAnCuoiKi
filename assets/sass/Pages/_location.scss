@@ -55,18 +55,3 @@
         }
     }
 }
-
-.location{
-    @include respondsive(tab){
-        padding: 15% 15%;
-        .box{
-            flex-direction: column;
-        }
-        &__left__top{
-            width: 100%;
-        }
-    }
-    @include respondsive(big-phone){
-        padding: 20% 10%;
-    }
-}
