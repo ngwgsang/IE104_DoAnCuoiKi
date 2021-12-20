@@ -8,7 +8,24 @@
         
 }
 @include respondsive (tab){
-
+    .menu{
+        height: 200rem;
+        &__nav{
+            &__searchbar{
+                width: 35rem;
+                &__option{
+                     transform: translate(20%,-120%);
+                }
+            }
+        }
+        &__status{
+            display: none;
+        }
+        
+    }
+    .menu-grid{
+        justify-content: center;
+    }
 }
 @include respondsive (big-tab){
 
@@ -29,6 +46,7 @@
             display: none;
         }
     }
+  
 }
 @include respondsive (medium-phone){
     .login{
@@ -52,21 +70,7 @@
             }
         }
     }
-    .menu{
-        height: 200rem;
-        &__nav{
-            &__searchbar{
-                width: 35rem;
-                &__option{
-                     transform: translate(20%,-120%);
-                }
-            }
-        }
-        &__status{
-            display: none;
-        }
-        
-    }
+
 
 }   
 

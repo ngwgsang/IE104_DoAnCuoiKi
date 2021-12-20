@@ -22,11 +22,68 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        .CART--text,.LOGIN--text{
+            display: none !important;
+        }
         &__item{
             color: $cl-f;
             font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &--phone{
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            color: #fff;
+            display: none !important;
+
         }
     }
 }
 
-
+.navbar__menu{
+    @include respondsive (big-phone){
+        display: none !important;
+        position: absolute;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('./../images/bg.png');
+        width: 100%;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+    &__item{
+        @include respondsive (big-phone){
+            width: 80% !important;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #000 !important;
+            padding: 1rem;
+            border-radius: 0.4rem;
+            font-weight: 600;
+            .CART--text, .LOGIN--text{
+                display: flex !important;
+            }
+        }
+    }
+    &--phone{
+        @include respondsive (big-phone){
+            display: flex !important;
+        }
+    }
+}

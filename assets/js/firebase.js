@@ -55,12 +55,13 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
               duration: 3000
             });
           document.getElementById('nav__LOGIN').style.display = "none";
-            document.getElementById('nav__ACCOUNT').style.display = "flex";
-            document.getElementById('LOGIN').style.display = "none";
-            document.getElementById('HOME').style.display = "flex";
+          document.getElementById('nav__ACCOUNT').style.display = "flex";
+          document.getElementById('LOGIN').style.display = "none";
+          document.getElementById('HOME').style.display = "flex";
+          document.querySelector('.account-config').style.display = "flex";
           // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
-          email = "";
-          password = "";
+          // email = "";
+          // password = "";
       });
       
 });
@@ -256,6 +257,6 @@ function clearData(){
   document.getElementById('overview--name').innerText  = "";
   document.getElementById('overview--email').innerText = "";
   document.getElementById('overview--phone').innerText = "";
-  document.getElementById('nav__ACCOUNT').innerText = "";
+  // document.getElementById('nav__ACCOUNT').innerText = "";
 }
 
