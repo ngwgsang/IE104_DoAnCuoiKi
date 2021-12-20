@@ -1,21 +1,31 @@
 @include respondsive (big-tab){
-    .menu{
-        &__items{
-            justify-content: space-around;
-        }
-    }
-    .menu-grid{
-        justify-content: space-around;
-    }
 }
 
 @include respondsive (medium-tab){
     .menu{
         height: 200rem;
         }
+        
 }
 @include respondsive (tab){
-
+    .menu{
+        height: 200rem;
+        &__nav{
+            &__searchbar{
+                width: 35rem;
+                &__option{
+                     transform: translate(20%,-120%);
+                }
+            }
+        }
+        &__status{
+            display: none;
+        }
+        
+    }
+    .menu-grid{
+        justify-content: center;
+    }
 }
 @include respondsive (big-tab){
 
@@ -36,6 +46,7 @@
             display: none;
         }
     }
+  
 }
 @include respondsive (medium-phone){
     .login{
@@ -59,23 +70,7 @@
             }
         }
     }
-    .menu{
-        height: 200rem;
-        &__nav{
-            &__searchbar{
-                width: 35rem;
-                &__option{
-                     transform: translate(20%,-120%);
-                }
-            }
-        }
-        &__status{
-            display: none;
-        }
-        &__items{
-            justify-content: space-around;
-        }
-    }
+
 
 }   
 
