@@ -2165,6 +2165,27 @@ p {
   height: 100%;
 }
 
+@media (max-width: 1200px) {
+  .location {
+    padding: 15% 15%;
+  }
+  .location .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .location__left__top {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .location {
+    padding: 20% 10%;
+  }
+}
+
 .account {
   width: 100%;
   height: auto;
