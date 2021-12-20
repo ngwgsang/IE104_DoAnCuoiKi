@@ -1,6 +1,4 @@
 
-
-
 #nav__ACCOUNT, #nav__LOGIN{
     display: flex;
     align-items: center;
@@ -14,6 +12,13 @@
         width: 3rem;
         height: 3rem;
     }
+}
+
+#nav__ACCOUNT{
+    color: $cl-2;
+}
+#nav__LOGIN{
+    color: $cl-f;
 }
 
 .account-config{

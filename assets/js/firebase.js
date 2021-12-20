@@ -55,10 +55,10 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
               duration: 3000
             });
           document.getElementById('nav__LOGIN').style.display = "none";
-            document.getElementById('nav__ACCOUNT').style.display = "flex";
-            document.getElementById('LOGIN').style.display = "none";
-            document.getElementById('HOME').style.display = "flex";
-            document.querySelector('.account-config').style.display = "flex";
+          document.getElementById('nav__ACCOUNT').style.display = "flex";
+          document.getElementById('LOGIN').style.display = "none";
+          document.getElementById('HOME').style.display = "flex";
+          document.querySelector('.account-config').style.display = "flex";
           // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
           // email = "";
           // password = "";
@@ -133,6 +133,7 @@ document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
     document.getElementById('ACCOUNT').style.display = "none";
     document.getElementById('nav__ACCOUNT').style.display = "none";
     document.querySelector('.account-config').style.display = "none";
+    
     const email = document.getElementById('signup__email').value;
     const password = document.getElementById('signup__password').value;
     clearData();

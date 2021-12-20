@@ -183,6 +183,12 @@ document.getElementById('CONTACT').style.display = "none";
 document.getElementById('DEPOLICY').style.display = "none";
 document.getElementById('PRPOLICY').style.display = "none";
 document.getElementById('TAC').style.display = "none";
+document.getElementById('CART').style.display = "none";
+if (window.innerWidth < 900)  {
+  document.querySelector('.navbar__menu').style = "display: none !important;"
+  document.querySelector('.navbar__menu--phone').style = "display: flex !important;"
+} 
+
 // ẨN HẾT TẤT CẢ CÁC TRANG VÀ HIỂN THỊ TRANG ĐÃ CHỌN
 box.style.display = "flex";
 window.scrollTo(0, 0);
@@ -279,6 +285,7 @@ function hideAllMenu(list){
   document.querySelector('#nav__salad').classList.remove("active")
   document.querySelector('#nav__drink').classList.remove("active")
   document.querySelector('#nav__fried').classList.remove("active")
+  
   //#Hiện menu được chọn
   list.style.display = "flex"
 }
@@ -405,3 +412,16 @@ function toast(
 
 
 
+//#RESPONDSIVE NAVBAR
+let show = 0
+document.querySelector('.navbar__menu--phone').addEventListener('click', ()=>{
+  if (show == 0)
+  {
+    document.querySelector('.navbar__menu').style = "display: flex !important;"
+    show = 1
+  }
+  else {
+    document.querySelector('.navbar__menu').style = "display: none !important;"
+    show = 0
+  }
+})

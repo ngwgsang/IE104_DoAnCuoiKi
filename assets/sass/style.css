@@ -327,6 +327,10 @@ p {
   gap: 2rem;
 }
 
+.navbar__menu .CART--text, .navbar__menu .LOGIN--text {
+  display: none !important;
+}
+
 .navbar__menu__item {
   color: #fff;
   font-weight: 500;
@@ -339,6 +343,80 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.navbar__menu--phone {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #fff;
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .navbar__menu {
+    display: none !important;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: url("./../images/bg.png");
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar__menu__item {
+    width: 80% !important;
+    height: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #fff;
+    color: #000 !important;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+  }
+  .navbar__menu__item .CART--text, .navbar__menu__item .LOGIN--text {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar__menu--phone {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 
 .footer {
@@ -707,6 +785,14 @@ p {
           justify-content: center;
   width: 3rem;
   height: 3rem;
+}
+
+#nav__ACCOUNT {
+  color: #F0A501;
+}
+
+#nav__LOGIN {
+  color: #fff;
 }
 
 .account-config {
@@ -1820,6 +1906,18 @@ p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
   justify-self: flex-end;
+}
+
+.content-custom-1 ul li {
+  height: 30rem;
+}
+
+.content-custom-2 ul li {
+  height: 32rem;
+}
+
+.content-custom-3 ul li {
+  height: 34rem;
 }
 
 .location {
@@ -2968,6 +3066,20 @@ p {
 }
 
 #nav__CART {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 4rem;
+  height: 4rem;
+}
+
+#nav__CART .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
