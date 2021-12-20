@@ -1396,26 +1396,21 @@ p {
   border: none;
 }
 
-@media (max-width: 1100px) {
-  .login__box__right .login__form__group6 {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .login__box__left {
-    display: none;
-  }
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 90rem;
+  height: 150rem;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
 }
 
 .menu__box {
-  width: 80%;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1458,24 +1453,22 @@ p {
       align-self: center;
   margin-top: 5rem;
   padding: 3rem;
-  width: 80%;
+  width: 50rem;
   height: 100%;
   background-color: #181A37;
   border-radius: 1rem;
 }
 
 .menu__nav__searchbar__option {
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  -webkit-transform: translate(30%, -120%);
+          transform: translate(30%, -120%);
 }
 
 .menu__nav__searchbar__option a {
-  position: relative;
-  -webkit-transform: translate(-20%, 10%);
-          transform: translate(-20%, 10%);
+  position: absolute;
   background-color: #334756;
   color: #fff;
   padding: 0.625rem;
@@ -1483,7 +1476,12 @@ p {
   border-top-left-radius: 0.5rem;
 }
 
+.menu__nav__searchbar__option a:last-child {
+  margin-left: 13rem;
+}
+
 .menu__nav__searchbar__group {
+  position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1491,14 +1489,27 @@ p {
 
 .menu__nav__searchbar__group input {
   padding: 0.5rem;
-  width: 30vw;
+  width: 30rem;
   font-size: 1rem;
 }
 
 .menu__nav__searchbar__group i {
+  position: absolute;
+  right: 0;
+  -webkit-transform: translate(-4%, 0%);
+          transform: translate(-4%, 0%);
+  font-size: 2.1rem;
+  padding: 0.2rem;
+  background-color: #F0A501;
   margin-left: 0.5rem;
-  color: #F0A501;
+  color: #fff;
   vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu__nav__navbar {
@@ -1532,7 +1543,9 @@ p {
 .menu__status {
   background-color: #181A37;
   color: #fff;
-  width: 20%;
+  -webkit-box-flex: 15rem;
+      -ms-flex: 15rem;
+          flex: 15rem;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1549,6 +1562,7 @@ p {
   text-align: center;
   font-size: 1rem;
   padding: 2rem;
+  border: 2px solid gray;
 }
 
 .menu__items {
@@ -2471,7 +2485,7 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1rem;
-  max-height: 40rem;
+  max-height: 50rem;
   background-color: #fff;
   overflow: hidden;
   border-radius: 1rem;
@@ -3372,5 +3386,72 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1600px) {
+  .menu__items {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu-grid {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 1400px) {
+  .menu {
+    height: 200rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact__box__left .contact__box__content__left form .contact__form__content__box {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__box__right {
+    display: none;
+  }
+}
+
+@media (max-height: 768px) {
+  .login__box__left {
+    display: none;
+  }
+  .login__box__right .login__form__group6 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .signup__box {
+    margin: 0;
+  }
+  .signup__box .signup__form__group9 {
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu {
+    height: 200rem;
+  }
+  .menu__nav__searchbar {
+    width: 35rem;
+  }
+  .menu__nav__searchbar__option {
+    -webkit-transform: translate(20%, -120%);
+            transform: translate(20%, -120%);
+  }
+  .menu__status {
+    display: none;
+  }
+  .menu__items {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=style.css.map */
