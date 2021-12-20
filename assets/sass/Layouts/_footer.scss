@@ -77,7 +77,9 @@
         }
     }
     @include respondsive(big-phone) {
+        padding: 4rem 2rem;
         flex-direction:  column;
+        align-items: center;
         gap: 1rem;
         div div {
             margin:  1rem;

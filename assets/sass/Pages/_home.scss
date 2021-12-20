@@ -272,11 +272,20 @@
                 font-size: 1.2rem;
             }
         }
+        .hero__sub__content{
+            p{
+                font-size: 1rem;
+                line-height: 1.4rem;
+                span{
+                    font-size: 2rem;
+                }
+            }
+        }
     }
     @include respondsive (big-phone){
         .home-promotion{
             &__slider__item{
-            margin: 0 6rem;
+            margin: 0 2rem;
             }
             .slick-prev, .slick-next{
                 display: none !important;
@@ -288,6 +297,29 @@
                 font-size: 1rem;
             }
         }
+        .hero__sub__content{
+            p{
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+                span{
+                    font-size: 1.9rem;
+                }
+            }
+        }
+        .hero__main__content{
+            *{
+                font-size: 2rem;
+            }
 
+            h1{
+                font-size: 4rem;
+                line-height: 1.5;
+            }
+        }
+    }
+    @include respondsive (medium-phone){
+        .home-menu{
+            display: none;
+        }
     }
 }

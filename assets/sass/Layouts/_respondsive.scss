@@ -2,14 +2,11 @@
 }
 
 @include respondsive (medium-tab){
-    .menu{
-        height: 200rem;
-        }
+
         
 }
 @include respondsive (tab){
     .menu{
-        height: 200rem;
         &__nav{
             &__searchbar{
                 width: 35rem;
@@ -18,10 +15,6 @@
                 }
             }
         }
-        &__status{
-            display: none;
-        }
-        
     }
     .menu-grid{
         justify-content: center;

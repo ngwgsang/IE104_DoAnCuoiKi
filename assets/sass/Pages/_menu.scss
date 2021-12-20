@@ -1,7 +1,7 @@
 .menu{
     display: flex;
     width: 100%;
-    height: 150rem;
+    height: auto;
     flex: 10;
         &__box{
         flex: 8;
@@ -50,7 +50,7 @@
                     position: relative;
                     align-self: center;
                     input{
-                        
+                        height: 2.5rem;
                         padding: 0.5rem;
                         width: 30rem;
                         font-size: 1rem;
@@ -58,15 +58,15 @@
                     i{  
                         position: absolute;
                         right: 0;
-                        transform: translate(-4%,0%);
-                        font-size: 2.1rem;
-                        padding: 0.2rem;
-                        background-color: $cl-2;
-                        margin-left: 0.5rem;
-                        color: $cl-f;
-                        vertical-align: middle;
+                        top: 0;
+                        display: flex;
                         align-items: center;
                         justify-content: center;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        font-size: 2rem;
+                        background-color: $cl-1;
+                        color: $cl-f;
                     }
                 }
             }
@@ -93,20 +93,6 @@
             }
         }
         
-        &__status{
-            background-color: $cl-4;
-            color: $cl-f;
-            width: 25rem;
-            height: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-self: center;
-            text-align: center;
-            font-size: 1rem;
-            padding: 2rem;
-            border: 2px solid gray;
-        }
         &__items{
             width: 100%;
             flex-wrap: wrap;

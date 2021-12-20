@@ -37,3 +37,24 @@
         }
     }
 }
+
+.recruitment {
+    @include respondsive (big-phone){
+        &__content{
+            &__box{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    @include respondsive (medium-phone){
+        &__content{
+            &__box{
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
