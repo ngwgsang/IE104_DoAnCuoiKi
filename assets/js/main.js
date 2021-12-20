@@ -25,13 +25,23 @@ $('.home-feedback__slider').slick({
   arrows:  false
 });
 
-
+var cart__count = 0
+var cart__price = 0
+var cart__more = 0
+var more 
+var moreprice
+var size
+var base
+var note
+var val
+document.querySelector('#CART--slot').innerText = cart__count
 //#MỞ OVERVIEW SẢN PHẨM KHI CLICK
-document.querySelectorAll('.product').forEach((product) =>{
-product.addEventListener('click',  () => {
-  changeProduct(product.value)
+document.querySelectorAll('.product').forEach((e) =>{
+e.addEventListener('click',  () => {
+  changeProduct(e.value)
   document.getElementById('popup').style.display = "flex";
-  if (product.value < 7){
+  //#TÙY VÀO SẢN PHẨM MÀ HIỂN THỊ POPUP
+  if (e.value < 7){
     document.querySelector('.product-overview__container__right--size').style.display = "block"
     document.querySelector('.product-overview__container__right--base').style.display = "block"
     document.querySelector('.product-overview__container__right--more').style.display = "block"
@@ -41,7 +51,95 @@ product.addEventListener('click',  () => {
     document.querySelector('.product-overview__container__right--base').style.display = "none"
     document.querySelector('.product-overview__container__right--more').style.display = "none"
   }
+  //#CHỌN SIZE + THÊM NHÂN
+  more = ""
+  moreprice = 0
+  cart__moreprice = 0
+  document.querySelectorAll('.more__item').forEach((x) =>{
+    x.addEventListener('click', () =>{
+      x.classList.toggle('active');
+      x.classList.toggle('active-2');
+      more = ""
+      moreprice = 0
+      document.querySelectorAll('.active-2').forEach((i)=>{
+        more += i.querySelector('.more__item--name').innerText + ", "
+        moreprice += i.value
+      })
+      more = more.substring(0, more.length - 2)
+      document.getElementById('product__price').innerText = `${product[e.value].price + moreprice}VNĐ`;
+    })
+  })
+  size = 'Nhỏ 6"'
+  document.querySelectorAll('.size__item').forEach((x) =>{
+    x.addEventListener('click', () =>{
+      document.querySelectorAll('.size__item').forEach((child)=>{
+        child.classList.remove('active');
+      })
+      x.classList.add('active');
+      size = x.innerText
+    })
+  })
+  base = "Dày"
+  document.querySelectorAll('.base__item').forEach((x) => {
+    x.addEventListener('click', ()=>{
+      document.querySelectorAll('.base__item').forEach((child)=>{
+        child.classList.remove('active');
+      })
+      x.classList.add('active');
+      base = x.innerText
+    })
+  })
+  note =""
+  document.querySelector('#product-overview-note').addEventListener('keyup', ()=>{
+     note = document.getElementById('product-overview-note').value
+  })
+  val = e
 })
+})
+document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
+  if (val.value < 7){
+    document.querySelector('.cart__content__list').innerHTML += `
+    <li class="cart__list__item">
+      <img src=${product[val.value].pic} class="cart__list__item--img">
+      <ul>
+        <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li>
+        <li class="cart__list__item--size">${size}</li>
+        <li class="cart__list__item--base">${base}</li>   
+        <li class="cart__list__item--more">Thêm: ${more}</li>   
+        <li class="cart__list__item--more">Ghi chú: ${note}</li>   
+      </ul>
+      <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+    </li>
+    `
+  }
+  else{
+    document.querySelector('.cart__content__list').innerHTML += `
+    <li class="cart__list__item">
+      <img src=${product[val.value].pic} class="cart__list__item--img">
+      <ul>
+        <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li> 
+        <li class="cart__list__item--more">Ghi chú: ${note}</li>   
+      </ul>
+      <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+    </li>
+    `
+  }
+
+  toast({
+    title: "Thành công!",
+    message: `Bạn đã thêm ${product[val.value].name} vào giỏ hàng !`,
+    type: "success",
+    duration: 3000
+  });
+  cart__count++
+  cart__price += product[val.value].price
+  cart__moreprice += moreprice
+  document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice + 30000}VNĐ`
+  document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price + cart__moreprice}VNĐ`
+  document.querySelector('.cart__content__summary--ship--price').innerText = "30000VNĐ"
+  document.querySelector('#CART--slot').innerText = cart__count
+  if (cart__count == 0) document.querySelector('.cart__content__list__noti').style.display = "flex"
+  else document.querySelector('.cart__content__list__noti').style.display = "none"
 })
 
 //#ĐÓNG OVERVIEW SẢN PHẨM KHI CLICK [X]
@@ -52,26 +150,22 @@ document.getElementById('popup').style.display = "none"
 //#THAY ĐỔI ĐỐI TƯỢNG TRONG POP-UP
 function changeProduct(index){
 document.getElementById('product__name').innerText = product[index].name;
-document.getElementById('product__price').innerText = product[index].price;
+document.getElementById('product__price').innerText = `${product[index].price}VNĐ`;
 document.getElementById('product__description').innerText = product[index].description;
 document.getElementById('product__pic').src = product[index].pic;
 }
-//#CHỌN SIZE + THÊM NHÂN
-document.querySelectorAll('.more__item').forEach((e) =>{
-  e.addEventListener('click', () =>{
-    e.classList.toggle('active');
-  })
-})
-document.querySelectorAll('.size__item').forEach((e) =>{
-  e.addEventListener('click', () =>{
-    document.querySelectorAll('.size__item').forEach((child)=>{
-      child.classList.remove('active');
-    })
-    e.classList.add('active');
-  })
-})
 //# RADIO
-
+// function checkRadio(e){
+//   // document.querySelectorAll('.base-box-radio').forEach((check) =>{
+//   //     check.removeAttribute('checked');
+//   // })  
+//   document.getElementById('base-1').removeAttribute('checked');
+//   document.getElementById('base-2').removeAttribute('checked');
+//   document.getElementById('base-3').removeAttribute('checked');
+//   document.getElementById('base-4').removeAttribute('checked');
+//   document.getElementById('base-5').removeAttribute('checked');
+//   e.setAttribute('checked', 'checked');
+// }
 //#ĐIỀU HƯỚNG TRANG
 function hideAllPage(box){
 document.getElementById('HOME').style.display = "none";
@@ -89,6 +183,12 @@ document.getElementById('CONTACT').style.display = "none";
 document.getElementById('DEPOLICY').style.display = "none";
 document.getElementById('PRPOLICY').style.display = "none";
 document.getElementById('TAC').style.display = "none";
+document.getElementById('CART').style.display = "none";
+if (window.innerWidth < 900)  {
+  document.querySelector('.navbar__menu').style = "display: none !important;"
+  document.querySelector('.navbar__menu--phone').style = "display: flex !important;"
+} 
+
 // ẨN HẾT TẤT CẢ CÁC TRANG VÀ HIỂN THỊ TRANG ĐÃ CHỌN
 box.style.display = "flex";
 window.scrollTo(0, 0);
@@ -143,6 +243,9 @@ hideAllPage(document.getElementById('PRPOLICY'))
 document.getElementById('nav__TAC').addEventListener('click', ()=>{
 hideAllPage(document.getElementById('TAC'))
 });
+document.getElementById('nav__CART').addEventListener('click', ()=>{
+hideAllPage(document.getElementById('CART'))
+});
 document.querySelectorAll('.nav__PROMOTIONCONTENT-1').forEach((e)=>{
   e.addEventListener('click', ()=>{
   hideAllPage(document.getElementById('PROMOTIONCONTENT'))
@@ -182,6 +285,7 @@ function hideAllMenu(list){
   document.querySelector('#nav__salad').classList.remove("active")
   document.querySelector('#nav__drink').classList.remove("active")
   document.querySelector('#nav__fried').classList.remove("active")
+  
   //#Hiện menu được chọn
   list.style.display = "flex"
 }
@@ -308,3 +412,16 @@ function toast(
 
 
 
+//#RESPONDSIVE NAVBAR
+let show = 0
+document.querySelector('.navbar__menu--phone').addEventListener('click', ()=>{
+  if (show == 0)
+  {
+    document.querySelector('.navbar__menu').style = "display: flex !important;"
+    show = 1
+  }
+  else {
+    document.querySelector('.navbar__menu').style = "display: none !important;"
+    show = 0
+  }
+})
