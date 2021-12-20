@@ -128,7 +128,7 @@
         };
     }
     @if $breakpoint == medium-phone{
-        @media (max-height: 700px){
+        @media (max-width: 700px){
             @content
         };
     }
