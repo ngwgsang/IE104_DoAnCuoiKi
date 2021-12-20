@@ -27,12 +27,20 @@ $('.home-feedback__slider').slick({
 
 var cart__count = 0
 var cart__price = 0
+var cart__more = 0
+var more 
+var moreprice
+var size
+var base
+var note
+var val
 document.querySelector('#CART--slot').innerText = cart__count
 //#MỞ OVERVIEW SẢN PHẨM KHI CLICK
 document.querySelectorAll('.product').forEach((e) =>{
 e.addEventListener('click',  () => {
   changeProduct(e.value)
   document.getElementById('popup').style.display = "flex";
+  //#TÙY VÀO SẢN PHẨM MÀ HIỂN THỊ POPUP
   if (e.value < 7){
     document.querySelector('.product-overview__container__right--size').style.display = "block"
     document.querySelector('.product-overview__container__right--base').style.display = "block"
@@ -44,8 +52,9 @@ e.addEventListener('click',  () => {
     document.querySelector('.product-overview__container__right--more').style.display = "none"
   }
   //#CHỌN SIZE + THÊM NHÂN
-  let more = ""
-  let moreprice = 0
+  more = ""
+  moreprice = 0
+  cart__moreprice = 0
   document.querySelectorAll('.more__item').forEach((x) =>{
     x.addEventListener('click', () =>{
       x.classList.toggle('active');
@@ -60,7 +69,7 @@ e.addEventListener('click',  () => {
       document.getElementById('product__price').innerText = `${product[e.value].price + moreprice}VNĐ`;
     })
   })
-  let size = 'Nhỏ 6"'
+  size = 'Nhỏ 6"'
   document.querySelectorAll('.size__item').forEach((x) =>{
     x.addEventListener('click', () =>{
       document.querySelectorAll('.size__item').forEach((child)=>{
@@ -70,7 +79,7 @@ e.addEventListener('click',  () => {
       size = x.innerText
     })
   })
-  let base = "Dày"
+  base = "Dày"
   document.querySelectorAll('.base__item').forEach((x) => {
     x.addEventListener('click', ()=>{
       document.querySelectorAll('.base__item').forEach((child)=>{
@@ -80,54 +89,57 @@ e.addEventListener('click',  () => {
       base = x.innerText
     })
   })
-  let note =""
+  note =""
   document.querySelector('#product-overview-note').addEventListener('keyup', ()=>{
      note = document.getElementById('product-overview-note').value
   })
-  document.querySelector('.product-overview__container__left--addtocartbtn').addEventListener('click', ()=>{
-    if (e.value < 7){
-      document.querySelector('.cart__content__list').innerHTML += `
-      <li class="cart__list__item">
-        <img src=${product[e.value].pic} class="cart__list__item--img">
-        <ul>
-          <li class="cart__list__item--name">${product[e.value].name} - ${product[e.value].price + moreprice}VNĐ</li>
-          <li class="cart__list__item--size">${size}</li>
-          <li class="cart__list__item--base">${base}</li>   
-          <li class="cart__list__item--more">Thêm: ${more}</li>   
-          <li class="cart__list__item--more">Ghi chú: ${note}</li>   
-        </ul>
-        <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
-      </li>
-      `
-    }
-    else{
-      document.querySelector('.cart__content__list').innerHTML += `
-      <li class="cart__list__item">
-        <img src=${product[e.value].pic} class="cart__list__item--img">
-        <ul>
-          <li class="cart__list__item--name">${product[e.value].name} - ${product[e.value].price + moreprice}VNĐ</li> 
-          <li class="cart__list__item--more">Ghi chú: ${note}</li>   
-        </ul>
-        <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
-      </li>
-      `
-    }
-
-    toast({
-      title: "Thành công!",
-      message: `Bạn đã thêm ${product[e.value].name} vào giỏ hàng !`,
-      type: "success",
-      duration: 3000
-    });
-    cart__count++
-    cart__price += product[e.value].price
-    document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price}VNĐ`
-    document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price}VNĐ`
-    document.querySelector('#CART--slot').innerText = cart__count
-    if (cart__count == 0) document.querySelector('.cart__content__list__noti').style.display = "flex"
-    else document.querySelector('.cart__content__list__noti').style.display = "none"
-  })
+  val = e
 })
+})
+document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
+  if (val.value < 7){
+    document.querySelector('.cart__content__list').innerHTML += `
+    <li class="cart__list__item">
+      <img src=${product[val.value].pic} class="cart__list__item--img">
+      <ul>
+        <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li>
+        <li class="cart__list__item--size">${size}</li>
+        <li class="cart__list__item--base">${base}</li>   
+        <li class="cart__list__item--more">Thêm: ${more}</li>   
+        <li class="cart__list__item--more">Ghi chú: ${note}</li>   
+      </ul>
+      <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+    </li>
+    `
+  }
+  else{
+    document.querySelector('.cart__content__list').innerHTML += `
+    <li class="cart__list__item">
+      <img src=${product[val.value].pic} class="cart__list__item--img">
+      <ul>
+        <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li> 
+        <li class="cart__list__item--more">Ghi chú: ${note}</li>   
+      </ul>
+      <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+    </li>
+    `
+  }
+
+  toast({
+    title: "Thành công!",
+    message: `Bạn đã thêm ${product[val.value].name} vào giỏ hàng !`,
+    type: "success",
+    duration: 3000
+  });
+  cart__count++
+  cart__price += product[val.value].price
+  cart__moreprice += moreprice
+  document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice + 30000}VNĐ`
+  document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price + cart__moreprice}VNĐ`
+  document.querySelector('.cart__content__summary--ship--price').innerText = "30000VNĐ"
+  document.querySelector('#CART--slot').innerText = cart__count
+  if (cart__count == 0) document.querySelector('.cart__content__list__noti').style.display = "flex"
+  else document.querySelector('.cart__content__list__noti').style.display = "none"
 })
 
 //#ĐÓNG OVERVIEW SẢN PHẨM KHI CLICK [X]
