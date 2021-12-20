@@ -1543,7 +1543,7 @@ p {
 .menu__status {
   background-color: #181A37;
   color: #fff;
-  width: 25rem;
+  width: 25%;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
