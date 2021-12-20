@@ -5,123 +5,123 @@
     font-family: 'Pacifico', cursive;
     display: flex;
     flex-direction: column;
-}
-.signup__box{
-    margin: 0 auto;   
-    animation: slideInFromLeft 1s ease-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $cl-4;
-    padding: 2rem;
-    form{
-        position: relative;
-        width:  28.125rem;
-        z-index: 2;
-        line-height: 1.5;
-    }
-    .signup__form__control{
-        position: relative;
-        margin-top: 0.313rem;
-        label{
-        color: $cl-f;
-        }
-        input{
-        padding: 0.313rem;
-        font-size: 0.938rem;
-        width: 100%;
-        }
-        button{
-            background-color: $cl-2;
-            color: $cl-0;
-            font-size: 0.938rem;
-            padding: 0.625rem;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            display: block;
-        }
-    }
-
-    .signup__form__group1 {
-        @include h3;
-        @include hr;
-        h1{
-        color: $cl-f;
-        }
-        p {
-            span{
-               color: #8B8C9B; 
-            }
-            .nav__LOGIN{
-                cursor: pointer;
-                color: $cl-1;
-            }
-        }
-    }
-    .signup__form__group7{
-        margin-top: 1rem;
+    &__box{
+        margin: 0 auto;   
+        animation: slideInFromLeft 1s ease-out;
         display: flex;
+        align-items: center;
         justify-content: center;
-        button{
-            background-color: $cl-2;
-            color: $cl-0;
-            font-size: 0.938rem;
-            padding: 0.625rem;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            display: block;
-            width: 7rem;
+        background-color: $cl-4;
+        padding: 2rem;
+        form{
+            position: relative;
+            width:  28.125rem;
+            z-index: 2;
+            line-height: 1.5;
         }
-    }
-    .signup__form__group8{
-        margin-top: 1rem;
-        p{
+        .signup__form__control{
+            position: relative;
+            margin-top: 0.313rem;
+            label{
             color: $cl-f;
-            text-align: center;
-        }
-        p:before,
-        p:after {
-        background-color: $cl-f;
-        content: "";
-        display: inline-block;
-        height: 0.013rem;
-        position: relative;
-        vertical-align: middle;
-        width: 30%;
-        }
-        p:before {
-            right: 1rem;
-            margin-left: -50%;
-        }
-
-        p:after {
-            left: 1rem;
-            margin-right: -50%;
-        }
-    }
-    .signup__form__group9{
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        button{
-            background-color: white;
-            padding-top:0;
-            padding-bottom: 2rem;   
-            font-size: 0.75rem;
-            height: 2.188rem;
-            .fa-google{
-                color: $cl-1;
             }
-            .fa-facebook{
-                color: #039BE5;
+            input{
+            padding: 0.313rem;
+            font-size: 0.938rem;
+            width: 100%;
+            }
+            button{
+                background-color: $cl-2;
+                color: $cl-0;
+                font-size: 0.938rem;
+                padding: 0.625rem;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                display: block;
             }
         }
-    }
-    button,input{
-        border-radius: 0.313rem;
-        border: none;
-    }
+    
+        .signup__form__group1 {
+            @include h3;
+            @include hr;
+            h1{
+            color: $cl-f;
+            }
+            p {
+                span{
+                   color: #8B8C9B; 
+                }
+                .nav__LOGIN{
+                    cursor: pointer;
+                    color: $cl-1;
+                }
+            }
+        }
+        .signup__form__group7{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            button{
+                background-color: $cl-2;
+                color: $cl-0;
+                font-size: 0.938rem;
+                padding: 0.625rem;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                display: block;
+                width: 7rem;
+            }
+        }
+        .signup__form__group8{
+            margin-top: 1rem;
+            p{
+                color: $cl-f;
+                text-align: center;
+            }
+            p:before,
+            p:after {
+            background-color: $cl-f;
+            content: "";
+            display: inline-block;
+            height: 0.013rem;
+            position: relative;
+            vertical-align: middle;
+            width: 30%;
+            }
+            p:before {
+                right: 1rem;
+                margin-left: -50%;
+            }
+    
+            p:after {
+                left: 1rem;
+                margin-right: -50%;
+            }
+        }
+        .signup__form__group9{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            button{
+                background-color: white;
+                padding-top:0;
+                padding-bottom: 2rem;   
+                font-size: 0.75rem;
+                height: 2.188rem;
+                .fa-google{
+                    color: $cl-1;
+                }
+                .fa-facebook{
+                    color: #039BE5;
+                }
+            }
+        }
+        button,input{
+            border-radius: 0.313rem;
+            border: none;
+        }
+    }   
 }

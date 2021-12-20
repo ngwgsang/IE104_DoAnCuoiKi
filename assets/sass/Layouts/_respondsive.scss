@@ -1,21 +1,81 @@
 @include respondsive (big-tab){
-
+    .menu{
+        &__items{
+            justify-content: space-around;
+        }
+    }
+    .menu-grid{
+        justify-content: space-around;
+    }
 }
 
 @include respondsive (medium-tab){
-
+    .menu{
+        height: 200rem;
+        }
 }
 @include respondsive (tab){
 
 }
-
 @include respondsive (big-tab){
 
 }
 @include respondsive (big-phone){
-
+    .contact__box{
+        &__left{
+            .contact__box__content__left{
+                    form{
+                        .contact__form__content__box{
+                            display: flex !important;
+                            flex-direction: column;
+                        }
+                    }
+            }
+        }
+        &__right{
+            display: none;
+        }
+    }
 }
 @include respondsive (medium-phone){
+    .login{
+        &__box{
+            &__left{
+               display: none;
+            }
+            &__right{
+                   .login__form__group6{
+                       flex-wrap: wrap;
+                   }
+            }
+        }
+       }
+    .signup{
+        &__box{
+            margin: 0;
+            .signup__form__group9{
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .menu{
+        height: 200rem;
+        &__nav{
+            &__searchbar{
+                width: 35rem;
+                &__option{
+                     transform: translate(20%,-120%);
+                }
+            }
+        }
+        &__status{
+            display: none;
+        }
+        &__items{
+            justify-content: space-around;
+        }
+    }
 
-}
+}   
 
