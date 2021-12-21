@@ -79,6 +79,13 @@
                 h5{
                     font-size: 1.4rem;
                 }
+                p{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
                 .price{
                     margin-top: 0.5rem;
                     font-size: 1.2rem;
@@ -94,8 +101,14 @@
 }
 .content-custom-2 ul li{
     height: 32rem;
+    img{
+        width: 70%;
+    }
 }
 .content-custom-3 ul li{
     height: 34rem;
+    img{
+        width: 70%;
+    }
 }
 

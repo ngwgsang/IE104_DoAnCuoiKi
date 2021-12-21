@@ -6,6 +6,29 @@
         
 }
 @include respondsive (tab){
+    .login{
+        padding: 15% 10%;
+        &__box{
+            &__left{
+               display: none;
+            }
+            &__right{
+                   .login__form__group6{
+                       flex-wrap: wrap;
+                   }
+            }
+        }
+       }
+    .signup{
+        padding: 15% 10%;
+        &__box{
+            margin: 0;
+            .signup__form__group9{
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+        }
+    }
     .menu{
         &__nav{
             &__searchbar{
@@ -20,9 +43,7 @@
         justify-content: center;
     }
 }
-@include respondsive (big-tab){
 
-}
 @include respondsive (big-phone){
     .contact__box{
         &__left{
@@ -42,27 +63,7 @@
   
 }
 @include respondsive (medium-phone){
-    .login{
-        &__box{
-            &__left{
-               display: none;
-            }
-            &__right{
-                   .login__form__group6{
-                       flex-wrap: wrap;
-                   }
-            }
-        }
-       }
-    .signup{
-        &__box{
-            margin: 0;
-            .signup__form__group9{
-                gap: 1rem;
-                flex-wrap: wrap;
-            }
-        }
-    }
+
     .menu{
         height: 220rem;
         &__nav{
@@ -107,7 +108,7 @@
         }
     }
     .menu-grid{
-        justify-content: flex-start;
+        justify-content: center;
         padding: 1.5rem;
     }
 }   
@@ -353,6 +354,11 @@
 
             p{
                 font-size: 1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
             }
         }
         .home-menu__list-item{
