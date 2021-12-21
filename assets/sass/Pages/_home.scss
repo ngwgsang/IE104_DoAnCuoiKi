@@ -197,8 +197,8 @@
     &__slider{
         margin: 0 auto;
         margin-top: 3rem;
-        height: 20rem;
-        width: 80rem;
+        // height: 20rem;
+        // width: 80rem;
         .slick-dots li button:before{
             color: $cl-1;
         }
@@ -231,5 +231,3 @@
         }
     }
 }
-
-

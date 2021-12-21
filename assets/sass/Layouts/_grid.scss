@@ -1,15 +1,15 @@
 .product-grid{
     padding: 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     width: 100%;
     height: auto;
     flex-wrap: wrap;
     background: red;
-    // flex-direction: row;
-    // justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .product{
-        // display: block;
         height: 20rem;
         width: 28rem;
         background: #efefef;

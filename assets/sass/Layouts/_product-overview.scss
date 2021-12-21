@@ -102,8 +102,30 @@
                 }
             }
             &--base{
-                @extend .product-overview__container__right--more;
-                @include active(b);
+                width: 100%;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 0.5rem;
+                    li{
+                        width: 100%;
+                        display: block;
+                        background: rgba(204, 204, 204, 0.2);
+                        height: 6rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 500;
+                        flex-direction: column;
+                        padding: 1rem;
+                        text-align: center;
+                        line-height: 1.2;
+                    }
+                    @include active(b);
+                }
+                
             }
             &--more{
                 width: 100%;
