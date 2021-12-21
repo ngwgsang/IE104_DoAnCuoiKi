@@ -111,7 +111,7 @@ e.addEventListener('click',  () => {
 document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
   if (val.value < 7){
     document.querySelector('.cart__content__list').innerHTML += `
-    <li class="cart__list__item">
+    <li class="cart__list__item" value = "${val.value}">
       <img src=${product[val.value].pic} class="cart__list__item--img">
       <ul>
         <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li>
@@ -126,7 +126,7 @@ document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
   }
   else{
     document.querySelector('.cart__content__list').innerHTML += `
-    <li class="cart__list__item">
+    <li class="cart__list__item" value = "${val.value}">
       <img src=${product[val.value].pic} class="cart__list__item--img">
       <ul>
         <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li> 
@@ -155,9 +155,54 @@ document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
   document.querySelectorAll('.remove--btn').forEach((x) => {
     x.addEventListener('click', ()=>{
       x.parentElement.parentElement.remove();
+      cart__count--
+      cart__price -= product[x.parentElement.parentElement.value].price
+      document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice + 30000}VNĐ`
+      if (cart__count == 0) {
+        document.querySelector('.cart__content__list__noti').style.display = "flex"
+        moreprice =0
+        document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice}VNĐ`
+      }
+      document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price + cart__moreprice}VNĐ`
+      document.querySelector('#CART--slot').innerText = cart__count
     })
   })
+  order();
 })
+
+//#ĐẶT MÓN
+
+  
+document.querySelector('.order--btn').addEventListener('click', ()=>{  
+  if (cart__count == 0 ) {
+    toast({
+      title: "Thất bại!",
+      message: `Bạn chưa có sản phẩm nào trong giỏ hàng !`,
+      type: "error",
+      duration: 3000
+    })
+  }
+  else{
+    cart__count=0
+    cart__price=0
+    cart__moreprice=0
+    document.querySelectorAll('.cart__list__item').forEach((x) =>{
+      x.remove();
+    })
+    toast({
+      title: "Thành công!",
+      message: `Bạn đã đặt hàng thành công !`,
+      type: "success",
+      duration: 3000
+    });
+    document.querySelector('.cart__content__list__noti').style.display = "flex"
+    document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice}VNĐ`
+    document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price + cart__moreprice}VNĐ`
+    document.querySelector('.cart__content__summary--ship--price').innerText = "0VNĐ"
+    document.querySelector('#CART--slot').innerText = cart__count
+  }
+})
+
 
 //#ĐÓNG OVERVIEW SẢN PHẨM KHI CLICK [X]
 document.getElementById('close-overview-btn').addEventListener('click', ()=>{
