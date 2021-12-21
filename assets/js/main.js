@@ -111,7 +111,7 @@ e.addEventListener('click',  () => {
 document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
   if (val.value < 7){
     document.querySelector('.cart__content__list').innerHTML += `
-    <li class="cart__list__item">
+    <li class="cart__list__item" value = "${val.value}">
       <img src=${product[val.value].pic} class="cart__list__item--img">
       <ul>
         <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li>
@@ -120,19 +120,19 @@ document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
         <li class="cart__list__item--more">Thêm: ${more}</li>   
         <li class="cart__list__item--more">Ghi chú: ${note}</li>   
       </ul>
-      <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+      <div class="cart__list__item--group"><span>Điều chỉnh</span><span class = "remove--btn">Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
     </li>
     `
   }
   else{
     document.querySelector('.cart__content__list').innerHTML += `
-    <li class="cart__list__item">
+    <li class="cart__list__item" value = "${val.value}">
       <img src=${product[val.value].pic} class="cart__list__item--img">
       <ul>
         <li class="cart__list__item--name">${product[val.value].name} - ${product[val.value].price + moreprice}VNĐ</li> 
         <li class="cart__list__item--more">Ghi chú: ${note}</li>   
       </ul>
-      <div class="cart__list__item--group"><span>Điều chỉnh</span><span>Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
+      <div class="cart__list__item--group"><span>Điều chỉnh</span><span class = "remove--btn">Xóa</span><span>Số lượng: <input type="number" value = "1"></span></div>
     </li>
     `
   }
@@ -152,7 +152,57 @@ document.querySelector('#addtocardbtn').addEventListener('click', ()=>{
   document.querySelector('#CART--slot').innerText = cart__count
   if (cart__count == 0) document.querySelector('.cart__content__list__noti').style.display = "flex"
   else document.querySelector('.cart__content__list__noti').style.display = "none"
+  document.querySelectorAll('.remove--btn').forEach((x) => {
+    x.addEventListener('click', ()=>{
+      x.parentElement.parentElement.remove();
+      cart__count--
+      cart__price -= product[x.parentElement.parentElement.value].price
+      document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice + 30000}VNĐ`
+      if (cart__count == 0) {
+        document.querySelector('.cart__content__list__noti').style.display = "flex"
+        moreprice =0
+        document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice}VNĐ`
+      }
+      document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price + cart__moreprice}VNĐ`
+      document.querySelector('#CART--slot').innerText = cart__count
+    })
+  })
+  order();
 })
+
+//#ĐẶT MÓN
+
+  
+document.querySelector('.order--btn').addEventListener('click', ()=>{  
+  if (cart__count == 0 ) {
+    toast({
+      title: "Thất bại!",
+      message: `Bạn chưa có sản phẩm nào trong giỏ hàng !`,
+      type: "error",
+      duration: 3000
+    })
+  }
+  else{
+    cart__count=0
+    cart__price=0
+    cart__moreprice=0
+    document.querySelectorAll('.cart__list__item').forEach((x) =>{
+      x.remove();
+    })
+    toast({
+      title: "Thành công!",
+      message: `Bạn đã đặt hàng thành công !`,
+      type: "success",
+      duration: 3000
+    });
+    document.querySelector('.cart__content__list__noti').style.display = "flex"
+    document.querySelector('.cart__content__summary--totalprice').innerText = `${cart__price + cart__moreprice}VNĐ`
+    document.querySelector('.cart__content__summary--total--price').innerText = `${cart__price + cart__moreprice}VNĐ`
+    document.querySelector('.cart__content__summary--ship--price').innerText = "0VNĐ"
+    document.querySelector('#CART--slot').innerText = cart__count
+  }
+})
+
 
 //#ĐÓNG OVERVIEW SẢN PHẨM KHI CLICK [X]
 document.getElementById('close-overview-btn').addEventListener('click', ()=>{
@@ -178,6 +228,9 @@ document.getElementById('product__pic').src = product[index].pic;
 //   document.getElementById('base-5').removeAttribute('checked');
 //   e.setAttribute('checked', 'checked');
 // }
+//
+
+
 //#ĐIỀU HƯỚNG TRANG
 function hideAllPage(box){
 document.getElementById('HOME').style.display = "none";
@@ -200,7 +253,6 @@ if (window.innerWidth < 900)  {
   document.querySelector('.navbar__menu').style = "display: none !important;"
   document.querySelector('.navbar__menu--phone').style = "display: flex !important;"
 } 
-
 // ẨN HẾT TẤT CẢ CÁC TRANG VÀ HIỂN THỊ TRANG ĐÃ CHỌN
 box.style.display = "flex";
 window.scrollTo(0, 0);
@@ -381,12 +433,12 @@ function toast(
   if (main) {
     const toast = document.createElement("div");
 
-    // Auto remove toast
+    // Tự động xóa msg
     const autoRemoveId = setTimeout(function () {
       main.removeChild(toast);
     }, duration + 1000);
 
-    // Remove toast when clicked
+    // Xóa thẻ khi click
     toast.onclick = function (e) {
       if (e.target.closest(".toast__close")) {
         main.removeChild(toast);

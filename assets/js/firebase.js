@@ -1,5 +1,4 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
-// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
 import { getDatabase, set, get , ref , child , update, remove  } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
 import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword , signOut } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js";
 
@@ -43,8 +42,6 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
           // Signed in 
           const user = userCredential.user;
           // ...
-          // document.getElementById('ACCOUNT--name').innerText = email;
-          // window.alert(`ĐĂNG NHẬP THÀNH CÔNG HEHE ${userCredential.user.uid}`);
           fetchData(auth.currentUser.uid);
           // Kiểm tra email có đúng định dạng và password có điền chưa
             // khởi tạo toast success cho resolve
@@ -62,8 +59,7 @@ document.getElementById('LOGIN-BTN').addEventListener('click', ()=>{
           // XÓA GIÁ TRỊ EMAIL VÀ PASSWORD
           // email = "";
           // password = "";
-      });
-      
+      });  
 });
 //#ĐĂNG KÝ
 document.getElementById('SIGNUP-BTN').addEventListener('click', ()=>{
@@ -146,17 +142,12 @@ document.getElementById('LOGOUT-BTN').addEventListener('click', ()=>{
           type: "success",
           duration: 3000
         });
-        // location.reload();
       }).catch((error) => {
         // An error happened.
         // window.alert(error);
     });
 })
   
-// document.getElementById('nav__ACCOUNT').addEventListener('pointerenter', ()=>{
-//     document.querySelector('.account-config').style.display = "flex"
-// })
-
 //# NẠP TẤT CẢ DATA THEO UID
 function fetchData(uid){
   get(child(dbref, `${uid}/_overview`))
@@ -257,6 +248,5 @@ function clearData(){
   document.getElementById('overview--name').innerText  = "";
   document.getElementById('overview--email').innerText = "";
   document.getElementById('overview--phone').innerText = "";
-  // document.getElementById('nav__ACCOUNT').innerText = "";
 }
 
