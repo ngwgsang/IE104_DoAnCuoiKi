@@ -58,11 +58,12 @@
                     i{  
                         position: absolute;
                         right: 0;
-                        transform: translate(-4%,0%);
-                        font-size: 2.1rem;
-                        padding: 0.2rem;
+                        top: 0;
+                        font-size: 2rem;
+                        height: 2.3rem;
+                        width: 2.3rem;
                         background-color: $cl-2;
-                        margin-left: 0.5rem;
+                        display: flex;
                         color: $cl-f;
                         vertical-align: middle;
                         align-items: center;

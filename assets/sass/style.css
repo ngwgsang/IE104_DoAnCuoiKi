@@ -1496,12 +1496,14 @@ p {
 .menu__nav__searchbar__group i {
   position: absolute;
   right: 0;
-  -webkit-transform: translate(-4%, 0%);
-          transform: translate(-4%, 0%);
-  font-size: 2.1rem;
-  padding: 0.2rem;
+  top: 0;
+  font-size: 2rem;
+  height: 2.3rem;
+  width: 2.3rem;
   background-color: #F0A501;
-  margin-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   vertical-align: middle;
   -webkit-box-align: center;
