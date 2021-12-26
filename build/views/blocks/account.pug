@@ -1,28 +1,25 @@
 #ACCOUNT.account
   .account__nav
     #account--name.account__nav__name
-      ul
-        li#nav__overview Thông tin khách hàng
-        li#nav__address Sổ địa chỉ
-        li#nav__search Lịch sử mua hàng
-        li#nav__password Đổi mật khẩu
-        li#nav__voucher Voucher của tôi
-        li#LOGOUT-BTN Đăng xuất
+    ul
+      li#nav__overview Thông tin khách hàng
+      li#nav__address Sổ địa chỉ
+      li#nav__search Lịch sử mua hàng
+      li#nav__password Đổi mật khẩu
+      li#nav__voucher Voucher của tôi
+      li#LOGOUT-BTN Đăng xuất
   .account__content
     .account__content__overview
       .account__content__overview--info
         h3 Thông tin chung
         hr(align='left')
         ul
-          li
-            | Họ và tên: 
-            span#overview--name
-          li
-            | Số điện thoại: 
-            span#overview--phone
-          li
-            | Email: 
-            span#overview--email
+          li Họ và tên: 
+             span#overview--name
+          li Số điện thoại: 
+             span#overview--phone
+          li Email: 
+             span#overview--email
       .account__content__overview--history
         h3 Đơn hàng gần đây
         hr(align='left')
@@ -42,53 +39,43 @@
           li.address
             ul
               li.tag Địa chỉ mặc định
-              li
-                | Họ tên: 
-                span#default_address--name
-              li
-                | Địa chỉ: 
+              li Họ tên: 
+                 span#default_address--name
+              li Địa chỉ: 
                 span#default_address--address
-              li
-                | Số điện thoại: 
-                span#default_address--phone
+              li Số điện thoại: 
+                 span#default_address--phone
           ul#address--list.list-address
       .account__content__address--form
         h3 Thêm địa chỉ mới
         hr(align='left')
         form
-          label
-            | Họ và tên: 
+          label Họ và tên: 
             span *
           input(type='text')
-          label
-            | Tỉnh/thành 
+          label Tỉnh/thành 
             span *
           select
             option(value='') Thành phố Hồ Chí Minh
             option(value='') Hà Nội
-          label
-            | Quận/Huyện 
+          label Quận/Huyện 
             span *
           select
             option(value='') Quận 1
             option(value='') Quận 2
-          label
-            | Xã/Phường 
+          label Xã/Phường 
             span *
           select
             option(value='') Phường 5
             option(value='') Phương 4
-          label
-            | Tên đường 
+          label Tên đường 
             span *
           input(type='text')
-          label
-            | Số nhà 
+          label Số nhà 
             span *
             span *
           input(type='text')
-          label
-            | Số điện thoại 
+          label Số điện thoại 
             span *
           input(type='text')
           .check-box
