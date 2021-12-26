@@ -1,0 +1,49 @@
+#popup.product-overview
+    .product-overview__container
+          .product-overview__container__left
+            img#product__pic.product-overview__container__left--img(src='./images/pizza-1.png')
+            p.product-overview__container__left--price
+              | GIÁ: 
+              span#product__price 99.000VNĐ
+            button#addtocardbtn.product-overview__container__left--addtocartbtn(type='button') Thêm vào giỏ hàng
+          .product-overview__container__right
+            span#close-overview-btn.close-overview-btn X
+            .product-overview__container__right--description.box
+              h4#product__name Pizza Hải Sản
+              hr(align='left')
+              p#product__description Tôm, Giăm bông, Đào hoà quyện bùng nổ cùng sốt Thousand Island
+            .product-overview__container__right--size.box
+              h5 Kích thước
+              ul
+                li.size__item.active Nhỏ 6"
+                li.size__item Vừa 9"
+                li.size__item Lớn 12"
+            .product-overview__container__right--base.box
+              h5 Đế
+              ul
+                li.base__item Dày
+                li.base__item Mỏng giòn
+                li.base__item Viền phô mai
+                li.base__item Viền tôm nướng
+                li.base__item Viền phô mai xúc xích
+            .product-overview__container__right--more.box
+              h5 Thêm nhân
+              ul
+                li.more__item(value='29000')
+                  span.more__item--name Cà chua
+                  span +29.000đ
+                li.more__item(value='39000')
+                  span.more__item--name Thịt heo xông khói
+                  span +39.000đ
+                li.more__item(value='39000')
+                  span.more__item--name Gà cắt lát
+                  span +39.000đ
+                li.more__item(value='49000')
+                  span.more__item--name Hải sản
+                  span +49.000đ
+                li.more__item(value='49000')
+                  span.more__item--name Tôm
+                  span +49.000đ
+            .product-overview__container__right--note
+              h5 Ghi chú
+              textarea#product-overview-note(name='' cols='30' rows='5')

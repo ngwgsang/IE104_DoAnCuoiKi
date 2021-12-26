@@ -1,0 +1,28 @@
+#CART.cart
+    .cart__content
+          h3 Giỏ hàng của bạn
+          ul.cart__content__list
+            li.cart__content__list__noti Giỏ hàng rỗng !
+            // chèn list
+          h3 Thanh toán
+          .cart__content__voucher
+            input(type='text' placeholder='Nhập mã khuyến mãi')
+            button(type='button') Áp dụng
+          .cart__content__summary
+            ul
+              li.cart__content__summary--total
+                span Tổng cộng
+                span.cart__content__summary--total--price 0VNĐ
+              li.cart__content__summary--promotion
+                span Giảm khuyến mãi
+                span.cart__content__summary--promotion--price 0VNĐ
+              li.cart__content__summary--voucher
+                span Giảm voucher
+                span.cart__content__summary--voucher--price 0VNĐ
+              li.cart__content__summary--ship
+                span Phí ship
+                span.cart__content__summary--ship--price 0VNĐ
+            button.order--btn(type='button')
+              span Đặt hàng
+              |  - 
+              span.cart__content__summary--totalprice 0VNĐ

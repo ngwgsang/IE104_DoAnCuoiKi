@@ -1,0 +1,41 @@
+#CONTACT.contact
+    .contact__box
+          .contact__box__left
+            .contact__box__content__left
+              h1.contact__box__title Liên hệ với chúng tôi
+              form(action='#' method='post')
+                .contact__form__content__box
+                  .contact__form__group1
+                    .contact__form__control
+                      label(for='fullName') Họ và Tên *
+                    .contact__form__control
+                      input#fullName(type='text' placeholder='Nhập tên của bạn' name='fullName' value='' required='')
+                  .contact__form__group2
+                    .contact__form__control
+                      label(for='Phone') Số điện thoại *
+                    .contact__form__control
+                      input#Phone(type='text' placeholder='Nhập số điện thoại' name='Phone' value='' required='')
+                  .contact__form__group3
+                    .contact__form__control
+                      label(for='Email') Email *
+                    .contact__form__control
+                      input#Email(type='email' placeholder='Nhập địa chỉ email của bạn.' data-val-required='Nhập email' name='Email' value='' required='')
+                  .contact__form__group4
+                    .contact__form__control
+                      label(for='Subject') Tiêu đề *
+                    .contact__form__control
+                      input#Subject(type='text' placeholder='Nhập chủ đề' name='Subject' value='' required='')
+                  .contact__form__group5
+                    .contact__form__control
+                      label(for='Subject') Nội dung *
+                    .contact__form__control
+                      textarea#Enquiry.text-content(placeholder='Nhập yêu cầu của bạn' name='Enquiry' required='')
+                  .contact__form__group6
+                    .contact__form__control
+                      button.btn-next(type='submit' name='send-email')
+                        | Gửi
+                        em
+                          i.fas.fa-arrow-right.fa-lg
+          .contact__box__right
+            .contact__box__content__right
+              img(src='./images/contact-bg.jpg' alt='')

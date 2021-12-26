@@ -1,0 +1,36 @@
+#LOGIN.login
+    .login__box
+        .login__box__left
+            img.login__logo__img(src='./images/login__logo.png' alt='login__logo')
+        .login__box__right
+            form
+              .login__form
+                .login__form__group1
+                  h1 THAM GIA NGAY
+                  p
+                    span Chưa có tài khoản?
+                    span#nav__SIGNUP Đăng ký tại đây
+                .login__form__group2
+                  .login__form__control
+                    label.login__form__control(for='login__email') Email
+                  .login__form__control
+                    input#login__email.login__form__control(name='login__email' type='email')
+                .login__form__group3
+                  .login__form__control
+                    label.login__form__control(for='login__password') Mật Khẩu
+                  .login__form__control
+                    input#login__password.login__form__control(name='login__password' type='password')
+                .login__form__group4
+                  .login__form__control
+                    button#LOGIN-BTN(type='button') Đăng nhập
+                .login__form__group5
+                  p Hoặc
+                .login__form__group6
+                  .login__form__control
+                    button.login__form__button__google(type='submit')
+                      i.fab.fa-google.fa-2x
+                      |  Đăng nhập với Google
+                  .login__form__control
+                    button.login__form__button__facebook(type='submit')
+                      i.fab.fa-facebook.fa-2x
+                      |  Đăng nhập với Facebook

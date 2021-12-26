@@ -1,0 +1,57 @@
+#SIGNUP.signup
+    .signup__box
+        form
+            .signup__form__group__box
+              .signup__form__group1
+                hr(align='left')
+                h3 ĐĂNG KÝ
+                p
+                  span Bạn đã có tài khoản?
+                  span.nav__LOGIN Đăng nhập tại đây
+              .signup__form__group2
+                .signup__form__control
+                  label.signup__form__control(for='signup__name')
+                    | Họ và Tên
+                    span  *
+                .signup__form__control
+                  input#signup__name.signup__form__control(name='signup__name' type='text')
+              .signup__form__group3
+                .signup__form__control
+                  label.signup__form__control(for='signup__phone')
+                    | Số điện thoại
+                    span  *
+                .signup__form__control
+                  input#signup__phone.signup__form__control(name='signup__phone' type='text')
+              .signup__form__group4
+                .signup__form__control
+                  label.signup__form__control(for='signup__email') Email *
+                .signup__form__control
+                  input#signup__email.signup__form__control(name='signup__email' type='email')
+              .signup__form__group5
+                .signup__form__control
+                  label.signup__form__control(for='signup__password')
+                    | Mật khẩu
+                    span  *
+                .signup__form__control
+                  input#signup__password.signup__form__control(name='signup__password' type='password')
+              .signup__form__group6
+                .signup__form__control
+                  label.signup__form__control(for='signup__password__confirm')
+                    | Xác nhận mật khẩu
+                    span  *
+                .signup__form__control
+                  input#signup__password__confirm.signup__form__control(name='signup__password__confirm' type='password')
+              .signup__form__group7
+                .signup__form__control
+                  button#SIGNUP-BTN(type='button') Đăng ký
+              .signup__form__group8
+                p Hoặc
+              .signup__form__group9
+                .signup__form__control
+                  button.signup__form__button__google(type='submit')
+                    i.fab.fa-google.fa-2x
+                    |  Đăng nhập với Google
+                .signup__form__control
+                  button.signup__form__button__facebook(type='submit')
+                    i.fab.fa-facebook.fa-2x
+                    |  Đăng nhập với Facebook
