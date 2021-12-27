@@ -203,11 +203,11 @@
         top: 5rem;
         left: 50%;
         transform: translateX(-50%);
-        background: url('./../images/bg.png');
+        background: url('./../images/bg.png'), linear-gradient($cl-4, $cl-4);
         width: 100%;
         flex-direction: column;
         gap: 1.2rem;
-        padding: 1rem;
+        padding: 3rem 1rem;
         font-size: 1.4rem;
     }
     &__item{
