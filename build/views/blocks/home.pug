@@ -1,3 +1,11 @@
+mixin home-menu__list-item(src, title, des, price, val)
+  li.home-menu__list-item.product(value=val)
+    img(src=src)
+    h5=title
+    p=des
+    p.price
+      | Giá chỉ từ: 
+      span=price
 #HOME.home
         // ###---------------HERO---------------##-
         .hero
@@ -41,139 +49,29 @@
           .home-menu__container
             h4 Pizza
             ul.home-menu__list
-              li.home-menu__list-item.product(value='0')
-                img(src='./images/pizza-1.png' alt='')
-                h5 Pizza hải sản
-                p Tôm, cua, mực và nghêu với sốt Marinara
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='1')
-                img(src='./images/pizza-2.png' alt='')
-                h5 Pizza Hải Sản Đào
-                p Tôm, Giăm bông, Đào hoà quyện bùng nổ cùng sốt Thousand Island
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='2')
-                img(src='./images/pizza-3.png' alt='')
-                h5 Pizza Hải Sản Cocktail
-                p Tôm, cua, giăm bông,... với sốt Thousand Island
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='3')
-                img(src='./images/pizza-4.png' alt='')
-                h5 Pizza Hải Sản Nhiệt Đới
-                p Tôm, nghêu, mực cua, dứa với sốt Thousand Island
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='4')
-                img(src='./images/pizza-6.png' alt='')
-                h5 Pizza Thịt Nguội Kiểu Canada
-                p Sự kết hợp giữa thịt nguội và bắp ngọt
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='5')
-                img(src='./images/pizza-7.png' alt='')
-                h5 Pizza Thịt Xông Khói
-                p Thịt giăm bông, thịt xông khói và hai loại rau của ớt xanh, cà chua
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
+              +home-menu__list-item('./images/pizza-1.png','Pizza hải sản','Pizza hải sản,Tôm, cua, mực và nghêu với sốt Marinara','99.000VNĐ', '0')
+              +home-menu__list-item('./images/pizza-2.png','Pizza Hải Sản Đào','Tôm, Giăm bông, Đào hoà quyện bùng nổ cùng sốt Thousand Island','99.000VNĐ','1')
+              +home-menu__list-item('./images/pizza-3.png','Pizza Hải Sản Cocktail','Tôm, cua, giăm bông,... với sốt Thousand Island','99.000VNĐ','2')
+              +home-menu__list-item('./images/pizza-4.png','Pizza Hải Sản Nhiệt Đới','Tôm, nghêu, mực cua, dứa với sốt Thousand Island','99.000VNĐ','3')
+              +home-menu__list-item('./images/pizza-6.png','Pizza Thịt Nguội Kiểu Canada','Sự kết hợp giữa thịt nguội và bắp ngọt','99.000VNĐ','4')
+              +home-menu__list-item('./images/pizza-7.png','Pizza Thịt Xông Khói','Thịt giăm bông, thịt xông khói và hai loại rau của ớt xanh, cà chua','99.000VNĐ','5')
           .home-menu__container
             h4 Spaghetti
             ul.home-menu__list
-              li.home-menu__list-item.product(value='6')
-                img(src='./images/spg-1.png' alt='')
-                h5 Mì Ý Cay Hải Sản
-                p Mỳ Ý rán với các loại hải sản tươi ngon cùng ớt và tỏi
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='7')
-                img(src='./images/spg-2.png' alt='')
-                h5 Mì Ý Cay Xúc Xích
-                p Mỳ Ý rán với xúc xích cay, thảo mộc, ngò gai và húng quế Ý
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='8')
-                img(src='./images/spg-3.png' alt='')
-                h5 Mì Ý Giăm Bông
-                p Mỳ Ý, nấm và giăm bông được nấu cùng với sốt kem trắng
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='9')
-                img(src='./images/spg-4.png' alt='')
-                h5 Mì Ý cay với thịt xông khói
-                p Mỳ Ý cay nồng và ngậy hương thơm của thịt xông khói
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='10')
-                img(src='./images/spg-5.png' alt='')
-                h5 Mì Ý Chay Sốt Marinara
-                p Sốt Marinara, nấm, ớt chuông và cà chua đỏ
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='11')
-                img(src='./images/spg-6.png' alt='')
-                h5 Mì Ý thịt bò bằm
-                p Sốt thịt bò bằm đặc trưng kết hợp cùng mỳ Ý
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
+              +home-menu__list-item('./images/spg-1.png', 'Mì Ý Cay Hải Sản', 'Mỳ Ý rán với các loại hải sản tươi ngon cùng ớt và tỏi', '99.000VNĐ', '6')
+              +home-menu__list-item('./images/spg-2.png', 'Mì Ý Cay Xúc Xích', 'Mỳ Ý rán với xúc xích cay, thảo mộc, ngò gai và húng quế Ý', '99.000VNĐ', '7')
+              +home-menu__list-item('./images/spg-3.png', 'Mì Ý Giăm Bông', 'Mỳ Ý, nấm và giăm bông được nấu cùng với sốt kem trắng', '99.000VNĐ', '8')
+              +home-menu__list-item('./images/spg-4.png', 'Mì Ý cay với thịt xông khói', 'Mỳ Ý cay nồng và ngậy hương thơm của thịt xông khói', '99.000VNĐ', '9')
+              +home-menu__list-item('./images/spg-5.png', 'Mì Ý Chay Sốt Marinara', 'Sốt Marinara, nấm, ớt chuông và cà chua đỏ', '99.000VNĐ', '10')
+              +home-menu__list-item('./images/spg-6.png', 'Mì Ý thịt bò bằm', 'Sốt thịt bò bằm đặc trưng kết hợp cùng mỳ Ý', '99.000VNĐ', '11')
           .home-menu__container
             h4 Món khác
             ul.home-menu__list
-              li.home-menu__list-item.product(value='12')
-                img(src='./images/salad-1.png' alt='')
-                h5 Salad Gà Giòn Không Xương
-                p
-                  | Salad Gà giòn với trứng cút, thịt xông khói, phô mai parmesan và sốt Thousand Island
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='13')
-                img(src='./images/salad-2.png' alt='')
-                h5 Salad Da Cá Hồi Giòn
-                p Salad với da cá hồi giòn với bắp cải đỏ, cà chua bi, ngô với sốt Yuzu
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='14')
-                img(src='./images/fr-1.png' alt='')
-                h5 Gà Zòn Zòn
-                p Cánh gà được phủ bởi một lớp bột chiên giòn
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='15')
-                img(src='./images/fr-2.png' alt='')
-                h5 Đùi Gà Tẩm Bột Chiên Giòn
-                p Đùi Gà phủ một lớp bột chiên giòn rụm
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='16')
-                img(src='./images/fr-3.png' alt='')
-                h5 Gà Giòn Không Xương
-                p Gà giòn tan với sốt Cocktail thơm ngậy
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
-              li.home-menu__list-item.product(value='17')
-                img(src='./images/fr-4.png' alt='')
-                h5 Gà Zòn Zòn cay
-                p Cánh gà được phủ bởi một lớp bột chiên giòn cay
-                p.price
-                  | Giá chỉ từ:
-                  span  99.000VNĐ
+              +home-menu__list-item('./images/fr-1.png','Gà Zòn Zòn','Cánh gà được phủ bởi một lớp bột chiên giòn','99.000VNĐ','14')
+              +home-menu__list-item('./images/fr-2.png','Đùi Gà Tẩm Bột Chiên Giòn','Đùi Gà phủ một lớp bột chiên giòn rụm','99.000VNĐ','15')
+              +home-menu__list-item('./images/fr-3.png','Gà Giòn Không Xương','Gà giòn tan với sốt Cocktail thơm ngậy','99.000VNĐ','16')
+              +home-menu__list-item('./images/salad-2.png','Salad Da Cá Hồi Giòn','Salad với da cá hồi giòn với bắp cải đỏ, cà chua bi, ngô với sốt Yuzu','99.000VNĐ','13')
+              +home-menu__list-item('./images/salad-3.png','Salad rau củ trộn dầu giấm','Salad rau củ trộn dầu giấm','99.000VNĐ','29')
         // ###---------------FEED-BACK----------##-
         .home-feedback
           h3.heading
